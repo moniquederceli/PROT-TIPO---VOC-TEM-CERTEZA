@@ -806,6 +806,7 @@ GameObject:
   - component: {fileID: 728075935}
   - component: {fileID: 728075938}
   - component: {fileID: 728075937}
+  - component: {fileID: 728075940}
   m_Layer: 5
   m_Name: NPC1
   m_TagString: Untagged
@@ -911,6 +912,21 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 728075934}
   m_CullTransparentMesh: 1
+--- !u!114 &728075940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728075934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a7b993ca0b20784ca33bd626f5093b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::NPCRecusado
+  imagemNPC: {fileID: 728075938}
+  imagemBravo: {fileID: 6491085365489579684, guid: b06124beb78f7c6449bf4a5bc98c73dc, type: 3}
+  velocidade: 300
 --- !u!1 &752682736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1478,6 +1494,8 @@ GameObject:
   - component: {fileID: 1594129986}
   - component: {fileID: 1594129988}
   - component: {fileID: 1594129987}
+  - component: {fileID: 1594129989}
+  - component: {fileID: 1594129990}
   m_Layer: 5
   m_Name: BigDocument
   m_TagString: Untagged
@@ -1542,6 +1560,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1594129985}
   m_CullTransparentMesh: 1
+--- !u!114 &1594129989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594129985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4034f76947f522f49ba61b8949523e32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DragDocument
+--- !u!114 &1594129990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1594129985}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25faa15d268ba82418fb838de05c8e55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DoubleClickClose
+  documentToClose: {fileID: 1188364462}
 --- !u!1 &1623669879
 GameObject:
   m_ObjectHideFlags: 0
@@ -1578,6 +1621,7 @@ MonoBehaviour:
   currentNPC: 0
   acceptButton: {fileID: 441307016}
   denyButton: {fileID: 1835029189}
+  documentIdentity: {fileID: 68401178}
 --- !u!4 &1623669881
 Transform:
   m_ObjectHideFlags: 0
@@ -2045,7 +2089,6 @@ GameObject:
   - component: {fileID: 2129091920}
   - component: {fileID: 2129091923}
   - component: {fileID: 2129091922}
-  - component: {fileID: 2129091921}
   m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
@@ -2072,19 +2115,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2129091921
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2129091919}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7253b1d5584cdb44a88f8a7ea933f92b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::CloseDocument
-  inspectionPanel: {fileID: 1188364462}
 --- !u!114 &2129091922
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -71,6 +71,7 @@ public class NPCMovement : MonoBehaviour
 
     if (gameManager != null)
     {
+        gameManager.ShowDocumentIdentity();
         gameManager.EnableDecisionButtons();
     }
 }
@@ -108,13 +109,21 @@ public class NPCMovement : MonoBehaviour
     // BOTÃO VERMELHO
     public void Deny()
     {
-        // Impede recusar antes de chegar
-        if (!canDecide)
-            return;
+    if (!canDecide)
+        return;
 
-        canDecide = false;
+    canDecide = false;
 
+    NPCRecusado recusado = GetComponent<NPCRecusado>();
+
+    if (recusado != null)
+    {
+        recusado.Recusar();
+    }
+    else
+    {
         gameObject.SetActive(false);
+    }
     }
 
     IEnumerator LeaveToRight()

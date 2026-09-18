@@ -12,6 +12,9 @@ public class GameManager : MonoBehaviour
     public Button acceptButton;
     public Button denyButton;
 
+    [Header("Documents")]
+    public GameObject documentIdentity;
+
     private void Start()
     {
         SetButtons(false);
@@ -27,6 +30,8 @@ public class GameManager : MonoBehaviour
 
         if (movement != null)
         {
+            HideDocumentIdentity();
+
             SetButtons(false);
 
             movement.Accept();
@@ -44,6 +49,8 @@ public class GameManager : MonoBehaviour
 
         if (movement != null)
         {
+            HideDocumentIdentity();
+
             SetButtons(false);
 
             movement.Deny();
@@ -87,14 +94,35 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void EnableDecisionButtons()
+    public void ShowDocumentIdentity()
     {
-        SetButtons(true);
+     if (documentIdentity != null)
+    {
+        documentIdentity.SetActive(true);
+     }
     }
 
+    public void HideDocumentIdentity()
+    {
+     if (documentIdentity != null)
+     {
+        documentIdentity.SetActive(false);
+     }
+    }
+    public void EnableDecisionButtons()
+    {
+    SetButtons(true);
+    }
     private void SetButtons(bool enabled)
     {
+    if (acceptButton != null)
+    {
         acceptButton.interactable = enabled;
+    }
+
+    if (denyButton != null)
+    {
         denyButton.interactable = enabled;
+    }
     }
 }
