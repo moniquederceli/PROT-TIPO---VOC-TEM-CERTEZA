@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 51c9b819f6f26ba468e5fbc4fccbea43
+guid: b424080cc0ac22d4b8c75dc18b4ecfdf
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7689823779178421381
-    second: "Base - Permiss\xE3o de resid\xEAncia_0"
+      213: -5193229638936560725
+    second: LM - Matthew_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "Base - Permiss\xE3o de resid\xEAncia_0"
+      name: LM - Matthew_0
       rect:
         serializedVersion: 2
         x: 24
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b73e7b8e302484590800000000000000
-      internalID: -7689823779178421381
+      spriteID: babf7268821fde7b0800000000000000
+      internalID: -5193229638936560725
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      "Base - Permiss\xE3o de resid\xEAncia_0": -7689823779178421381
+      LM - Matthew_0: -5193229638936560725
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

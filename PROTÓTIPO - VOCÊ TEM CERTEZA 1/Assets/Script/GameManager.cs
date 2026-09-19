@@ -8,12 +8,17 @@ public class GameManager : MonoBehaviour
 
     public int currentNPC = 0;
 
+    [Header("Documentos dos NPCs")]
+    public NPCDocuments npcDocuments;
+
     [Header("Decision Buttons")]
     public Button acceptButton;
     public Button denyButton;
 
     [Header("Documents")]
-    public GameObject documentIdentity;
+    public GameObject documentoRG;
+    public GameObject documentoLM;
+    public GameObject documentoRM;
 
     private void Start()
     {
@@ -41,22 +46,22 @@ public class GameManager : MonoBehaviour
     }
 
     public void DenyCurrentNPC()
+   {
+    if (currentNPC >= npcObjects.Length)
+        return;
+
+    NPCMovement movement = npcObjects[currentNPC].GetComponent<NPCMovement>();
+
+    if (movement != null)
     {
-        if (currentNPC >= npcObjects.Length)
-            return;
+        HideDocumentIdentity();
 
-        NPCMovement movement = npcObjects[currentNPC].GetComponent<NPCMovement>();
+        SetButtons(false);
 
-        if (movement != null)
-        {
-            HideDocumentIdentity();
+        movement.Deny();
 
-            SetButtons(false);
-
-            movement.Deny();
-
-            NextNPC();
-        }
+        Invoke(nameof(NextNPC), 2f);
+    }
     }
 
     public void NextNPC()
@@ -81,6 +86,11 @@ public class GameManager : MonoBehaviour
 
             npc.SetActive(true);
 
+            if (npcDocuments != null)
+            {
+                npcDocuments.MostrarDocumentos(currentNPC + 1);
+            }
+
             NPCMovement movement = npc.GetComponent<NPCMovement>();
 
             if (movement != null)
@@ -96,18 +106,26 @@ public class GameManager : MonoBehaviour
 
     public void ShowDocumentIdentity()
     {
-     if (documentIdentity != null)
-    {
-        documentIdentity.SetActive(true);
-     }
+        if (documentoRG != null)
+        documentoRG.SetActive(true);
+
+        if (documentoLM != null)
+        documentoLM.SetActive(true);
+
+        if (documentoRM != null)
+        documentoRM.SetActive(true);
     }
 
     public void HideDocumentIdentity()
     {
-     if (documentIdentity != null)
-     {
-        documentIdentity.SetActive(false);
-     }
+         if (documentoRG != null)
+        documentoRG.SetActive(false);
+
+        if (documentoLM != null)
+        documentoLM.SetActive(false);
+
+        if (documentoRM != null)
+        documentoRM.SetActive(false);
     }
     public void EnableDecisionButtons()
     {
