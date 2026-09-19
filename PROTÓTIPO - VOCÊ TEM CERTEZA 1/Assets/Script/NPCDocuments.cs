@@ -25,6 +25,8 @@ public class NPCDocuments : MonoBehaviour
 
     public void MostrarDocumentos(int numeroNPC)
     {
+        Debug.Log("Mostrando documentos do NPC: " + numeroNPC);
+
         if (numeroNPC == 1)
         {
             documentoRG.sprite = rg1;
@@ -37,6 +39,10 @@ public class NPCDocuments : MonoBehaviour
             documentoRG.sprite = rg2;
             documentoLM.sprite = lm2;
             documentoRM.sprite = rm2;
+
+            Debug.Log("NPC 2 - RG: " + documentoRG.sprite.name);
+            Debug.Log("NPC 2 - LM: " + documentoLM.sprite.name);
+            Debug.Log("NPC 2 - RM: " + documentoRM.sprite.name);
         }
 
         if (numeroNPC == 3)

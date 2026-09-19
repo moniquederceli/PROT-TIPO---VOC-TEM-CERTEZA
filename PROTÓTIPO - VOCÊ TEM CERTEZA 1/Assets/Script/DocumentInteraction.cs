@@ -6,6 +6,19 @@ public class DocumentInteraction : MonoBehaviour, IPointerClickHandler
 {
     [Header("RG - Documento Grande Especial")]
     public GameObject documentoGrande;
+    public Image imagemDocumentoGrande;
+
+    public Sprite rgGrande1;
+    public Sprite rgGrande2;
+    public Sprite rgGrande3;
+
+    public Sprite lmGrande1;
+    public Sprite lmGrande2;
+    public Sprite lmGrande3;
+
+    public Sprite rmGrande1;
+    public Sprite rmGrande2;
+    public Sprite rmGrande3;
 
     [Header("Sistema antigo - LM e RM")]
     public GameObject inspectionPanel;
@@ -30,8 +43,44 @@ public class DocumentInteraction : MonoBehaviour, IPointerClickHandler
         // Isso será usado pelo RG.
         if (documentoGrande != null)
         {
-            documentoGrande.SetActive(true);
-            return;
+        if (documentoGrande != null)
+{
+    GameManager gameManager = FindAnyObjectByType<GameManager>();
+
+    if (gameManager != null && imagemDocumentoGrande != null)
+    {
+        if (gameObject.name == "RG")
+        {
+            if (gameManager.currentNPC == 0)
+                imagemDocumentoGrande.sprite = rgGrande1;
+            else if (gameManager.currentNPC == 1)
+                imagemDocumentoGrande.sprite = rgGrande2;
+            else if (gameManager.currentNPC == 2)
+                imagemDocumentoGrande.sprite = rgGrande3;
+        }
+        else if (gameObject.name == "LM")
+        {
+            if (gameManager.currentNPC == 0)
+                imagemDocumentoGrande.sprite = lmGrande1;
+            else if (gameManager.currentNPC == 1)
+                imagemDocumentoGrande.sprite = lmGrande2;
+            else if (gameManager.currentNPC == 2)
+                imagemDocumentoGrande.sprite = lmGrande3;
+        }
+        else if (gameObject.name == "RM")
+        {
+            if (gameManager.currentNPC == 0)
+                imagemDocumentoGrande.sprite = rmGrande1;
+            else if (gameManager.currentNPC == 1)
+                imagemDocumentoGrande.sprite = rmGrande2;
+            else if (gameManager.currentNPC == 2)
+                imagemDocumentoGrande.sprite = rmGrande3;
+        }
+    }
+
+    documentoGrande.SetActive(true);
+    return;
+}    
         }
 
         // Se não tiver Documento Grande,
