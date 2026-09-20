@@ -1,0 +1,845 @@
+fileFormatVersion: 2
+guid: 440975925f54825418247dd29065c0c3
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6207599874082285944
+    second: envelope com folhas_0
+  - first:
+      213: 2013316863756123587
+    second: envelope com folhas_1
+  - first:
+      213: -8052226057043656526
+    second: envelope com folhas_2
+  - first:
+      213: -4305309244164271292
+    second: envelope com folhas_3
+  - first:
+      213: -598833404383729553
+    second: envelope com folhas_4
+  - first:
+      213: -4346229095454083933
+    second: envelope com folhas_5
+  - first:
+      213: -7298479440920062238
+    second: envelope com folhas_6
+  - first:
+      213: -4030229973481515191
+    second: envelope com folhas_7
+  - first:
+      213: -2035016821298317524
+    second: envelope com folhas_8
+  - first:
+      213: 7607699465499216485
+    second: envelope com folhas_9
+  - first:
+      213: 3083802456997361605
+    second: envelope com folhas_10
+  - first:
+      213: 7913715822550531072
+    second: envelope com folhas_11
+  - first:
+      213: 5202183725923850615
+    second: envelope com folhas_12
+  - first:
+      213: 4376114667096868938
+    second: envelope com folhas_13
+  - first:
+      213: -6212000089906990676
+    second: envelope com folhas_14
+  - first:
+      213: -7855619361687643725
+    second: envelope com folhas_15
+  - first:
+      213: 5968331860732693467
+    second: envelope com folhas_16
+  - first:
+      213: -7896033144436053457
+    second: envelope com folhas_17
+  - first:
+      213: -6573247608725862253
+    second: envelope com folhas_18
+  - first:
+      213: -1338433673503554371
+    second: envelope com folhas_19
+  - first:
+      213: -2043848389874355068
+    second: envelope com folhas_20
+  - first:
+      213: -603220214881532720
+    second: envelope com folhas_21
+  - first:
+      213: -1602561429478997465
+    second: envelope com folhas_22
+  - first:
+      213: -1302935922360079548
+    second: envelope com folhas_23
+  - first:
+      213: 8415898907005567868
+    second: envelope com folhas_24
+  - first:
+      213: -1181340081633635622
+    second: envelope com folhas_25
+  - first:
+      213: -6593403511858306483
+    second: envelope com folhas_26
+  - first:
+      213: 6791061541964824323
+    second: envelope com folhas_27
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: envelope com folhas_0
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 47
+        width: 2233
+        height: 2008
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8792f6a3233d52650800000000000000
+      internalID: 6207599874082285944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_1
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 1299
+        width: 56
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3cdbc74450db0fb10800000000000000
+      internalID: 2013316863756123587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_2
+      rect:
+        serializedVersion: 2
+        x: 2987
+        y: 1324
+        width: 8
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0c4ca401fb04090800000000000000
+      internalID: -8052226057043656526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_3
+      rect:
+        serializedVersion: 2
+        x: 2991
+        y: 1316
+        width: 15
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 443126d8d087044c0800000000000000
+      internalID: -4305309244164271292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_4
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 1194
+        width: 96
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f68e114013480b7f0800000000000000
+      internalID: -598833404383729553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_5
+      rect:
+        serializedVersion: 2
+        x: 2973
+        y: 1259
+        width: 22
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a4fdfc3aa71fa3c0800000000000000
+      internalID: -4346229095454083933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_6
+      rect:
+        serializedVersion: 2
+        x: 2935
+        y: 1133
+        width: 22
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e6d7731e9796ba90800000000000000
+      internalID: -7298479440920062238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_7
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 1101
+        width: 9
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9479083313fb118c0800000000000000
+      internalID: -4030229973481515191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_8
+      rect:
+        serializedVersion: 2
+        x: 2930
+        y: 997
+        width: 27
+        height: 117
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c27b196abfa22c3e0800000000000000
+      internalID: -2035016821298317524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_9
+      rect:
+        serializedVersion: 2
+        x: 840
+        y: 1018
+        width: 14
+        height: 20
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 56a82074b5af39960800000000000000
+      internalID: 7607699465499216485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_10
+      rect:
+        serializedVersion: 2
+        x: 2897
+        y: 980
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c7fdc6fefddbca20800000000000000
+      internalID: 3083802456997361605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_11
+      rect:
+        serializedVersion: 2
+        x: 2901
+        y: 986
+        width: 23
+        height: 22
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 00c3388ac9a23dd60800000000000000
+      internalID: 7913715822550531072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_12
+      rect:
+        serializedVersion: 2
+        x: 2949
+        y: 966
+        width: 31
+        height: 43
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7795200598ed13840800000000000000
+      internalID: 5202183725923850615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_13
+      rect:
+        serializedVersion: 2
+        x: 842
+        y: 948
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a488fa4aa151bbc30800000000000000
+      internalID: 4376114667096868938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_14
+      rect:
+        serializedVersion: 2
+        x: 2901
+        y: 948
+        width: 20
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ca13660b4da8ac9a0800000000000000
+      internalID: -6212000089906990676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_15
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 946
+        width: 6
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b95de7bfcb3bf290800000000000000
+      internalID: -7855619361687643725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_16
+      rect:
+        serializedVersion: 2
+        x: 2919
+        y: 908
+        width: 47
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bdb4e9ca436c3d250800000000000000
+      internalID: 5968331860732693467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_17
+      rect:
+        serializedVersion: 2
+        x: 2924
+        y: 939
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2aad2ba0b7ab6290800000000000000
+      internalID: -7896033144436053457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_18
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 885
+        width: 27
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 398853d502227c4a0800000000000000
+      internalID: -6573247608725862253
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_19
+      rect:
+        serializedVersion: 2
+        x: 2915
+        y: 930
+        width: 6
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db4466f4aadec6de0800000000000000
+      internalID: -1338433673503554371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_20
+      rect:
+        serializedVersion: 2
+        x: 2930
+        y: 804
+        width: 68
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 484f8cad7bac2a3e0800000000000000
+      internalID: -2043848389874355068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_21
+      rect:
+        serializedVersion: 2
+        x: 831
+        y: 736
+        width: 9
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0d4c6aa196ee0a7f0800000000000000
+      internalID: -603220214881532720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_22
+      rect:
+        serializedVersion: 2
+        x: 2946
+        y: 536
+        width: 7
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7228921eede82c9e0800000000000000
+      internalID: -1602561429478997465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_23
+      rect:
+        serializedVersion: 2
+        x: 2883
+        y: 496
+        width: 23
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ba1ae8eaa0bede0800000000000000
+      internalID: -1302935922360079548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_24
+      rect:
+        serializedVersion: 2
+        x: 2906
+        y: 498
+        width: 6
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c734aa177774bc470800000000000000
+      internalID: 8415898907005567868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_25
+      rect:
+        serializedVersion: 2
+        x: 2912
+        y: 502
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad2db4b64790b9fe0800000000000000
+      internalID: -1181340081633635622
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_26
+      rect:
+        serializedVersion: 2
+        x: 910
+        y: 271
+        width: 7
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d426fd670768f74a0800000000000000
+      internalID: -6593403511858306483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope com folhas_27
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 127
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 30f31a8ed72be3e50800000000000000
+      internalID: 6791061541964824323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      envelope com folhas_0: 6207599874082285944
+      envelope com folhas_1: 2013316863756123587
+      envelope com folhas_10: 3083802456997361605
+      envelope com folhas_11: 7913715822550531072
+      envelope com folhas_12: 5202183725923850615
+      envelope com folhas_13: 4376114667096868938
+      envelope com folhas_14: -6212000089906990676
+      envelope com folhas_15: -7855619361687643725
+      envelope com folhas_16: 5968331860732693467
+      envelope com folhas_17: -7896033144436053457
+      envelope com folhas_18: -6573247608725862253
+      envelope com folhas_19: -1338433673503554371
+      envelope com folhas_2: -8052226057043656526
+      envelope com folhas_20: -2043848389874355068
+      envelope com folhas_21: -603220214881532720
+      envelope com folhas_22: -1602561429478997465
+      envelope com folhas_23: -1302935922360079548
+      envelope com folhas_24: 8415898907005567868
+      envelope com folhas_25: -1181340081633635622
+      envelope com folhas_26: -6593403511858306483
+      envelope com folhas_27: 6791061541964824323
+      envelope com folhas_3: -4305309244164271292
+      envelope com folhas_4: -598833404383729553
+      envelope com folhas_5: -4346229095454083933
+      envelope com folhas_6: -7298479440920062238
+      envelope com folhas_7: -4030229973481515191
+      envelope com folhas_8: -2035016821298317524
+      envelope com folhas_9: 7607699465499216485
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

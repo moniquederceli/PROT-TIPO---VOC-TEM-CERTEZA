@@ -20,14 +20,33 @@ public class PortaAnimacao : MonoBehaviour
     [Header("Tempo com a porta fechada")]
     public float tempoPortaFechada = 1.5f;
 
+    [Header("Imagem do Botão")]
+    public Image imagemBotao;
+
+    [Header("Sprites do Botão")]
+    public Sprite botaoNormal;
+    public Sprite botaoApertado;
+
     private bool animando = false;
 
     private void Start()
     {
-        // A porta começa invisível
+        // =================================
+        // PORTA COMEÇA INVISÍVEL
+        // =================================
+
         Color cor = porta.color;
         cor.a = 0f;
         porta.color = cor;
+
+        // =================================
+        // BOTÃO COMEÇA COM A IMAGEM NORMAL
+        // =================================
+
+        if (imagemBotao != null && botaoNormal != null)
+        {
+            imagemBotao.sprite = botaoNormal;
+        }
     }
 
     public void FecharPorta()
@@ -35,6 +54,19 @@ public class PortaAnimacao : MonoBehaviour
         // Impede clicar novamente durante a animação
         if (animando)
             return;
+
+        // =================================
+        // BOTÃO FOI APERTADO
+        // =================================
+
+        if (imagemBotao != null && botaoApertado != null)
+        {
+            imagemBotao.sprite = botaoApertado;
+        }
+
+        // =================================
+        // COMEÇA A ANIMAÇÃO DA PORTA
+        // =================================
 
         StartCoroutine(AnimarPorta());
     }
