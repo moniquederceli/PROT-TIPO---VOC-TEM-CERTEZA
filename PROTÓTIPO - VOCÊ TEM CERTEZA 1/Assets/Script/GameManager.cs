@@ -6,6 +6,19 @@ public class GameManager : MonoBehaviour
     [Header("NPCs")]
     public GameObject[] npcObjects;
 
+    [Header("NPCs do Sorteio")]
+    public GameObject npc1;
+    public GameObject npc1_5;
+
+    public GameObject npc2;
+    public GameObject npc2_5;
+
+    public GameObject npc3;
+    public GameObject npc3_5;
+
+    private GameObject[] filaNPCs = new GameObject[3];
+    private int[] filaDocumentos = new int[3];
+
     public int currentNPC = 0;
 
     [Header("Documentos dos NPCs")]
@@ -23,15 +36,21 @@ public class GameManager : MonoBehaviour
     private void Start()
     {
         SetButtons(false);
-        ShowCurrentNPC();
     }
+    public void IniciarJogo()
+    {
+    currentNPC = 0;
 
+    SortearNPCs();
+
+    ShowCurrentNPC();
+    }
     public void AcceptCurrentNPC()
     {
-        if (currentNPC >= npcObjects.Length)
-            return;
+        if (currentNPC >= filaNPCs.Length)
+        return;
 
-        NPCMovement movement = npcObjects[currentNPC].GetComponent<NPCMovement>();
+        NPCMovement movement = filaNPCs[currentNPC].GetComponent<NPCMovement>();
 
         if (movement != null)
         {
@@ -46,11 +65,11 @@ public class GameManager : MonoBehaviour
     }
 
     public void DenyCurrentNPC()
-   {
-    if (currentNPC >= npcObjects.Length)
+    {
+        if (currentNPC >= filaNPCs.Length)
         return;
 
-    NPCMovement movement = npcObjects[currentNPC].GetComponent<NPCMovement>();
+    NPCMovement movement = filaNPCs[currentNPC].GetComponent<NPCMovement>();
 
     if (movement != null)
     {
@@ -74,21 +93,21 @@ public class GameManager : MonoBehaviour
     private void ShowCurrentNPC()
     {
         // Desativa todos os NPCs
-        for (int i = 0; i < npcObjects.Length; i++)
+        for (int i = 0; i < filaNPCs.Length; i++)
         {
             npcObjects[i].SetActive(false);
         }
 
         // Verifica se ainda existem NPCs
-        if (currentNPC < npcObjects.Length)
+        if (currentNPC < filaNPCs.Length)
         {
-            GameObject npc = npcObjects[currentNPC];
+            GameObject npc = filaNPCs[currentNPC];
 
             npc.SetActive(true);
 
             if (npcDocuments != null)
             {
-                npcDocuments.MostrarDocumentos(currentNPC + 1);
+                npcDocuments.MostrarDocumentos(filaDocumentos[currentNPC]);
             }
 
             NPCMovement movement = npc.GetComponent<NPCMovement>();
@@ -143,4 +162,55 @@ public class GameManager : MonoBehaviour
         denyButton.interactable = enabled;
     }
     }
+    private void SortearNPCs()
+    {
+    // Primeiro escolhe qual NPC NORMAL será o primeiro
+    int primeiro = Random.Range(0, 3);
+
+    if (primeiro == 0)
+    {
+        filaNPCs[0] = npc1;
+        filaDocumentos[0] = 1;
+
+        filaNPCs[1] = Random.Range(0, 2) == 0 ? npc2 : npc2_5;
+        filaDocumentos[1] = filaNPCs[1] == npc2 ? 2 : 25;
+
+        filaNPCs[2] = Random.Range(0, 2) == 0 ? npc3 : npc3_5;
+        filaDocumentos[2] = 3;
+    }
+    else if (primeiro == 1)
+    {
+        filaNPCs[0] = npc2;
+        filaDocumentos[0] = 2;
+
+        filaNPCs[1] = Random.Range(0, 2) == 0 ? npc1 : npc1_5;
+        filaDocumentos[1] = filaNPCs[1] == npc1 ? 1 : 15;
+
+        filaNPCs[2] = Random.Range(0, 2) == 0 ? npc3 : npc3_5;
+        filaDocumentos[2] = 3;
+    }
+    else
+    {
+        filaNPCs[0] = npc3;
+        filaDocumentos[0] = 3;
+
+        filaNPCs[1] = Random.Range(0, 2) == 0 ? npc1 : npc1_5;
+        filaDocumentos[1] = filaNPCs[1] == npc1 ? 1 : 15;
+
+        filaNPCs[2] = Random.Range(0, 2) == 0 ? npc2 : npc2_5;
+        filaDocumentos[2] = filaNPCs[2] == npc2 ? 2 : 25;
+    }
+
+    // Embaralha o segundo e o terceiro
+    if (Random.Range(0, 2) == 0)
+    {
+        GameObject npcTemporario = filaNPCs[1];
+        filaNPCs[1] = filaNPCs[2];
+        filaNPCs[2] = npcTemporario;
+
+        int documentoTemporario = filaDocumentos[1];
+        filaDocumentos[1] = filaDocumentos[2];
+        filaDocumentos[2] = documentoTemporario;
+    }
+}
 }
