@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 9f939c35945a0e74eab63884118ee2d3
+guid: 14089838fac57d64c84295895a61419e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -509353642979399044
-    second: principal_0
+      213: -8404151625511841718
+    second: MODELO JOGO veridico_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -96,24 +96,11 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: principal_0
+      name: MODELO JOGO veridico_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c7a69257f896ee8f0800000000000000
-      internalID: -509353642979399044
+      spriteID: a4058daaf947e5b80800000000000000
+      internalID: -8404151625511841718
       vertices: []
       indices: 
       edges: []
@@ -148,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      principal_0: -509353642979399044
+      MODELO JOGO veridico_0: -8404151625511841718
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
