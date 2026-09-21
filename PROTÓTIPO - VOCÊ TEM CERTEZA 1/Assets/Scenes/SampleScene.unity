@@ -569,15 +569,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DocumentInteraction
   documentoGrande: {fileID: 1010110431}
   imagemDocumentoGrande: {fileID: 1010110433}
-  rgGrande1: {fileID: -67457665953437114, guid: e7ea9c5087b2fd04a9b55e902256f85a, type: 3}
-  rgGrande2: {fileID: 5479994448962700912, guid: 2d8ec3019ea406f4dbc0c30fcc3eeb1b, type: 3}
-  rgGrande3: {fileID: -4638144748832478917, guid: 5e44a212891a1c54db6679110b670974, type: 3}
-  lmGrande1: {fileID: 0}
-  lmGrande2: {fileID: 0}
-  lmGrande3: {fileID: 0}
-  rmGrande1: {fileID: 0}
-  rmGrande2: {fileID: 0}
-  rmGrande3: {fileID: 0}
   inspectionPanel: {fileID: 0}
   bigDocumentImage: {fileID: 0}
 --- !u!114 &68401181
@@ -804,8 +795,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1080, y: 0}
-  m_SizeDelta: {x: 336.7449, y: 436.18}
+  m_AnchoredPosition: {x: -1063.2848, y: 0}
+  m_SizeDelta: {x: 370.1753, y: 479.4818}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &113497968
 MonoBehaviour:
@@ -940,8 +931,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1080, y: 0}
-  m_SizeDelta: {x: 374.9669, y: 436.7047}
+  m_AnchoredPosition: {x: -1061.7219, y: 0}
+  m_SizeDelta: {x: 411.523, y: 479.28}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &140564888
 MonoBehaviour:
@@ -1076,8 +1067,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1080, y: 0}
-  m_SizeDelta: {x: 475.238, y: 436.179}
+  m_AnchoredPosition: {x: -1058.5116, y: 0}
+  m_SizeDelta: {x: 518.2147, y: 475.6235}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &233796714
 MonoBehaviour:
@@ -3843,15 +3834,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DocumentInteraction
   documentoGrande: {fileID: 1580592356}
   imagemDocumentoGrande: {fileID: 1580592357}
-  rgGrande1: {fileID: 0}
-  rgGrande2: {fileID: 0}
-  rgGrande3: {fileID: 0}
-  lmGrande1: {fileID: 0}
-  lmGrande2: {fileID: 0}
-  lmGrande3: {fileID: 0}
-  rmGrande1: {fileID: 2606652654264474744, guid: eeb8662a0c0bcf84b8932da77e70a162, type: 3}
-  rmGrande2: {fileID: -4260109307378386901, guid: bc9353a401cfb694081b62d8b8f2e44e, type: 3}
-  rmGrande3: {fileID: 8251624488213885917, guid: 8bcc4f3936c140b4daca9feaba69efa9, type: 3}
   inspectionPanel: {fileID: 0}
   bigDocumentImage: {fileID: 0}
 --- !u!114 &650325624
@@ -4163,8 +4145,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1080, y: 2.9905}
-  m_SizeDelta: {x: 475.238, y: 436.179}
+  m_AnchoredPosition: {x: -1058.7661, y: 0}
+  m_SizeDelta: {x: 517.7058, y: 475.1564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!223 &728075937
 Canvas:
@@ -6993,8 +6975,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1080, y: 0}
-  m_SizeDelta: {x: 499.7691, y: 442.16}
+  m_AnchoredPosition: {x: -1058.5, y: 0}
+  m_SizeDelta: {x: 539.5876, y: 477.39}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1427730277
 MonoBehaviour:
@@ -7471,15 +7453,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DocumentInteraction
   documentoGrande: {fileID: 4283823}
   imagemDocumentoGrande: {fileID: 4283825}
-  rgGrande1: {fileID: 0}
-  rgGrande2: {fileID: 0}
-  rgGrande3: {fileID: 0}
-  lmGrande1: {fileID: -1732835852680432309, guid: b8f1ac8fc9ef9b546aa97646277841ab, type: 3}
-  lmGrande2: {fileID: -7832863863361418960, guid: f3149e1a1ef24174da155e944caee237, type: 3}
-  lmGrande3: {fileID: 2238531252218987781, guid: 0ab88578ef2fe83448c0c81e86759425, type: 3}
-  rmGrande1: {fileID: 0}
-  rmGrande2: {fileID: 0}
-  rmGrande3: {fileID: 0}
   inspectionPanel: {fileID: 0}
   bigDocumentImage: {fileID: 0}
 --- !u!114 &1614438411
@@ -7768,7 +7741,7 @@ MonoBehaviour:
   imagem3: {fileID: 3405917649911701710, guid: 4863ac52b90b7744cbb43c42b8c90af0, type: 3}
   imagem2: {fileID: 2558944017922351848, guid: 398d40d0180eeba438e8ffe1c17f74da, type: 3}
   imagem1: {fileID: 6057543536457699466, guid: 1522ad7f4d99d74409bb0404fc384296, type: 3}
-  tempoEntreFrames: 0.25
+  tempoEntreFrames: 0.2
 --- !u!1 &1661103960
 GameObject:
   m_ObjectHideFlags: 0
@@ -8884,7 +8857,7 @@ MonoBehaviour:
   rg1: {fileID: 3176025998034297319, guid: 264176fad78d5454f85b2345e6d64a67, type: 3}
   lm1: {fileID: -1732835852680432309, guid: b8f1ac8fc9ef9b546aa97646277841ab, type: 3}
   rm1: {fileID: 2606652654264474744, guid: eeb8662a0c0bcf84b8932da77e70a162, type: 3}
-  rg1_5: {fileID: -67457665953437114, guid: e7ea9c5087b2fd04a9b55e902256f85a, type: 3}
+  rg1_5: {fileID: 3176025998034297319, guid: 264176fad78d5454f85b2345e6d64a67, type: 3}
   lm1_5: {fileID: -1732835852680432309, guid: b8f1ac8fc9ef9b546aa97646277841ab, type: 3}
   rm1_5: {fileID: 5462581709408302592, guid: b5f299d1d3313c54181eb0ea6bb329d7, type: 3}
   rg2: {fileID: -7460481442823860306, guid: aac2a5273f7c01145bee1a27e05cc725, type: 3}
@@ -8896,12 +8869,27 @@ MonoBehaviour:
   rg3: {fileID: -3979710909977279133, guid: 8e3c949dd5d30014099ca6c1c549cdb4, type: 3}
   lm3: {fileID: 2238531252218987781, guid: 0ab88578ef2fe83448c0c81e86759425, type: 3}
   rm3: {fileID: 8251624488213885917, guid: 8bcc4f3936c140b4daca9feaba69efa9, type: 3}
-  bigRG: {fileID: 1010110433}
+  rg3_5: {fileID: -3979710909977279133, guid: 8e3c949dd5d30014099ca6c1c549cdb4, type: 3}
+  lm3_5: {fileID: 2238531252218987781, guid: 0ab88578ef2fe83448c0c81e86759425, type: 3}
+  rm3_5: {fileID: 8251624488213885917, guid: 8bcc4f3936c140b4daca9feaba69efa9, type: 3}
   rgGrande1: {fileID: -67457665953437114, guid: e7ea9c5087b2fd04a9b55e902256f85a, type: 3}
   rgGrande1_5: {fileID: -67457665953437114, guid: e7ea9c5087b2fd04a9b55e902256f85a, type: 3}
   rgGrande2: {fileID: 5479994448962700912, guid: 2d8ec3019ea406f4dbc0c30fcc3eeb1b, type: 3}
   rgGrande2_5: {fileID: -356288160857531031, guid: 30c8ee2612d2f6e4cb426015055b53d1, type: 3}
   rgGrande3: {fileID: 6687782885317493526, guid: dfbae98913ca35449bc02c7c3e41af9e, type: 3}
+  rgGrande3_5: {fileID: 6687782885317493526, guid: dfbae98913ca35449bc02c7c3e41af9e, type: 3}
+  lmGrande1: {fileID: -1732835852680432309, guid: b8f1ac8fc9ef9b546aa97646277841ab, type: 3}
+  lmGrande1_5: {fileID: -1732835852680432309, guid: b8f1ac8fc9ef9b546aa97646277841ab, type: 3}
+  lmGrande2: {fileID: -7832863863361418960, guid: f3149e1a1ef24174da155e944caee237, type: 3}
+  lmGrande2_5: {fileID: -7832863863361418960, guid: f3149e1a1ef24174da155e944caee237, type: 3}
+  lmGrande3: {fileID: 2238531252218987781, guid: 0ab88578ef2fe83448c0c81e86759425, type: 3}
+  lmGrande3_5: {fileID: 2238531252218987781, guid: 0ab88578ef2fe83448c0c81e86759425, type: 3}
+  rmGrande1: {fileID: 2606652654264474744, guid: eeb8662a0c0bcf84b8932da77e70a162, type: 3}
+  rmGrande1_5: {fileID: 5462581709408302592, guid: b5f299d1d3313c54181eb0ea6bb329d7, type: 3}
+  rmGrande2: {fileID: -4260109307378386901, guid: bc9353a401cfb694081b62d8b8f2e44e, type: 3}
+  rmGrande2_5: {fileID: -4260109307378386901, guid: bc9353a401cfb694081b62d8b8f2e44e, type: 3}
+  rmGrande3: {fileID: 8251624488213885917, guid: 8bcc4f3936c140b4daca9feaba69efa9, type: 3}
+  rmGrande3_5: {fileID: 8251624488213885917, guid: 8bcc4f3936c140b4daca9feaba69efa9, type: 3}
 --- !u!1 &2053200583
 GameObject:
   m_ObjectHideFlags: 0
@@ -9087,8 +9075,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1080, y: 0}
-  m_SizeDelta: {x: 336.7449, y: 436.18}
+  m_AnchoredPosition: {x: -1063.3022, y: 0}
+  m_SizeDelta: {x: 370.1404, y: 479.4366}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2082801395
 MonoBehaviour:
@@ -9319,7 +9307,7 @@ MonoBehaviour:
   frame3: {fileID: 3405917649911701710, guid: 4863ac52b90b7744cbb43c42b8c90af0, type: 3}
   frame4: {fileID: -6999033191045481624, guid: 0843346d2c9b23d47804b66f318135ff, type: 3}
   frame5: {fileID: -4972955403129370662, guid: 44b6b6d200c1e67489514ad80ec03142, type: 3}
-  tempoEntreFrames: 0.15
+  tempoEntreFrames: 0.1
   tempoPortaFechada: 1.5
   imagemBotao: {fileID: 0}
   botaoNormal: {fileID: 0}

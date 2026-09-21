@@ -18,6 +18,14 @@ public class GameManager : MonoBehaviour
 
     private GameObject[] filaNPCs = new GameObject[3];
     private int[] filaDocumentos = new int[3];
+    
+    public int GetDocumentoAtual()
+    {
+    if (currentNPC >= filaDocumentos.Length)
+        return 0;
+
+    return filaDocumentos[currentNPC];
+    }
 
     public int currentNPC = 0;
 

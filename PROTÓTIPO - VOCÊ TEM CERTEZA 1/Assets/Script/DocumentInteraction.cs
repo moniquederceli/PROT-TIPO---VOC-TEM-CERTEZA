@@ -4,21 +4,10 @@ using UnityEngine.UI;
 
 public class DocumentInteraction : MonoBehaviour, IPointerClickHandler
 {
-    [Header("RG - Documento Grande Especial")]
+    [Header("Documento Grande")]
     public GameObject documentoGrande;
+
     public Image imagemDocumentoGrande;
-
-    public Sprite rgGrande1;
-    public Sprite rgGrande2;
-    public Sprite rgGrande3;
-
-    public Sprite lmGrande1;
-    public Sprite lmGrande2;
-    public Sprite lmGrande3;
-
-    public Sprite rmGrande1;
-    public Sprite rmGrande2;
-    public Sprite rmGrande3;
 
     [Header("Sistema antigo - LM e RM")]
     public GameObject inspectionPanel;
@@ -31,77 +20,130 @@ public class DocumentInteraction : MonoBehaviour, IPointerClickHandler
         documentImage = GetComponent<Image>();
     }
 
+
     public void OnPointerClick(PointerEventData eventData)
     {
         OpenDocument();
     }
 
+
     public void OpenDocument()
     {
-        // SE tiver um Documento Grande configurado,
-        // abre ele.
-        // Isso será usado pelo RG.
+        // ==========================================
+        // DOCUMENTO GRANDE
+        // ==========================================
+
         if (documentoGrande != null)
         {
-        if (documentoGrande != null)
-{
-    GameManager gameManager = FindAnyObjectByType<GameManager>();
+            GameManager gameManager =
+                FindAnyObjectByType<GameManager>();
 
-    if (gameManager != null && imagemDocumentoGrande != null)
-    {
-        if (gameObject.name == "RG")
-        {
-            if (gameManager.currentNPC == 0)
-                imagemDocumentoGrande.sprite = rgGrande1;
-            else if (gameManager.currentNPC == 1)
-                imagemDocumentoGrande.sprite = rgGrande2;
-            else if (gameManager.currentNPC == 2)
-                imagemDocumentoGrande.sprite = rgGrande3;
-        }
-        else if (gameObject.name == "LM")
-        {
-            if (gameManager.currentNPC == 0)
-                imagemDocumentoGrande.sprite = lmGrande1;
-            else if (gameManager.currentNPC == 1)
-                imagemDocumentoGrande.sprite = lmGrande2;
-            else if (gameManager.currentNPC == 2)
-                imagemDocumentoGrande.sprite = lmGrande3;
-        }
-        else if (gameObject.name == "RM")
-        {
-            if (gameManager.currentNPC == 0)
-                imagemDocumentoGrande.sprite = rmGrande1;
-            else if (gameManager.currentNPC == 1)
-                imagemDocumentoGrande.sprite = rmGrande2;
-            else if (gameManager.currentNPC == 2)
-                imagemDocumentoGrande.sprite = rmGrande3;
-        }
-    }
+            if (gameManager != null &&
+                gameManager.npcDocuments != null &&
+                imagemDocumentoGrande != null)
+            {
+                // Pega QUAL NPC realmente está sendo atendido
+                int documentoAtual =
+                    gameManager.GetDocumentoAtual();
 
-    documentoGrande.SetActive(true);
-    return;
-}    
-        }
+                Sprite documentoGrande = null;
 
-        // Se não tiver Documento Grande,
-        // usa o sistema antigo.
-        // LM e RM continuam funcionando assim.
-        if (inspectionPanel == null)
-        {
-            Debug.LogError("Inspection Panel não foi configurado.");
+
+                // ==========================================
+                // RG
+                // ==========================================
+
+                if (gameObject.name == "RG")
+                {
+                    documentoGrande =
+                        gameManager.npcDocuments.GetRGGrande(
+                            documentoAtual
+                        );
+                }
+
+
+                // ==========================================
+                // LM
+                // ==========================================
+
+                else if (gameObject.name == "LM")
+                {
+                    documentoGrande =
+                        gameManager.npcDocuments.GetLMGrande(
+                            documentoAtual
+                        );
+                }
+
+
+                // ==========================================
+                // RM
+                // ==========================================
+
+                else if (gameObject.name == "RM")
+                {
+                    documentoGrande =
+                        gameManager.npcDocuments.GetRMGrande(
+                            documentoAtual
+                        );
+                }
+
+
+                // ==========================================
+                // COLOCA A IMAGEM
+                // ==========================================
+
+                if (documentoGrande != null)
+                {
+                    imagemDocumentoGrande.sprite =
+                        documentoGrande;
+                }
+                else
+                {
+                    Debug.LogWarning(
+                        "Documento grande não configurado para: "
+                        + documentoAtual
+                    );
+                }
+            }
+
+
+            // Abre o documento grande
+            documentoGrande.SetActive(true);
+
             return;
         }
+
+
+        // ==========================================
+        // SISTEMA ANTIGO
+        // ==========================================
+
+        if (inspectionPanel == null)
+        {
+            Debug.LogError(
+                "Inspection Panel não foi configurado."
+            );
+
+            return;
+        }
+
 
         if (bigDocumentImage == null)
         {
-            Debug.LogError("Big Document Image não foi configurado.");
+            Debug.LogError(
+                "Big Document Image não foi configurado."
+            );
+
             return;
         }
 
-        bigDocumentImage.sprite = documentImage.sprite;
+
+        bigDocumentImage.sprite =
+            documentImage.sprite;
 
         inspectionPanel.SetActive(true);
     }
+
 
     public void CloseDocument()
     {
