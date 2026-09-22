@@ -37,6 +37,11 @@ public class GameManager : MonoBehaviour
     [Header("Final de Dia")]
     public GameObject finalDeDia;
 
+    [Header("Menu Inicial")]
+    public GameObject telaInicial;
+    public Image fundoInicio;
+    public Sprite imagemFundoMenu;
+
     [Header("Documentos dos NPCs")]
     public NPCDocuments npcDocuments;
 
@@ -328,4 +333,46 @@ public class GameManager : MonoBehaviour
             filaDocumentos[2] = documentoTemporario;
         }
     }
-}
+
+
+    public void ConcluirDia()
+    {
+        Debug.Log("CONCLUIR DIA: botão pressionado");
+
+        // Esconde a tela de final de dia
+        if (finalDeDia != null)
+        {
+            finalDeDia.SetActive(false);
+        }
+
+        // Esconde documentos
+        HideDocumentIdentity();
+
+        // Desliga aceitar e recusar
+        SetButtons(false);
+
+        // Volta a imagem original do menu
+        if (fundoInicio != null)
+        {
+            fundoInicio.gameObject.SetActive(true);
+
+            if (imagemFundoMenu != null)
+            {
+                fundoInicio.sprite = imagemFundoMenu;
+            }
+        }
+
+        // Mostra novamente o menu inicial
+        if (telaInicial != null)
+        {
+            telaInicial.SetActive(true);
+            telaInicial.transform.SetAsLastSibling();
+        }
+
+        currentNPC = 0;
+
+        Debug.Log("CONCLUIR DIA: menu inicial ativado");
+    }
+
+
+}   
