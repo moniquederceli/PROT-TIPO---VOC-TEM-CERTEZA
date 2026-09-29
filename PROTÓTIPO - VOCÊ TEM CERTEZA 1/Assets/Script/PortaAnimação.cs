@@ -27,6 +27,9 @@ public class PortaAnimacao : MonoBehaviour
     public Sprite botaoNormal;
     public Sprite botaoApertado;
 
+    [Header("Game Manager")]
+    public GameManager gameManager;
+
     private bool animando = false;
 
     private void Start()
@@ -62,6 +65,12 @@ public class PortaAnimacao : MonoBehaviour
         if (imagemBotao != null && botaoApertado != null)
         {
             imagemBotao.sprite = botaoApertado;
+        }
+
+        // Trava os botões Aceitar/Recusar enquanto a porta faz sua animação
+        if (gameManager != null)
+        {
+            gameManager.DesabilitarBotoesDecisao();
         }
 
         // =================================
@@ -102,6 +111,16 @@ public class PortaAnimacao : MonoBehaviour
         porta.sprite = frame5;
 
         // =========================
+        // PORTA ESTÁ TOTALMENTE FECHADA AGORA.
+        // O NPC que estava na tela "morre" imediatamente.
+        // =========================
+
+        if (gameManager != null)
+        {
+            gameManager.EsconderNPCAtual();
+        }
+
+        // =========================
         // PORTA FICA FECHADA
         // =========================
 
@@ -124,12 +143,31 @@ public class PortaAnimacao : MonoBehaviour
         yield return new WaitForSeconds(tempoEntreFrames);
 
         // =========================
+        // PORTA TOTALMENTE ABERTA:
+        // o próximo NPC pode entrar na tela agora.
+        // =========================
+
+        if (gameManager != null)
+        {
+            gameManager.ContinuarAposPorta();
+        }
+
+        // =========================
         // PORTA SOME
         // =========================
 
         cor = porta.color;
         cor.a = 0f;
         porta.color = cor;
+
+        // =================================
+        // BOTÃO VOLTA A FICAR NORMAL
+        // =================================
+
+        if (imagemBotao != null && botaoNormal != null)
+        {
+            imagemBotao.sprite = botaoNormal;
+        }
 
         animando = false;
     }

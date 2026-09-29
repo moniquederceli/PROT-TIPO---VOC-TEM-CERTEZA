@@ -42,10 +42,18 @@ public class GameManager : MonoBehaviour
 
     public int currentNPC = 0;
 
-    [Header("Resultado Financeiro do Dia")]
+    [Header("Resultado Financeiro DO DIA (reseta a cada dia)")]
     private float vidasSalvas = 0f;
     private float mortesDecaidos = 0f;
     private float bonus = 0f;
+
+    [Header("Contagem TOTAL do jogo (usada no Resumo Final)")]
+    private int normalSalvos = 0;
+    private int normalMortos = 0;
+    private int docErradoSalvos = 0;
+    private int docErradoMortos = 0;
+    private int anomalicoSalvos = 0;
+    private int anomalicoMortos = 0;
 
     [Header("Tela de Final de Dia")]
     public GameObject finalDeDia;
@@ -56,7 +64,10 @@ public class GameManager : MonoBehaviour
     public GameObject telaDia;
     public TMP_Text textoTelaDia;
 
-    [Header("Tela Inicial (usada ao Finalizar Jogo)")]
+    [Header("Tela de Resumo Final (aparece só no fim do Dia 2)")]
+    public GameObject telaResumoFinal;
+
+    [Header("Tela Inicial (usada ao Voltar ao Menu)")]
     public GameObject telaInicial;
     public GameObject fundoInicial;
 
@@ -72,12 +83,16 @@ public class GameManager : MonoBehaviour
     public GameObject documentoLM;
     public GameObject documentoRM;
 
+    [Header("Documentos GRANDES (fecham sozinhos ao Aceitar/Recusar)")]
+    public GameObject[] documentosGrandesAbertos;
+
     private void Start()
     {
         SetButtons(false);
 
         if (finalDeDia != null) finalDeDia.SetActive(false);
         if (telaDia != null) telaDia.SetActive(false);
+        if (telaResumoFinal != null) telaResumoFinal.SetActive(false);
     }
 
     public int GetDocumentoAtual()
@@ -93,14 +108,30 @@ public class GameManager : MonoBehaviour
         diaAtual = 1;
         npcsJaUsados.Clear();
 
-        vidasSalvas = 0f;
-        mortesDecaidos = 0f;
-        bonus = 0f;
+        ResetarValoresDoDia();
+        ResetarContagemTotal();
 
         SortearNPCsDoDia();
 
         currentNPC = 0;
         ShowCurrentNPC();
+    }
+
+    private void ResetarValoresDoDia()
+    {
+        vidasSalvas = 0f;
+        mortesDecaidos = 0f;
+        bonus = 0f;
+    }
+
+    private void ResetarContagemTotal()
+    {
+        normalSalvos = 0;
+        normalMortos = 0;
+        docErradoSalvos = 0;
+        docErradoMortos = 0;
+        anomalicoSalvos = 0;
+        anomalicoMortos = 0;
     }
 
     // ==========================================
@@ -159,14 +190,8 @@ public class GameManager : MonoBehaviour
                     break;
             }
 
-            // ==========================================
-            // CÓDIGO DO DOCUMENTO
-            // Fórmula: (Id do NPC x 10) + 0 [correto] ou +1 [incorreto]
-            // Normal e Aparência Anômala usam o MESMO documento correto,
-            // só a variação Documento Errado usa o documento incorreto.
-            // ==========================================
+            // Código do documento: (Id do NPC x 10) + 0 [correto] ou +1 [incorreto]
             int codigoDocumento = entrada.npcId * 10;
-
             if (variacaoEscolhida == TipoVariacao.DocumentoErrado)
                 codigoDocumento += 1;
 
@@ -191,7 +216,7 @@ public class GameManager : MonoBehaviour
     }
 
     // ==========================================
-    // ACEITAR / RECUSAR
+    // ACEITAR (BOTÃO VERDE)
     // ==========================================
     public void AcceptCurrentNPC()
     {
@@ -203,11 +228,27 @@ public class GameManager : MonoBehaviour
         if (movement != null)
         {
             HideDocumentIdentity();
+            FecharTodosDocumentosGrandes();
             SetButtons(false);
 
-            if (filaVariacoes[currentNPC] == TipoVariacao.Normal)
+            switch (filaVariacoes[currentNPC])
             {
-                vidasSalvas += 20f;
+                case TipoVariacao.Normal:
+                    // NPC Normal aceito: +20 de bônus (vida salva)
+                    vidasSalvas += 20f;
+                    normalSalvos++;
+                    break;
+
+                case TipoVariacao.DocumentoErrado:
+                    // NPC com Documento Errado aceito: não acontece nada
+                    docErradoSalvos++;
+                    break;
+
+                case TipoVariacao.AparenciaAnomala:
+                    // NPC Anomálico aceito: -10 no bônus (deixou passar um decaído)
+                    bonus -= 10f;
+                    anomalicoSalvos++;
+                    break;
             }
 
             movement.Accept();
@@ -216,6 +257,9 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // ==========================================
+    // RECUSAR (BOTÃO VERMELHO)
+    // ==========================================
     public void DenyCurrentNPC()
     {
         if (filaNPCs == null || currentNPC >= filaNPCs.Length || filaNPCs[currentNPC] == null)
@@ -226,17 +270,24 @@ public class GameManager : MonoBehaviour
         if (movement != null)
         {
             HideDocumentIdentity();
+            FecharTodosDocumentosGrandes();
             SetButtons(false);
 
-            if (filaVariacoes[currentNPC] == TipoVariacao.DocumentoErrado ||
-                filaVariacoes[currentNPC] == TipoVariacao.AparenciaAnomala)
+            switch (filaVariacoes[currentNPC])
             {
-                bonus += 10f;
-            }
+                case TipoVariacao.Normal:
+                    // NPC Normal recusado: não acontece nada
+                    break;
 
-            if (filaVariacoes[currentNPC] == TipoVariacao.AparenciaAnomala)
-            {
-                mortesDecaidos += 1f;
+                case TipoVariacao.DocumentoErrado:
+                    // Documento Errado recusado: +10 de bônus
+                    bonus += 10f;
+                    break;
+
+                case TipoVariacao.AparenciaAnomala:
+                    // Anomálico recusado: +10 de bônus
+                    bonus += 10f;
+                    break;
             }
 
             movement.Deny();
@@ -245,7 +296,13 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    // Chamado 2 segundos depois de Aceitar ou Recusar
     public void NextNPC()
+    {
+        AvancarParaProximoNPC();
+    }
+
+    private void AvancarParaProximoNPC()
     {
         currentNPC++;
 
@@ -281,6 +338,60 @@ public class GameManager : MonoBehaviour
     }
 
     // ==========================================
+    // MANIVELA / PORTA (MATA O NPC ATUAL)
+    // ==========================================
+
+    // Chamado pela PortaAnimacao assim que o botão da mesa é apertado,
+    // pra impedir o jogador de clicar em Aceitar/Recusar durante a animação.
+    public void DesabilitarBotoesDecisao()
+    {
+        SetButtons(false);
+    }
+
+    // Chamado pela PortaAnimacao no instante em que a porta termina de fechar.
+    public void EsconderNPCAtual()
+    {
+        if (filaNPCs == null || currentNPC >= filaNPCs.Length || filaNPCs[currentNPC] == null)
+            return;
+
+        RegistrarMortePorPorta(filaVariacoes[currentNPC]);
+
+        filaNPCs[currentNPC].SetActive(false);
+
+        HideDocumentIdentity();
+        FecharTodosDocumentosGrandes();
+        SetButtons(false);
+    }
+
+    private void RegistrarMortePorPorta(TipoVariacao variacao)
+    {
+        switch (variacao)
+        {
+            case TipoVariacao.Normal:
+                // Morto por engano (era inocente)
+                normalMortos++;
+                break;
+
+            case TipoVariacao.DocumentoErrado:
+                // Morto por engano (era inocente)
+                docErradoMortos++;
+                break;
+
+            case TipoVariacao.AparenciaAnomala:
+                // Morte "correta" de um decaído
+                anomalicoMortos++;
+                mortesDecaidos += 1f;
+                break;
+        }
+    }
+
+    // Chamado pela PortaAnimacao assim que a porta termina de abrir de novo.
+    public void ContinuarAposPorta()
+    {
+        AvancarParaProximoNPC();
+    }
+
+    // ==========================================
     // FINAL DO DIA
     // ==========================================
     private void MostrarFinalDeDia()
@@ -300,7 +411,7 @@ public class GameManager : MonoBehaviour
 
         if (textoBotaoConcluirDia != null)
         {
-            textoBotaoConcluirDia.text = ultimoDia ? "Finalizar Jogo" : "Concluir Dia";
+            textoBotaoConcluirDia.text = ultimoDia ? "Finalizar Dia" : "Concluir Dia";
         }
 
         if (finalDeDia != null)
@@ -315,8 +426,7 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Este é o único método ligado ao botão da tela de final de dia.
-    // Ele decide sozinho se deve ir para o próximo dia ou finalizar o jogo.
+    // Único método ligado ao botão da tela de final de dia.
     public void ConcluirDia()
     {
         if (finalDeDia != null)
@@ -324,7 +434,7 @@ public class GameManager : MonoBehaviour
 
         if (ultimoDia)
         {
-            ReiniciarJogo();
+            MostrarResumoFinal();
             return;
         }
 
@@ -346,6 +456,11 @@ public class GameManager : MonoBehaviour
         if (telaDia != null)
             telaDia.SetActive(false);
 
+        // Os valores financeiros do dia (vidas/bônus/mortes) recomeçam do zero.
+        // O dinheiro acumulado (saldo total) NÃO é afetado por isso — ele fica
+        // guardado dentro do CalculadoraFinalDia.
+        ResetarValoresDoDia();
+
         SortearNPCsDoDia();
 
         currentNPC = 0;
@@ -353,28 +468,65 @@ public class GameManager : MonoBehaviour
     }
 
     // ==========================================
-    // FIM DE JOGO -> VOLTA PARA O MENU INICIAL
+    // RESUMO FINAL DO JOGO (depois do Dia 2)
     // ==========================================
+    private void MostrarResumoFinal()
+    {
+        if (telaResumoFinal != null)
+        {
+            telaResumoFinal.SetActive(true);
+
+            ResumoFinalJogo resumo = telaResumoFinal.GetComponent<ResumoFinalJogo>();
+            if (resumo != null)
+            {
+                resumo.ConfigurarResumo(
+                    normalSalvos, normalMortos,
+                    docErradoSalvos, docErradoMortos,
+                    anomalicoSalvos, anomalicoMortos
+                );
+            }
+        }
+    }
+
+    // Ligue este método ao botão "Voltar ao Menu" da tela de Resumo Final.
+    public void VoltarAoMenuPrincipal()
+    {
+        if (telaResumoFinal != null)
+            telaResumoFinal.SetActive(false);
+
+        ReiniciarJogo();
+    }
+
     private void ReiniciarJogo()
     {
         diaAtual = 1;
         npcsJaUsados.Clear();
-        vidasSalvas = 0f;
-        mortesDecaidos = 0f;
-        bonus = 0f;
+
+        ResetarValoresDoDia();
+        ResetarContagemTotal();
+
         currentNPC = 0;
         filaNPCs = null;
         ultimoDia = false;
 
         if (finalDeDia != null) finalDeDia.SetActive(false);
         if (telaDia != null) telaDia.SetActive(false);
+        if (telaResumoFinal != null) telaResumoFinal.SetActive(false);
+
+        // Zera o saldo de dinheiro acumulado guardado na calculadora
+        if (finalDeDia != null)
+        {
+            CalculadoraFinalDia calculadora = finalDeDia.GetComponent<CalculadoraFinalDia>();
+            if (calculadora != null)
+                calculadora.ReiniciarSaldo();
+        }
 
         if (telaInicial != null) telaInicial.SetActive(true);
         if (fundoInicial != null) fundoInicial.SetActive(true);
     }
 
     // ==========================================
-    // DOCUMENTOS E BOTÕES (sem alterações)
+    // DOCUMENTOS E BOTÕES
     // ==========================================
     public void ShowDocumentIdentity()
     {
@@ -399,5 +551,16 @@ public class GameManager : MonoBehaviour
     {
         if (acceptButton != null) acceptButton.interactable = enabled;
         if (denyButton != null) denyButton.interactable = enabled;
+    }
+
+    private void FecharTodosDocumentosGrandes()
+    {
+        if (documentosGrandesAbertos == null) return;
+
+        foreach (GameObject documento in documentosGrandesAbertos)
+        {
+            if (documento != null)
+                documento.SetActive(false);
+        }
     }
 }

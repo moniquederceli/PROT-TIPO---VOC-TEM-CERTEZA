@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DragDocument : MonoBehaviour, IBeginDragHandler, IDragHandler
+public class DragDocument : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IDragHandler
 {
     private RectTransform rectTransform;
     private Canvas canvas;
@@ -12,9 +12,17 @@ public class DragDocument : MonoBehaviour, IBeginDragHandler, IDragHandler
         canvas = GetComponentInParent<Canvas>();
     }
 
+    // Roda assim que o jogador clica no documento, mesmo que não arraste.
+    // Isso garante que o documento vá para a frente dos outros.
+    public void OnPointerDown(PointerEventData eventData)
+    {
+        rectTransform.SetAsLastSibling();
+    }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
-        // Começa a arrastar
+        // Garante de novo, caso o clique inicial não tenha disparado o OnPointerDown
+        rectTransform.SetAsLastSibling();
     }
 
     public void OnDrag(PointerEventData eventData)

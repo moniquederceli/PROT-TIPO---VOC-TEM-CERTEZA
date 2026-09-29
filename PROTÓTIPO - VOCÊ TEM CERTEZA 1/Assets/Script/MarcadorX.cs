@@ -15,20 +15,25 @@ public class MarcadorX : MonoBehaviour
     {
         bool estavaMarcado = X.activeSelf;
 
-        X.SetActive(!estavaMarcado);
-
-        if (calculadora == null)
-            return;
-
         if (!estavaMarcado)
         {
-            // Marcou o gasto
-            calculadora.AdicionarGasto(valorGasto);
+            // O jogador está tentando MARCAR (gastar) este item.
+            // Só deixa se ele tiver saldo suficiente.
+            if (calculadora != null && !calculadora.TentarAdicionarGasto(valorGasto))
+            {
+                // Sem saldo suficiente: não marca o X e não gasta nada.
+                return;
+            }
+
+            X.SetActive(true);
         }
         else
         {
-            // Desmarcou o gasto
-            calculadora.RemoverGasto(valorGasto);
+            // O jogador está DESMARCANDO: devolve o dinheiro.
+            X.SetActive(false);
+
+            if (calculadora != null)
+                calculadora.RemoverGasto(valorGasto);
         }
     }
 }
