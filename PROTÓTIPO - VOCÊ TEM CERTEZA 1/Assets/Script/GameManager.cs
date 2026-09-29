@@ -14,7 +14,6 @@ public class GameManager : MonoBehaviour
     }
 
     // Isso representa UM dos 8 NPCs, com suas 3 variações.
-    // Vai aparecer no Inspector como uma "caixinha" que você preenche.
     [System.Serializable]
     public class NPCEntry
     {
@@ -25,11 +24,6 @@ public class GameManager : MonoBehaviour
         public GameObject npcNormal;
         public GameObject npcDocumentoErrado;
         public GameObject npcAparenciaAnomala;
-
-        [Header("Códigos de documento (ligados ao NPCDocuments) - pode deixar 0 por enquanto")]
-        public int documentoNormal;
-        public int documentoErrado;
-        public int documentoAnomalo;
     }
 
     [Header("=== Os 8 NPCs do jogo ===")]
@@ -44,6 +38,7 @@ public class GameManager : MonoBehaviour
     private GameObject[] filaNPCs;
     private int[] filaDocumentos;
     private TipoVariacao[] filaVariacoes;
+    private bool ultimoDia = false;
 
     public int currentNPC = 0;
 
@@ -52,11 +47,18 @@ public class GameManager : MonoBehaviour
     private float mortesDecaidos = 0f;
     private float bonus = 0f;
 
-    [Header("Telas")]
+    [Header("Tela de Final de Dia")]
     public GameObject finalDeDia;
+    public Button botaoConcluirDia;
+    public TMP_Text textoBotaoConcluirDia;
+
+    [Header("Tela Preta de Transição (DIA X)")]
     public GameObject telaDia;
     public TMP_Text textoTelaDia;
-    public GameObject fimDeJogo;
+
+    [Header("Tela Inicial (usada ao Finalizar Jogo)")]
+    public GameObject telaInicial;
+    public GameObject fundoInicial;
 
     [Header("Documentos dos NPCs")]
     public NPCDocuments npcDocuments;
@@ -76,7 +78,6 @@ public class GameManager : MonoBehaviour
 
         if (finalDeDia != null) finalDeDia.SetActive(false);
         if (telaDia != null) telaDia.SetActive(false);
-        if (fimDeJogo != null) fimDeJogo.SetActive(false);
     }
 
     public int GetDocumentoAtual()
@@ -107,7 +108,6 @@ public class GameManager : MonoBehaviour
     // ==========================================
     private void SortearNPCsDoDia()
     {
-        // Monta a lista de IDs que ainda não apareceram em nenhum dia
         List<int> disponiveis = new List<int>();
 
         foreach (NPCEntry entrada in npcs)
@@ -124,7 +124,6 @@ public class GameManager : MonoBehaviour
 
         for (int slot = 0; slot < quantidade; slot++)
         {
-            // Escolhe um ID aleatório entre os que sobraram
             int indiceEscolhido = Random.Range(0, disponiveis.Count);
             int idEscolhido = disponiveis[indiceEscolhido];
             disponiveis.RemoveAt(indiceEscolhido);
@@ -146,26 +145,33 @@ public class GameManager : MonoBehaviour
             }
 
             GameObject npcEscolhido = null;
-            int documentoEscolhido = 0;
 
             switch (variacaoEscolhida)
             {
                 case TipoVariacao.Normal:
                     npcEscolhido = entrada.npcNormal;
-                    documentoEscolhido = entrada.documentoNormal;
                     break;
                 case TipoVariacao.DocumentoErrado:
                     npcEscolhido = entrada.npcDocumentoErrado;
-                    documentoEscolhido = entrada.documentoErrado;
                     break;
                 case TipoVariacao.AparenciaAnomala:
                     npcEscolhido = entrada.npcAparenciaAnomala;
-                    documentoEscolhido = entrada.documentoAnomalo;
                     break;
             }
 
+            // ==========================================
+            // CÓDIGO DO DOCUMENTO
+            // Fórmula: (Id do NPC x 10) + 0 [correto] ou +1 [incorreto]
+            // Normal e Aparência Anômala usam o MESMO documento correto,
+            // só a variação Documento Errado usa o documento incorreto.
+            // ==========================================
+            int codigoDocumento = entrada.npcId * 10;
+
+            if (variacaoEscolhida == TipoVariacao.DocumentoErrado)
+                codigoDocumento += 1;
+
             filaNPCs[slot] = npcEscolhido;
-            filaDocumentos[slot] = documentoEscolhido;
+            filaDocumentos[slot] = codigoDocumento;
             filaVariacoes[slot] = variacaoEscolhida;
 
             npcsJaUsados.Add(idEscolhido);
@@ -266,7 +272,7 @@ public class GameManager : MonoBehaviour
             npc.SetActive(true);
 
             if (npcDocuments != null)
-                npcDocuments.MostrarDocumentos(filaDocumentos[currentNPC]);
+                npcDocuments.MostrarDocumentos();
 
             NPCMovement movement = npc.GetComponent<NPCMovement>();
             if (movement != null)
@@ -275,7 +281,7 @@ public class GameManager : MonoBehaviour
     }
 
     // ==========================================
-    // FINAL DO DIA / TRANSIÇÃO "DIA X"
+    // FINAL DO DIA
     // ==========================================
     private void MostrarFinalDeDia()
     {
@@ -287,6 +293,15 @@ public class GameManager : MonoBehaviour
 
         HideDocumentIdentity();
         SetButtons(false);
+
+        // Verifica se ainda sobram NPCs novos para um próximo dia
+        int restantes = npcs.Length - npcsJaUsados.Count;
+        ultimoDia = restantes <= 0;
+
+        if (textoBotaoConcluirDia != null)
+        {
+            textoBotaoConcluirDia.text = ultimoDia ? "Finalizar Jogo" : "Concluir Dia";
+        }
 
         if (finalDeDia != null)
         {
@@ -300,19 +315,16 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    // Chame esta função no botão "Concluir Dia" da tela de final de dia
+    // Este é o único método ligado ao botão da tela de final de dia.
+    // Ele decide sozinho se deve ir para o próximo dia ou finalizar o jogo.
     public void ConcluirDia()
     {
         if (finalDeDia != null)
             finalDeDia.SetActive(false);
 
-        bool aindaTemNPCsNovos = (npcs.Length - npcsJaUsados.Count) >= 1;
-
-        if (!aindaTemNPCsNovos)
+        if (ultimoDia)
         {
-            if (fimDeJogo != null)
-                fimDeJogo.SetActive(true);
-
+            ReiniciarJogo();
             return;
         }
 
@@ -341,7 +353,28 @@ public class GameManager : MonoBehaviour
     }
 
     // ==========================================
-    // DOCUMENTOS E BOTÕES (igual antes)
+    // FIM DE JOGO -> VOLTA PARA O MENU INICIAL
+    // ==========================================
+    private void ReiniciarJogo()
+    {
+        diaAtual = 1;
+        npcsJaUsados.Clear();
+        vidasSalvas = 0f;
+        mortesDecaidos = 0f;
+        bonus = 0f;
+        currentNPC = 0;
+        filaNPCs = null;
+        ultimoDia = false;
+
+        if (finalDeDia != null) finalDeDia.SetActive(false);
+        if (telaDia != null) telaDia.SetActive(false);
+
+        if (telaInicial != null) telaInicial.SetActive(true);
+        if (fundoInicial != null) fundoInicial.SetActive(true);
+    }
+
+    // ==========================================
+    // DOCUMENTOS E BOTÕES (sem alterações)
     // ==========================================
     public void ShowDocumentIdentity()
     {

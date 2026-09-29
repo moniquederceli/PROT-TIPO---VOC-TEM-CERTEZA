@@ -3,221 +3,85 @@ using UnityEngine.UI;
 
 public class NPCDocuments : MonoBehaviour
 {
-    [Header("Documentos na mesa")]
+    // Um "conjunto" de documentos GRANDES de UM NPC: os corretos (usados
+    // quando o NPC é Normal OU Aparência Anômala) e os incorretos (usados
+    // só quando o NPC é Documento Errado).
+    [System.Serializable]
+    public class NPCDocumentSet
+    {
+        [Tooltip("Precisa ser o MESMO número usado no GameManager, no campo Npc Id")]
+        public int npcId;
+
+        [Header("Documento GRANDE (zoom) quando o NPC é Normal ou Aparência Anômala")]
+        public Sprite rgCorretoGrande;
+        public Sprite lmCorretoGrande;
+        public Sprite rmCorretoGrande;
+
+        [Header("Documento GRANDE (zoom) quando o NPC é Documento Errado")]
+        public Sprite rgIncorretoGrande;
+        public Sprite lmIncorretoGrande;
+        public Sprite rmIncorretoGrande;
+    }
+
+    [Header("Documentos na mesa (SEMPRE iguais, para qualquer NPC)")]
     public Image documentoRG;
     public Image documentoLM;
     public Image documentoRM;
 
-    // ==========================================
-    // NPC 1
-    // ==========================================
+    public Sprite rgGenerico;
+    public Sprite lmGenerico;
+    public Sprite rmGenerico;
 
-    [Header("NPC 1")]
-    public Sprite rg1;
-    public Sprite lm1;
-    public Sprite rm1;
+    [Header("Documentos GRANDES (zoom) de cada um dos 8 NPCs")]
+    public NPCDocumentSet[] documentos = new NPCDocumentSet[8];
 
-    // ==========================================
-    // NPC 1.5
-    // ==========================================
-
-    [Header("NPC 1.5")]
-    public Sprite rg1_5;
-    public Sprite lm1_5;
-    public Sprite rm1_5;
-
-    // ==========================================
-    // NPC 2
-    // ==========================================
-
-    [Header("NPC 2")]
-    public Sprite rg2;
-    public Sprite lm2;
-    public Sprite rm2;
-
-    // ==========================================
-    // NPC 2.5
-    // ==========================================
-
-    [Header("NPC 2.5")]
-    public Sprite rg2_5;
-    public Sprite lm2_5;
-    public Sprite rm2_5;
-
-    // ==========================================
-    // NPC 3
-    // ==========================================
-
-    [Header("NPC 3")]
-    public Sprite rg3;
-    public Sprite lm3;
-    public Sprite rm3;
-
-    // ==========================================
-    // NPC 3.5
-    // ==========================================
-
-    [Header("NPC 3.5")]
-    public Sprite rg3_5;
-    public Sprite lm3_5;
-    public Sprite rm3_5;
-
-
-    // ==========================================
-    // DOCUMENTOS GRANDES
-    // ==========================================
-
-    [Header("RG Grande")]
-    public Sprite rgGrande1;
-    public Sprite rgGrande1_5;
-    public Sprite rgGrande2;
-    public Sprite rgGrande2_5;
-    public Sprite rgGrande3;
-    public Sprite rgGrande3_5;
-
-
-    [Header("LM Grande")]
-    public Sprite lmGrande1;
-    public Sprite lmGrande1_5;
-    public Sprite lmGrande2;
-    public Sprite lmGrande2_5;
-    public Sprite lmGrande3;
-    public Sprite lmGrande3_5;
-
-
-    [Header("RM Grande")]
-    public Sprite rmGrande1;
-    public Sprite rmGrande1_5;
-    public Sprite rmGrande2;
-    public Sprite rmGrande2_5;
-    public Sprite rmGrande3;
-    public Sprite rmGrande3_5;
-
-
-    // ==========================================
-    // DOCUMENTOS DA MESA
-    // ==========================================
-
-    public void MostrarDocumentos(int numeroNPC)
+    // Chamado toda vez que um novo NPC entra na cabine.
+    // A imagem da mesa é sempre a mesma, não importa o NPC nem a variação.
+    public void MostrarDocumentos()
     {
-        Debug.Log("Mostrando documentos do NPC: " + numeroNPC);
-
-        if (numeroNPC == 1)
-        {
-            documentoRG.sprite = rg1;
-            documentoLM.sprite = lm1;
-            documentoRM.sprite = rm1;
-        }
-
-        else if (numeroNPC == 15)
-        {
-            documentoRG.sprite = rg1_5;
-            documentoLM.sprite = lm1_5;
-            documentoRM.sprite = rm1_5;
-        }
-
-        else if (numeroNPC == 2)
-        {
-            documentoRG.sprite = rg2;
-            documentoLM.sprite = lm2;
-            documentoRM.sprite = rm2;
-        }
-
-        else if (numeroNPC == 25)
-        {
-            documentoRG.sprite = rg2_5;
-            documentoLM.sprite = lm2_5;
-            documentoRM.sprite = rm2_5;
-        }
-
-        else if (numeroNPC == 3)
-        {
-            documentoRG.sprite = rg3;
-            documentoLM.sprite = lm3;
-            documentoRM.sprite = rm3;
-        }
-
-        else if (numeroNPC == 35)
-        {
-            documentoRG.sprite = rg3_5;
-            documentoLM.sprite = lm3_5;
-            documentoRM.sprite = rm3_5;
-        }
+        if (documentoRG != null) documentoRG.sprite = rgGenerico;
+        if (documentoLM != null) documentoLM.sprite = lmGenerico;
+        if (documentoRM != null) documentoRM.sprite = rmGenerico;
     }
 
-
     // ==========================================
-    // PEGAR DOCUMENTO GRANDE
+    // O código chega assim: (Id do NPC x 10) + 0 [correto] ou +1 [incorreto]
+    // Exemplo: NPC 3 correto = 30 | NPC 3 incorreto = 31
+    // Usado só quando o jogador AMPLIA o documento.
     // ==========================================
-
-    public Sprite GetRGGrande(int numeroNPC)
+    public Sprite GetRGGrande(int codigoDocumento)
     {
-        if (numeroNPC == 1)
-            return rgGrande1;
+        NPCDocumentSet set = BuscarSetPorId(codigoDocumento / 10);
+        if (set == null) return null;
 
-        if (numeroNPC == 15)
-            return rgGrande1_5;
-
-        if (numeroNPC == 2)
-            return rgGrande2;
-
-        if (numeroNPC == 25)
-            return rgGrande2_5;
-
-        if (numeroNPC == 3)
-            return rgGrande3;
-
-        if (numeroNPC == 35)
-            return rgGrande3_5;
-
-        return null;
+        return (codigoDocumento % 10) == 1 ? set.rgIncorretoGrande : set.rgCorretoGrande;
     }
 
-
-    public Sprite GetLMGrande(int numeroNPC)
+    public Sprite GetLMGrande(int codigoDocumento)
     {
-        if (numeroNPC == 1)
-            return lmGrande1;
+        NPCDocumentSet set = BuscarSetPorId(codigoDocumento / 10);
+        if (set == null) return null;
 
-        if (numeroNPC == 15)
-            return lmGrande1_5;
-
-        if (numeroNPC == 2)
-            return lmGrande2;
-
-        if (numeroNPC == 25)
-            return lmGrande2_5;
-
-        if (numeroNPC == 3)
-            return lmGrande3;
-
-        if (numeroNPC == 35)
-            return lmGrande3_5;
-
-        return null;
+        return (codigoDocumento % 10) == 1 ? set.lmIncorretoGrande : set.lmCorretoGrande;
     }
 
-
-    public Sprite GetRMGrande(int numeroNPC)
+    public Sprite GetRMGrande(int codigoDocumento)
     {
-        if (numeroNPC == 1)
-            return rmGrande1;
+        NPCDocumentSet set = BuscarSetPorId(codigoDocumento / 10);
+        if (set == null) return null;
 
-        if (numeroNPC == 15)
-            return rmGrande1_5;
+        return (codigoDocumento % 10) == 1 ? set.rmIncorretoGrande : set.rmCorretoGrande;
+    }
 
-        if (numeroNPC == 2)
-            return rmGrande2;
+    private NPCDocumentSet BuscarSetPorId(int npcId)
+    {
+        foreach (NPCDocumentSet set in documentos)
+        {
+            if (set != null && set.npcId == npcId)
+                return set;
+        }
 
-        if (numeroNPC == 25)
-            return rmGrande2_5;
-
-        if (numeroNPC == 3)
-            return rmGrande3;
-
-        if (numeroNPC == 35)
-            return rmGrande3_5;
-
+        Debug.LogError("NPCDocuments: não encontrei nenhum conjunto de documentos com o Npc Id " + npcId + ". Confira o array 'Documentos' no Inspector.");
         return null;
     }
 }
