@@ -67,6 +67,9 @@ public class GameManager : MonoBehaviour
     [Header("Tela de Resumo Final (aparece só no fim do Dia 2)")]
     public GameObject telaResumoFinal;
 
+    [Header("Aviso de Nova Página do Diário (aparece no início do Dia 2)")]
+    public GameObject avisoNovaPagina;
+
     [Header("Tela Inicial (usada ao Voltar ao Menu)")]
     public GameObject telaInicial;
     public GameObject fundoInicial;
@@ -351,8 +354,27 @@ public class GameManager : MonoBehaviour
     // Chamado pela PortaAnimacao no instante em que a porta termina de fechar.
     public void EsconderNPCAtual()
     {
-        if (filaNPCs == null || currentNPC >= filaNPCs.Length || filaNPCs[currentNPC] == null)
+        Debug.Log("EsconderNPCAtual foi chamado!");
+
+        if (filaNPCs == null)
+        {
+            Debug.LogWarning("EsconderNPCAtual: filaNPCs está vazia (null). O jogo foi iniciado corretamente?");
             return;
+        }
+
+        if (currentNPC >= filaNPCs.Length)
+        {
+            Debug.LogWarning("EsconderNPCAtual: currentNPC (" + currentNPC + ") está fora da fila (tamanho " + filaNPCs.Length + ").");
+            return;
+        }
+
+        if (filaNPCs[currentNPC] == null)
+        {
+            Debug.LogWarning("EsconderNPCAtual: o NPC atual na fila está vazio (null). Confira se todos os campos do array 'Npcs' no GameManager estão preenchidos.");
+            return;
+        }
+
+        Debug.Log("Escondendo o NPC: " + filaNPCs[currentNPC].name);
 
         RegistrarMortePorPorta(filaVariacoes[currentNPC]);
 
@@ -465,6 +487,14 @@ public class GameManager : MonoBehaviour
 
         currentNPC = 0;
         ShowCurrentNPC();
+
+        // Mostra o aviso de nova página do diário só ao entrar no Dia 2
+        if (diaAtual == 2 && avisoNovaPagina != null)
+        {
+            AvisoNovaPagina aviso = avisoNovaPagina.GetComponent<AvisoNovaPagina>();
+            if (aviso != null)
+                aviso.Mostrar();
+        }
     }
 
     // ==========================================
