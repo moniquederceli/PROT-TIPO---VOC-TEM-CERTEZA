@@ -20,6 +20,12 @@ public class PortaAnimacao : MonoBehaviour
     [Header("Tempo com a porta fechada")]
     public float tempoPortaFechada = 1.5f;
 
+    [Header("Luz vermelha de alarme (pisca enquanto a porta está fechada)")]
+    public Image luzVermelha;
+    public float piscadasPorSegundo = 3f;
+    [Range(0f, 1f)]
+    public float intensidadeMaxima = 0.5f;
+
     [Header("Imagem do Botão")]
     public Image imagemBotao;
 
@@ -41,6 +47,12 @@ public class PortaAnimacao : MonoBehaviour
         Color cor = porta.color;
         cor.a = 0f;
         porta.color = cor;
+
+        // =================================
+        // LUZ VERMELHA COMEÇA APAGADA
+        // =================================
+
+        DefinirAlfaLuz(0f);
 
         // =================================
         // BOTÃO COMEÇA COM A IMAGEM NORMAL
@@ -121,10 +133,12 @@ public class PortaAnimacao : MonoBehaviour
         }
 
         // =========================
-        // PORTA FICA FECHADA
+        // PORTA FICA FECHADA E A LUZ VERMELHA PISCA
+        // (a luz para de piscar assim que este tempo acaba,
+        // logo antes da porta começar a subir)
         // =========================
 
-        yield return new WaitForSeconds(tempoPortaFechada);
+        yield return StartCoroutine(PiscarLuz(tempoPortaFechada));
 
         // =========================
         // ABRINDO
@@ -170,5 +184,36 @@ public class PortaAnimacao : MonoBehaviour
         }
 
         animando = false;
+    }
+
+    // Faz a luz vermelha pulsar (acende e apaga suavemente) durante o tempo informado.
+    // Se não houver luz configurada, ela simplesmente espera esse tempo.
+    private IEnumerator PiscarLuz(float duracao)
+    {
+        float tempo = 0f;
+
+        while (tempo < duracao)
+        {
+            tempo += Time.deltaTime;
+
+            // Onda que começa apagada (0), vai até o máximo (1) e volta
+            float onda = (1f - Mathf.Cos(tempo * piscadasPorSegundo * 2f * Mathf.PI)) / 2f;
+            DefinirAlfaLuz(onda * intensidadeMaxima);
+
+            yield return null;
+        }
+
+        // Apaga a luz no fim
+        DefinirAlfaLuz(0f);
+    }
+
+    private void DefinirAlfaLuz(float alfa)
+    {
+        if (luzVermelha == null)
+            return;
+
+        Color c = luzVermelha.color;
+        c.a = alfa;
+        luzVermelha.color = c;
     }
 }

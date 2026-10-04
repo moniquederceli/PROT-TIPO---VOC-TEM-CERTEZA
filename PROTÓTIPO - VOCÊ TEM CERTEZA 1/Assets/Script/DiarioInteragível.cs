@@ -20,6 +20,9 @@ public class DiarioInterativo : MonoBehaviour
     [Header("Referência ao GameManager (pra saber em qual dia estamos)")]
     public GameManager gameManager;
 
+    [Header("Navegação de visão (esconde as setas enquanto o diário está aberto). Opcional: se ficar vazio, o script acha sozinho")]
+    public NavegacaoVisao navegacaoVisao;
+
     [Header("Fundo escurecido atrás do diário")]
     public GameObject overlayEscuro;
 
@@ -40,6 +43,9 @@ public class DiarioInterativo : MonoBehaviour
 
     private void Awake()
     {
+        if (navegacaoVisao == null)
+            navegacaoVisao = FindAnyObjectByType<NavegacaoVisao>();
+
         if (overlayEscuro != null) overlayEscuro.SetActive(false);
         if (painelDiario != null) painelDiario.SetActive(false);
         if (caixaTexto != null) caixaTexto.SetActive(false);
@@ -56,6 +62,10 @@ public class DiarioInterativo : MonoBehaviour
         if (caixaTexto != null) caixaTexto.SetActive(false);
 
         MostrarPaginaAtual();
+
+        // Esconde as setas de virar a cabeça enquanto o diário está aberto
+        if (navegacaoVisao != null)
+            navegacaoVisao.DefinirDiarioAberto(true);
     }
 
     // Ligue este método no ONCLICK do fundo escurecido (clicar fora fecha o diário)
@@ -66,6 +76,10 @@ public class DiarioInterativo : MonoBehaviour
         if (caixaTexto != null) caixaTexto.SetActive(false);
 
         modoLeitura = false;
+
+        // Libera as setas de virar a cabeça de novo
+        if (navegacaoVisao != null)
+            navegacaoVisao.DefinirDiarioAberto(false);
     }
 
     // Ligue este método no ONCLICK da imagem da página (alterna mostrar/esconder o texto)

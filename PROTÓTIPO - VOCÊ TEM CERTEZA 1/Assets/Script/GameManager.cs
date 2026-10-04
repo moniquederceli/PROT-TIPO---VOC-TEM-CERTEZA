@@ -70,6 +70,9 @@ public class GameManager : MonoBehaviour
     [Header("Aviso de Nova Página do Diário (aparece no início do Dia 2)")]
     public GameObject avisoNovaPagina;
 
+    [Header("Navegação de visão (setas e reset pro centro). Opcional: se ficar vazio, o script acha sozinho")]
+    public NavegacaoVisao navegacaoVisao;
+
     [Header("Tela Inicial (usada ao Voltar ao Menu)")]
     public GameObject telaInicial;
     public GameObject fundoInicial;
@@ -91,6 +94,9 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
+        if (navegacaoVisao == null)
+            navegacaoVisao = FindAnyObjectByType<NavegacaoVisao>();
+
         SetButtons(false);
 
         if (finalDeDia != null) finalDeDia.SetActive(false);
@@ -113,6 +119,14 @@ public class GameManager : MonoBehaviour
 
         ResetarValoresDoDia();
         ResetarContagemTotal();
+
+        // Toda partida começa olhando para o centro (a mesa),
+        // e é aqui que as setas passam a aparecer (a porta de entrada já terminou)
+        if (navegacaoVisao != null)
+        {
+            navegacaoVisao.ResetarParaCentro();
+            navegacaoVisao.DefinirJogoIniciado(true);
+        }
 
         SortearNPCsDoDia();
 
@@ -427,6 +441,10 @@ public class GameManager : MonoBehaviour
         HideDocumentIdentity();
         SetButtons(false);
 
+        // Esconde as setas de virar a cabeça enquanto o relatório está aberto
+        if (navegacaoVisao != null)
+            navegacaoVisao.DefinirRelatorioAberto(true);
+
         // Verifica se ainda sobram NPCs novos para um próximo dia
         int restantes = npcs.Length - npcsJaUsados.Count;
         ultimoDia = restantes <= 0;
@@ -470,6 +488,15 @@ public class GameManager : MonoBehaviour
                 textoTelaDia.text = "DIA " + diaAtual;
         }
 
+        // Com a tela preta na frente: as setas somem e a visão volta para o centro
+        // (ninguém vê o movimento, porque a tela está preta).
+        if (navegacaoVisao != null)
+        {
+            navegacaoVisao.DefinirTransicaoDiaAtiva(true);
+            navegacaoVisao.DefinirRelatorioAberto(false);
+            navegacaoVisao.ResetarParaCentro();
+        }
+
         Invoke(nameof(ComecarProximoDia), tempoTelaDia);
     }
 
@@ -477,6 +504,10 @@ public class GameManager : MonoBehaviour
     {
         if (telaDia != null)
             telaDia.SetActive(false);
+
+        // A tela preta acabou: as setas de virar a cabeça podem voltar
+        if (navegacaoVisao != null)
+            navegacaoVisao.DefinirTransicaoDiaAtiva(false);
 
         // Os valores financeiros do dia (vidas/bônus/mortes) recomeçam do zero.
         // O dinheiro acumulado (saldo total) NÃO é afetado por isso — ele fica
@@ -538,6 +569,16 @@ public class GameManager : MonoBehaviour
         currentNPC = 0;
         filaNPCs = null;
         ultimoDia = false;
+
+        // Voltamos para o menu: volta a visão para o centro e as setas ficam escondidas
+        // até a próxima partida começar de verdade
+        if (navegacaoVisao != null)
+        {
+            navegacaoVisao.DefinirRelatorioAberto(false);
+            navegacaoVisao.DefinirTransicaoDiaAtiva(false);
+            navegacaoVisao.ResetarParaCentro();
+            navegacaoVisao.DefinirJogoIniciado(false);
+        }
 
         if (finalDeDia != null) finalDeDia.SetActive(false);
         if (telaDia != null) telaDia.SetActive(false);
