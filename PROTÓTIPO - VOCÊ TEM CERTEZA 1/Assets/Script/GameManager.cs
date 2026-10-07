@@ -73,6 +73,9 @@ public class GameManager : MonoBehaviour
     [Header("Navegação de visão (setas e reset pro centro). Opcional: se ficar vazio, o script acha sozinho")]
     public NavegacaoVisao navegacaoVisao;
 
+    [Header("Carimbos (OPCIONAL): arraste a ZonaCarimbo para apagar o carimbo quando chegar um NPC novo")]
+    public ZonaDeCarimbo zonaDeCarimbo;
+
     [Header("Tela Inicial (usada ao Voltar ao Menu)")]
     public GameObject telaInicial;
     public GameObject fundoInicial;
@@ -240,6 +243,10 @@ public class GameManager : MonoBehaviour
         if (filaNPCs == null || currentNPC >= filaNPCs.Length || filaNPCs[currentNPC] == null)
             return;
 
+        // Se o NPC atual está desligado (ex: morto pela porta), ignora o clique
+        if (!filaNPCs[currentNPC].activeInHierarchy)
+            return;
+
         NPCMovement movement = filaNPCs[currentNPC].GetComponent<NPCMovement>();
 
         if (movement != null)
@@ -280,6 +287,10 @@ public class GameManager : MonoBehaviour
     public void DenyCurrentNPC()
     {
         if (filaNPCs == null || currentNPC >= filaNPCs.Length || filaNPCs[currentNPC] == null)
+            return;
+
+        // Se o NPC atual está desligado (ex: morto pela porta), ignora o clique
+        if (!filaNPCs[currentNPC].activeInHierarchy)
             return;
 
         NPCMovement movement = filaNPCs[currentNPC].GetComponent<NPCMovement>();
@@ -348,6 +359,10 @@ public class GameManager : MonoBehaviour
             if (npcDocuments != null)
                 npcDocuments.MostrarDocumentos();
 
+            // Folha nova para o NPC novo: apaga o carimbo do NPC anterior (se configurado)
+            if (zonaDeCarimbo != null)
+                zonaDeCarimbo.LimparMarcas();
+
             NPCMovement movement = npc.GetComponent<NPCMovement>();
             if (movement != null)
                 movement.StartNPC();
@@ -391,6 +406,11 @@ public class GameManager : MonoBehaviour
         Debug.Log("Escondendo o NPC: " + filaNPCs[currentNPC].name);
 
         RegistrarMortePorPorta(filaVariacoes[currentNPC]);
+
+        // Cancela qualquer decisão pendente deste NPC antes de escondê-lo
+        NPCMovement movimento = filaNPCs[currentNPC].GetComponent<NPCMovement>();
+        if (movimento != null)
+            movimento.CancelarPorMorte();
 
         filaNPCs[currentNPC].SetActive(false);
 

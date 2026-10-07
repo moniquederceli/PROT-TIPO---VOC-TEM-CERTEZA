@@ -42,6 +42,14 @@ public class NPCMovement : MonoBehaviour
         StartCoroutine(EnterCabin());
     }
 
+    // Chamado pelo GameManager quando a porta "mata" este NPC.
+    // Tira a permissão de decidir, pra nenhum clique atrasado mexer nele depois.
+    public void CancelarPorMorte()
+    {
+        canDecide = false;
+        isMoving = false;
+    }
+
     private void Update()
     {
         // Só faz o movimento de caminhada enquanto estiver andando
@@ -56,25 +64,25 @@ public class NPCMovement : MonoBehaviour
     }
 
     IEnumerator EnterCabin()
-{
-    yield return MoveToPosition(centerPosition);
-
-    isMoving = false;
-
-    Vector2 position = rectTransform.anchoredPosition;
-    position.y = originalY;
-    rectTransform.anchoredPosition = position;
-
-    canDecide = true;
-
-    GameManager gameManager = FindAnyObjectByType<GameManager>();
-
-    if (gameManager != null)
     {
-        gameManager.ShowDocumentIdentity();
-        gameManager.EnableDecisionButtons();
+        yield return MoveToPosition(centerPosition);
+
+        isMoving = false;
+
+        Vector2 position = rectTransform.anchoredPosition;
+        position.y = originalY;
+        rectTransform.anchoredPosition = position;
+
+        canDecide = true;
+
+        GameManager gameManager = FindAnyObjectByType<GameManager>();
+
+        if (gameManager != null)
+        {
+            gameManager.ShowDocumentIdentity();
+            gameManager.EnableDecisionButtons();
+        }
     }
-}
 
     IEnumerator MoveToPosition(float targetX)
     {
@@ -97,8 +105,8 @@ public class NPCMovement : MonoBehaviour
     // BOTÃO VERDE
     public void Accept()
     {
-        // Impede aceitar antes de chegar
-        if (!canDecide)
+        // Impede aceitar antes de chegar, ou se este NPC está desligado (ex: morto pela porta)
+        if (!canDecide || !gameObject.activeInHierarchy)
             return;
 
         canDecide = false;
@@ -109,21 +117,22 @@ public class NPCMovement : MonoBehaviour
     // BOTÃO VERMELHO
     public void Deny()
     {
-    if (!canDecide)
-        return;
+        // Mesma proteção do Accept
+        if (!canDecide || !gameObject.activeInHierarchy)
+            return;
 
-    canDecide = false;
+        canDecide = false;
 
-    NPCRecusado recusado = GetComponent<NPCRecusado>();
+        NPCRecusado recusado = GetComponent<NPCRecusado>();
 
-    if (recusado != null)
-    {
-        recusado.Recusar();
-    }
-    else
-    {
-        gameObject.SetActive(false);
-    }
+        if (recusado != null)
+        {
+            recusado.Recusar();
+        }
+        else
+        {
+            gameObject.SetActive(false);
+        }
     }
 
     IEnumerator LeaveToRight()
