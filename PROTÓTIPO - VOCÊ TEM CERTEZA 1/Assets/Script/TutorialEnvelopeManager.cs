@@ -1,284 +1,294 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 // Coloque este script UMA VEZ SÓ, em um objeto vazio chamado "SistemaTutorial".
-// Ele controla o tutorial inteiro:
-//   envelope fechado -> envelope aberto -> papel -> menu dos 3 papéis -> papel grande.
+// Fluxo do tutorial:
+//   envelope fechado --(clique)--> envelope aberto (fundo + todas as folhas + frente)
+//   envelope aberto --(clique na tampa)--> envelope fechado
+//   envelope aberto --(clique em "todas as folhas")--> 3 folhas soltas na tela (grupo)
+//   folha do grupo --(clique)--> some do grupo e abre a folha GRANDE (igual ao RG, LM e RM)
+//   folha grande --(botão direito, ou Aprovar/Recusar)--> fecha e a folha volta ao grupo
+//   folha do grupo --(botão direito)--> fecha a folha; quando as 3 fecham, "todas as folhas" volta pro envelope
 public class TutorialEnvelopeManager : MonoBehaviour
 {
-    [Header("Navegação de visão (esconde as setas enquanto o tutorial está aberto). Opcional: se ficar vazio, o script acha sozinho")]
-    public NavegacaoVisao navegacaoVisao;
+    [Header("=== O ENVELOPE ===")]
+    [Tooltip("O envelope FECHADO (a imagem padrão, que você clica para abrir)")]
+    public GameObject envelopeFechado;
 
-    [Header("=== 1) O ENVELOPE NA PAREDE ===")]
-    [Tooltip("A imagem do envelope na parede (a que troca entre fechado e aberto)")]
-    public Image imagemEnvelope;
-    public Sprite spriteEnvelopeFechado;
-    public Sprite spriteEnvelopeAberto;
+    [Tooltip("O envelope ABERTO: o objeto 'pai' que contém Fundo, Area Da Tampa, Todas As Folhas e Frente")]
+    public GameObject envelopeAberto;
 
-    [Tooltip("Área invisível em cima da tampa do envelope. Só existe com o envelope ABERTO.")]
-    public GameObject areaDaTampa;
+    [Tooltip("A imagem 'todas as folhas' que aparece dentro do envelope aberto (some enquanto as folhas estão fora do envelope)")]
+    public GameObject todasAsFolhasNoEnvelope;
 
-    [Tooltip("O papel que aparece dentro do envelope aberto.")]
-    public GameObject papelDoEnvelope;
+    [Header("=== AS 3 FOLHAS PEQUENAS DO GRUPO (com o efeito de hover) ===")]
+    [Tooltip("NA ORDEM: Element 0 = Regras, Element 1 = Selos, Element 2 = Documentos")]
+    public HoverEffect[] folhas;
 
-    [Header("=== 2) O MENU DOS 3 PAPÉIS ===")]
-    [Tooltip("Fundo escurecido atrás dos papéis (clicar nele fecha). Opcional, mas recomendado.")]
-    public GameObject fundoEscuro;
-
-    [Tooltip("O objeto 'pai' que contém os 3 papéis sobrepostos")]
-    public GameObject menuDosPapeis;
-
-    [Tooltip("Os 3 papéis do menu, NA ORDEM: Element 0 = Regras, Element 1 = Selos, Element 2 = Documentos")]
-    public HoverEffect[] papeisDoMenu;
+    [Header("=== AS 3 FOLHAS GRANDES (iguais ao RG, LM e RM) ===")]
+    [Tooltip("NA MESMA ORDEM: Element 0 = Regras, Element 1 = Selos, Element 2 = Documentos")]
+    public FolhaGrandeTutorial[] folhasGrandes;
 
     [Header("Efeito de destaque ao passar o mouse")]
-    [Tooltip("Cor do papel que está com o mouse em cima (branco = brilho normal)")]
+    [Tooltip("Cor da folha que está com o mouse em cima (branco = brilho normal)")]
     public Color corDestacada = Color.white;
 
-    [Tooltip("Cor dos OUTROS papéis enquanto um está destacado (mais escura = mais apagado)")]
+    [Tooltip("Cor das OUTRAS folhas enquanto uma está destacada (mais escura = mais apagada)")]
     public Color corEscurecida = new Color(0.4f, 0.4f, 0.4f, 1f);
 
-    [Tooltip("O papel destacado cresce um pouquinho (1 = não cresce, 1.05 = 5% maior)")]
+    [Tooltip("A folha destacada cresce um pouquinho (1 = não cresce, 1.05 = 5% maior)")]
     public float escalaDestacada = 1.05f;
 
-    [Header("=== 3) OS 3 PAPÉIS GRANDES DE LEITURA ===")]
-    [Tooltip("NA MESMA ORDEM: Element 0 = Regras, Element 1 = Selos, Element 2 = Documentos")]
-    public GameObject[] papeisGrandes;
+    // Onde cada folha está agora
+    private enum Estado
+    {
+        Fechada,   // dentro do envelope
+        NoGrupo,   // folha pequena solta na tela, no grupo de 3
+        Grande     // aberta em tamanho grande
+    }
 
-    private bool envelopeAberto = false;
-    private bool menuAberto = false;
-    private int papelGrandeAberto = -1;
-    private Vector2[] posicoesIniciais;
+    private bool envelopeEstaAberto = false;
+    private Estado[] estados;
+    private int[] ordemInicial;
 
     private void Awake()
     {
-        if (navegacaoVisao == null)
-            navegacaoVisao = FindAnyObjectByType<NavegacaoVisao>();
+        int quantidade = (folhas != null) ? folhas.Length : 0;
+        estados = new Estado[quantidade];
 
-        // Guarda onde você deixou cada papel grande no editor.
-        // Toda vez que ele abrir, volta para este lugar.
-        if (papeisGrandes != null)
+        // Descobre qual folha fica atrás e qual fica na frente (pela ordem na Hierarchy),
+        // para sempre reabrir as folhas empilhadas do mesmo jeito.
+        ordemInicial = new int[quantidade];
+        int[] chaves = new int[quantidade];
+
+        for (int i = 0; i < quantidade; i++)
         {
-            posicoesIniciais = new Vector2[papeisGrandes.Length];
+            ordemInicial[i] = i;
+            chaves[i] = (folhas[i] != null) ? folhas[i].transform.GetSiblingIndex() : int.MaxValue;
 
-            for (int i = 0; i < papeisGrandes.Length; i++)
+            if (folhas[i] != null)
+                folhas[i].Configurar(this, i);
+        }
+
+        System.Array.Sort(chaves, ordemInicial);
+
+        if (folhasGrandes != null)
+        {
+            for (int i = 0; i < folhasGrandes.Length; i++)
             {
-                if (papeisGrandes[i] != null)
-                {
-                    RectTransform rt = papeisGrandes[i].GetComponent<RectTransform>();
-                    if (rt != null)
-                        posicoesIniciais[i] = rt.anchoredPosition;
-                }
+                if (folhasGrandes[i] != null)
+                    folhasGrandes[i].Configurar(this, i);
             }
         }
 
-        // Avisa cada papel do menu qual é o número dele (0, 1 ou 2)
-        if (papeisDoMenu != null)
+        // Começa tudo fechado
+        for (int i = 0; i < quantidade; i++)
         {
-            for (int i = 0; i < papeisDoMenu.Length; i++)
-            {
-                if (papeisDoMenu[i] != null)
-                    papeisDoMenu[i].Configurar(this, i);
-            }
+            estados[i] = Estado.Fechada;
+
+            if (folhas[i] != null)
+                folhas[i].gameObject.SetActive(false);
+
+            if (folhasGrandes != null && i < folhasGrandes.Length && folhasGrandes[i] != null)
+                folhasGrandes[i].gameObject.SetActive(false);
         }
 
-        EsconderMenuEPapeis();
+        envelopeEstaAberto = false;
         AtualizarEnvelope();
     }
 
     // ==========================================
-    // ETAPA 1: ENVELOPE
+    // ENVELOPE
     // ==========================================
 
-    // Ligue no ONCLICK do envelope (a imagem principal do envelope)
-    public void CliqueNoEnvelope()
+    // Ligue no ONCLICK do envelope FECHADO
+    public void AbrirEnvelope()
     {
-        if (menuAberto || envelopeAberto)
+        if (envelopeEstaAberto)
             return;
 
-        envelopeAberto = true;
+        envelopeEstaAberto = true;
         AtualizarEnvelope();
     }
 
-    // Ligue no ONCLICK da área da tampa
+    // Ligue no ONCLICK da área da tampa (dentro do envelope aberto)
     public void FecharEnvelope()
     {
-        if (menuAberto || !envelopeAberto)
+        if (!envelopeEstaAberto)
             return;
 
-        envelopeAberto = false;
+        envelopeEstaAberto = false;
         AtualizarEnvelope();
     }
 
-    // Ligue no ONCLICK do papel que está dentro do envelope
-    public void PegarPapel()
+    // Ligue no ONCLICK da imagem "todas as folhas" (dentro do envelope aberto)
+    public void PegarFolhas()
     {
-        if (menuAberto || !envelopeAberto)
+        if (!envelopeEstaAberto || !TodasFechadas())
             return;
 
-        menuAberto = true;
-        papelGrandeAberto = -1;
-
-        AtualizarEnvelope();
-
-        if (fundoEscuro != null) fundoEscuro.SetActive(true);
-        if (menuDosPapeis != null) menuDosPapeis.SetActive(true);
-
-        AplicarDestaque(-1);
-
-        // O jogador não pode virar a cabeça com o tutorial aberto
-        if (navegacaoVisao != null)
-            navegacaoVisao.DefinirDiarioAberto(true);
-    }
-
-    // Deixa o envelope e o papel dentro dele do jeito certo
-    private void AtualizarEnvelope()
-    {
-        if (imagemEnvelope != null)
+        // Abre as 3 folhas empilhadas, cada uma no seu lugar original
+        for (int k = 0; k < ordemInicial.Length; k++)
         {
-            Sprite sprite = envelopeAberto ? spriteEnvelopeAberto : spriteEnvelopeFechado;
+            int i = ordemInicial[k];
 
-            if (sprite != null)
-                imagemEnvelope.sprite = sprite;
+            if (folhas[i] == null)
+                continue;
+
+            folhas[i].Resetar();
+            folhas[i].gameObject.SetActive(true);
+            folhas[i].transform.SetAsLastSibling();
+            estados[i] = Estado.NoGrupo;
         }
 
-        if (areaDaTampa != null)
-            areaDaTampa.SetActive(envelopeAberto);
+        AtualizarEnvelope();
+    }
 
-        // O papel só aparece com o envelope aberto e enquanto você NÃO está lendo o tutorial
-        if (papelDoEnvelope != null)
-            papelDoEnvelope.SetActive(envelopeAberto && !menuAberto);
+    // Mostra o envelope fechado OU o aberto, e esconde "todas as folhas" quando elas estão fora do envelope
+    private void AtualizarEnvelope()
+    {
+        if (envelopeFechado != null)
+            envelopeFechado.SetActive(!envelopeEstaAberto);
+
+        if (envelopeAberto != null)
+            envelopeAberto.SetActive(envelopeEstaAberto);
+
+        if (todasAsFolhasNoEnvelope != null)
+            todasAsFolhasNoEnvelope.SetActive(envelopeEstaAberto && TodasFechadas());
     }
 
     // ==========================================
-    // ETAPA 2: MENU DOS 3 PAPÉIS
+    // FOLHAS DO GRUPO (PEQUENAS)
     // ==========================================
 
-    // Chamado pelo HoverEffect quando o mouse ENTRA num papel
-    public void AoEntrarNoPapel(int indice)
+    // Chamado pelo HoverEffect quando o mouse ENTRA numa folha
+    public void AoEntrarNaFolha(int indice)
     {
         AplicarDestaque(indice);
     }
 
-    // Chamado pelo HoverEffect quando o mouse SAI de um papel
-    public void AoSairDoPapel(int indice)
+    // Chamado pelo HoverEffect quando o mouse SAI de uma folha
+    public void AoSairDaFolha(int indice)
     {
         AplicarDestaque(-1);
     }
 
-    // indiceDestacado = -1 significa "nenhum": todos ficam normais
-    private void AplicarDestaque(int indiceDestacado)
+    // Chamado pelo HoverEffect quando você clica (com o botão esquerdo, sem arrastar) numa folha do grupo:
+    // ela some do grupo e abre a folha grande.
+    public void AbrirFolhaGrande(int indice)
     {
-        if (papeisDoMenu == null)
+        if (!IndiceValido(indice) || estados[indice] != Estado.NoGrupo)
             return;
 
-        for (int i = 0; i < papeisDoMenu.Length; i++)
+        if (folhasGrandes == null || indice >= folhasGrandes.Length || folhasGrandes[indice] == null)
         {
-            if (papeisDoMenu[i] == null)
+            Debug.LogError("TutorialEnvelopeManager: a folha grande número " + indice + " não está configurada em 'Folhas Grandes'.");
+            return;
+        }
+
+        estados[indice] = Estado.Grande;
+
+        // Some do grupo
+        if (folhas[indice] != null)
+            folhas[indice].gameObject.SetActive(false);
+
+        AplicarDestaque(-1);
+
+        // Abre a folha grande no lugar original, na frente dos outros documentos (sem passar do GrennFilter)
+        FolhaGrandeTutorial grande = folhasGrandes[indice];
+        grande.Resetar();
+        grande.gameObject.SetActive(true);
+        OrdemDeCamadas.TrazerParaFrente(grande.transform);
+
+        AtualizarEnvelope();
+    }
+
+    // Chamado pelo FolhaGrandeTutorial quando a folha grande fecha (botão direito, ou Aprovar/Recusar):
+    // a folha pequena volta para o grupo.
+    public void AoFecharFolhaGrande(int indice)
+    {
+        if (!IndiceValido(indice) || estados[indice] != Estado.Grande)
+            return;
+
+        estados[indice] = Estado.NoGrupo;
+
+        if (folhas[indice] != null)
+        {
+            folhas[indice].Resetar();
+            folhas[indice].gameObject.SetActive(true);
+        }
+
+        // Refaz a pilha na ordem original (a folha que você clicou tinha passado para a frente)
+        RestaurarOrdemDasFolhas();
+
+        AtualizarEnvelope();
+    }
+
+    // Coloca as folhas de volta na ordem de empilhamento original da Hierarchy
+    // (a primeira da lista fica atrás, e a última na frente)
+    private void RestaurarOrdemDasFolhas()
+    {
+        for (int k = 0; k < ordemInicial.Length; k++)
+        {
+            int i = ordemInicial[k];
+
+            if (folhas[i] != null)
+                folhas[i].transform.SetAsLastSibling();
+        }
+    }
+
+    // Chamado pelo HoverEffect quando você clica com o botão direito numa folha do grupo
+    public void FecharFolha(int indice)
+    {
+        if (!IndiceValido(indice) || estados[indice] != Estado.NoGrupo)
+            return;
+
+        estados[indice] = Estado.Fechada;
+
+        if (folhas[indice] != null)
+            folhas[indice].gameObject.SetActive(false);
+
+        AplicarDestaque(-1);
+
+        // Se foi a última folha, "todas as folhas" volta para dentro do envelope
+        AtualizarEnvelope();
+    }
+
+    // indiceDestacado = -1 significa "nenhuma": todas ficam normais
+    private void AplicarDestaque(int indiceDestacado)
+    {
+        if (folhas == null)
+            return;
+
+        for (int i = 0; i < folhas.Length; i++)
+        {
+            if (folhas[i] == null || estados[i] != Estado.NoGrupo)
                 continue;
 
             if (indiceDestacado < 0)
-                papeisDoMenu[i].AplicarAparencia(Color.white, 1f);
+                folhas[i].AplicarAparencia(Color.white, 1f);
             else if (i == indiceDestacado)
-                papeisDoMenu[i].AplicarAparencia(corDestacada, escalaDestacada);
+                folhas[i].AplicarAparencia(corDestacada, escalaDestacada);
             else
-                papeisDoMenu[i].AplicarAparencia(corEscurecida, 1f);
+                folhas[i].AplicarAparencia(corEscurecida, 1f);
         }
     }
 
-    // Ligue no ONCLICK do fundo escurecido (clicar fora)
-    public void CliqueNoFundo()
+    private bool IndiceValido(int indice)
     {
-        if (papelGrandeAberto >= 0)
-            FecharPapelGrande();
-        else
-            FecharMenu();
+        return folhas != null && estados != null && indice >= 0 && indice < folhas.Length;
     }
 
-    // Fecha o menu dos 3 papéis (botão direito num papel, ou clique no fundo)
-    public void FecharMenu()
+    private bool TodasFechadas()
     {
-        if (!menuAberto)
-            return;
+        if (estados == null)
+            return true;
 
-        menuAberto = false;
-        papelGrandeAberto = -1;
-
-        EsconderMenuEPapeis();
-        AtualizarEnvelope();   // o papel volta para dentro do envelope
-
-        if (navegacaoVisao != null)
-            navegacaoVisao.DefinirDiarioAberto(false);
-    }
-
-    // ==========================================
-    // ETAPA 3: PAPEL GRANDE
-    // ==========================================
-
-    // Chamado pelo HoverEffect quando você clica com o botão esquerdo num dos 3 papéis
-    public void AbrirPapelGrande(int indice)
-    {
-        if (!menuAberto || papelGrandeAberto >= 0)
-            return;
-
-        if (papeisGrandes == null || indice < 0 || indice >= papeisGrandes.Length || papeisGrandes[indice] == null)
+        foreach (Estado estado in estados)
         {
-            Debug.LogError("TutorialEnvelopeManager: o papel grande número " + indice + " não está configurado em 'Papeis Grandes'.");
-            return;
+            if (estado != Estado.Fechada)
+                return false;
         }
 
-        papelGrandeAberto = indice;
-
-        // O menu dos 3 papéis some enquanto você lê (o fundo escuro continua)
-        if (menuDosPapeis != null)
-            menuDosPapeis.SetActive(false);
-
-        GameObject papel = papeisGrandes[indice];
-
-        // Abre sempre no lugar original
-        RectTransform rt = papel.GetComponent<RectTransform>();
-        if (rt != null && posicoesIniciais != null && indice < posicoesIniciais.Length)
-            rt.anchoredPosition = posicoesIniciais[indice];
-
-        papel.SetActive(true);
-        papel.transform.SetAsLastSibling();
-    }
-
-    // Fecha o papel grande e volta para o menu dos 3 papéis (botão direito no papel)
-    public void FecharPapelGrande()
-    {
-        if (papelGrandeAberto < 0)
-            return;
-
-        papelGrandeAberto = -1;
-
-        if (papeisGrandes != null)
-        {
-            foreach (GameObject papel in papeisGrandes)
-            {
-                if (papel != null)
-                    papel.SetActive(false);
-            }
-        }
-
-        if (menuDosPapeis != null)
-            menuDosPapeis.SetActive(true);
-
-        AplicarDestaque(-1);
-    }
-
-    private void EsconderMenuEPapeis()
-    {
-        if (fundoEscuro != null) fundoEscuro.SetActive(false);
-        if (menuDosPapeis != null) menuDosPapeis.SetActive(false);
-
-        if (papeisGrandes != null)
-        {
-            foreach (GameObject papel in papeisGrandes)
-            {
-                if (papel != null)
-                    papel.SetActive(false);
-            }
-        }
+        return true;
     }
 }
