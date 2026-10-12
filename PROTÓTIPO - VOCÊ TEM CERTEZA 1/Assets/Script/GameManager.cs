@@ -76,6 +76,15 @@ public class GameManager : MonoBehaviour
     [Header("Carimbos (OPCIONAL): arraste a ZonaCarimbo para apagar o carimbo quando chegar um NPC novo")]
     public ZonaDeCarimbo zonaDeCarimbo;
 
+    [Header("Trava dos botões Aprovar/Recusar (OPCIONAL): arraste o objeto ValidationManager")]
+    public ValidationManager validationManager;
+
+    [Header("Limpeza de caixinhas marcadas (OPCIONAL)")]
+    [Tooltip("Arraste aqui o Checklist: ele volta em branco a cada NPC novo")]
+    public LimpadorDeMarcas limpadorChecklist;
+    [Tooltip("Arraste aqui a tela de gastos (final do dia): as caixinhas voltam desmarcadas no início de cada dia")]
+    public LimpadorDeMarcas limpadorGastos;
+
     [Header("Tela Inicial (usada ao Voltar ao Menu)")]
     public GameObject telaInicial;
     public GameObject fundoInicial;
@@ -247,6 +256,10 @@ public class GameManager : MonoBehaviour
         if (!filaNPCs[currentNPC].activeInHierarchy)
             return;
 
+        // Trava: só deixa decidir com o checklist todo marcado e o carimbo aplicado
+        if (validationManager != null && !validationManager.PodeDecidir())
+            return;
+
         NPCMovement movement = filaNPCs[currentNPC].GetComponent<NPCMovement>();
 
         if (movement != null)
@@ -291,6 +304,10 @@ public class GameManager : MonoBehaviour
 
         // Se o NPC atual está desligado (ex: morto pela porta), ignora o clique
         if (!filaNPCs[currentNPC].activeInHierarchy)
+            return;
+
+        // Trava: só deixa decidir com o checklist todo marcado e o carimbo aplicado
+        if (validationManager != null && !validationManager.PodeDecidir())
             return;
 
         NPCMovement movement = filaNPCs[currentNPC].GetComponent<NPCMovement>();
@@ -362,6 +379,10 @@ public class GameManager : MonoBehaviour
             // Folha nova para o NPC novo: apaga o carimbo do NPC anterior (se configurado)
             if (zonaDeCarimbo != null)
                 zonaDeCarimbo.LimparMarcas();
+
+            // Checklist em branco para o NPC novo (vale para aprovado, recusado e morto na porta)
+            if (limpadorChecklist != null)
+                limpadorChecklist.Limpar();
 
             NPCMovement movement = npc.GetComponent<NPCMovement>();
             if (movement != null)
@@ -534,6 +555,10 @@ public class GameManager : MonoBehaviour
         // guardado dentro do CalculadoraFinalDia.
         ResetarValoresDoDia();
 
+        // As caixinhas de gastos voltam desmarcadas (o saldo que sobrou continua guardado)
+        if (limpadorGastos != null)
+            limpadorGastos.Limpar();
+
         SortearNPCsDoDia();
 
         currentNPC = 0;
@@ -611,6 +636,13 @@ public class GameManager : MonoBehaviour
             if (calculadora != null)
                 calculadora.ReiniciarSaldo();
         }
+
+        // Tela de gastos e checklist também voltam em branco ao reiniciar o jogo
+        if (limpadorGastos != null)
+            limpadorGastos.Limpar();
+
+        if (limpadorChecklist != null)
+            limpadorChecklist.Limpar();
 
         if (telaInicial != null) telaInicial.SetActive(true);
         if (fundoInicial != null) fundoInicial.SetActive(true);

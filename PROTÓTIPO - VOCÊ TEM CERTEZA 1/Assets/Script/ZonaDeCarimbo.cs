@@ -38,6 +38,16 @@ public class ZonaDeCarimbo : MonoBehaviour, IDropHandler
             marcaRecusado.SetActive(!aprovado);
     }
 
+    // Diz se já existe algum carimbo (verde ou vermelho) no documento.
+    // Usado pelo ValidationManager para liberar os botões de Aprovar/Recusar.
+    public bool TemCarimbo()
+    {
+        bool aprovado = (marcaAprovado != null && marcaAprovado.activeSelf);
+        bool recusado = (marcaRecusado != null && marcaRecusado.activeSelf);
+
+        return aprovado || recusado;
+    }
+
     // Apaga qualquer carimbo do documento
     public void LimparMarcas()
     {

@@ -1,0 +1,1508 @@
+fileFormatVersion: 2
+guid: c14dc43af9a36c64d9933935c0b6ab9d
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7648201327617597014
+    second: envelope_aberto_0
+  - first:
+      213: -485402423639583168
+    second: envelope_aberto_1
+  - first:
+      213: 1876956718369262391
+    second: envelope_aberto_2
+  - first:
+      213: -1548443369003592
+    second: envelope_aberto_3
+  - first:
+      213: -3316445000263734669
+    second: envelope_aberto_4
+  - first:
+      213: -568816726913164791
+    second: envelope_aberto_5
+  - first:
+      213: -8038977765019729226
+    second: envelope_aberto_6
+  - first:
+      213: 6255609258555366487
+    second: envelope_aberto_7
+  - first:
+      213: -2651752897058936511
+    second: envelope_aberto_8
+  - first:
+      213: -8411048209232857460
+    second: envelope_aberto_9
+  - first:
+      213: 8934389917279269201
+    second: envelope_aberto_10
+  - first:
+      213: 8014831774260231429
+    second: envelope_aberto_11
+  - first:
+      213: 9024315127547002456
+    second: envelope_aberto_12
+  - first:
+      213: 7573229003382447923
+    second: envelope_aberto_13
+  - first:
+      213: 4080617743367025260
+    second: envelope_aberto_14
+  - first:
+      213: 8556560307469876008
+    second: envelope_aberto_15
+  - first:
+      213: -3213255214257179501
+    second: envelope_aberto_16
+  - first:
+      213: -1751428824693422579
+    second: envelope_aberto_17
+  - first:
+      213: -7037212651143983887
+    second: envelope_aberto_18
+  - first:
+      213: 2985873117620100890
+    second: envelope_aberto_19
+  - first:
+      213: -6184630406926946953
+    second: envelope_aberto_20
+  - first:
+      213: 1883420145726484920
+    second: envelope_aberto_21
+  - first:
+      213: 628862981302010176
+    second: envelope_aberto_22
+  - first:
+      213: -6529320019113172718
+    second: envelope_aberto_23
+  - first:
+      213: -1971122463521850783
+    second: envelope_aberto_24
+  - first:
+      213: -8117488061197167298
+    second: envelope_aberto_25
+  - first:
+      213: -2618847544245280532
+    second: envelope_aberto_26
+  - first:
+      213: 6762347098887183252
+    second: envelope_aberto_27
+  - first:
+      213: 5348590183503693115
+    second: envelope_aberto_28
+  - first:
+      213: 8705399185599188277
+    second: envelope_aberto_29
+  - first:
+      213: 2794673032387866884
+    second: envelope_aberto_30
+  - first:
+      213: 5132258593511493488
+    second: envelope_aberto_31
+  - first:
+      213: 3795600629530718849
+    second: envelope_aberto_32
+  - first:
+      213: -2138124585307772885
+    second: envelope_aberto_33
+  - first:
+      213: -8304750062477642786
+    second: envelope_aberto_34
+  - first:
+      213: 7393565143303367895
+    second: envelope_aberto_35
+  - first:
+      213: -7563203283843487368
+    second: envelope_aberto_36
+  - first:
+      213: -6506457415633054081
+    second: envelope_aberto_37
+  - first:
+      213: 892295150942144184
+    second: envelope_aberto_38
+  - first:
+      213: 3892969340665391671
+    second: envelope_aberto_39
+  - first:
+      213: 2153533526843521424
+    second: envelope_aberto_40
+  - first:
+      213: 5225503302897141564
+    second: envelope_aberto_41
+  - first:
+      213: 4892875591026990324
+    second: envelope_aberto_42
+  - first:
+      213: -1873540075292632606
+    second: envelope_aberto_43
+  - first:
+      213: -1216729519718077916
+    second: envelope_aberto_44
+  - first:
+      213: -661777741220878993
+    second: envelope_aberto_45
+  - first:
+      213: -2421056715755474663
+    second: envelope_aberto_46
+  - first:
+      213: -2984660831476931811
+    second: envelope_aberto_47
+  - first:
+      213: 8188878232653783488
+    second: envelope_aberto_48
+  - first:
+      213: 6524034416989944361
+    second: envelope_aberto_49
+  - first:
+      213: 5074316746058730927
+    second: envelope_aberto_50
+  - first:
+      213: -2698840829233790558
+    second: envelope_aberto_51
+  - first:
+      213: 4158519753113483422
+    second: envelope_aberto_52
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: envelope_aberto_0
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 41
+        width: 1035
+        height: 1098
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa1aea81a612cd590800000000000000
+      internalID: -7648201327617597014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_1
+      rect:
+        serializedVersion: 2
+        x: 734
+        y: 1112
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04659d541118349f0800000000000000
+      internalID: -485402423639583168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_2
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 1077
+        width: 22
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73bce29d03a4c0a10800000000000000
+      internalID: 1876956718369262391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_3
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 681
+        width: 23
+        height: 33
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b5290fe2bf7afff0800000000000000
+      internalID: -1548443369003592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_4
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 714
+        width: 25
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 37ae822f7de99f1d0800000000000000
+      internalID: -3316445000263734669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_5
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 633
+        width: 27
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 90a5a0a53382b18f0800000000000000
+      internalID: -568816726913164791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_6
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 609
+        width: 58
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b24cb6a050df6090800000000000000
+      internalID: -8038977765019729226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_7
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 657
+        width: 28
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 75c56dd1a7360d650800000000000000
+      internalID: 6255609258555366487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_8
+      rect:
+        serializedVersion: 2
+        x: 151
+        y: 649
+        width: 10
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 14960ba2ac4133bd0800000000000000
+      internalID: -2651752897058936511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_9
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 562
+        width: 92
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c867df3a734f54b80800000000000000
+      internalID: -8411048209232857460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_10
+      rect:
+        serializedVersion: 2
+        x: 1176
+        y: 643
+        width: 12
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15133481b445dfb70800000000000000
+      internalID: 8934389917279269201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_11
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 580
+        width: 19
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50d7b47c8076a3f60800000000000000
+      internalID: 8014831774260231429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_12
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 595
+        width: 11
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 85e7f9eabcecc3d70800000000000000
+      internalID: 9024315127547002456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_13
+      rect:
+        serializedVersion: 2
+        x: 125
+        y: 538
+        width: 76
+        height: 84
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 33fdb4567a3891960800000000000000
+      internalID: 7573229003382447923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_14
+      rect:
+        serializedVersion: 2
+        x: 1205
+        y: 544
+        width: 25
+        height: 62
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c623c81b73441a830800000000000000
+      internalID: 4080617743367025260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_15
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 570
+        width: 6
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 82bf2f9d3420fb670800000000000000
+      internalID: 8556560307469876008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_16
+      rect:
+        serializedVersion: 2
+        x: 1182
+        y: 566
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 394778d38693863d0800000000000000
+      internalID: -3213255214257179501
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_17
+      rect:
+        serializedVersion: 2
+        x: 1160
+        y: 393
+        width: 52
+        height: 164
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d06c4ce63cca1b7e0800000000000000
+      internalID: -1751428824693422579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_18
+      rect:
+        serializedVersion: 2
+        x: 1186
+        y: 554
+        width: 12
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fc8da7e06cc65e90800000000000000
+      internalID: -7037212651143983887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_19
+      rect:
+        serializedVersion: 2
+        x: 105
+        y: 406
+        width: 43
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a1f5228d7c3ff6920800000000000000
+      internalID: 2985873117620100890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_20
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 472
+        width: 37
+        height: 55
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77d2a089967cb2aa0800000000000000
+      internalID: -6184630406926946953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_21
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 337
+        width: 37
+        height: 70
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b177dcc4a0432a10800000000000000
+      internalID: 1883420145726484920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_22
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 464
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 04146e4bc8b2ab800800000000000000
+      internalID: 628862981302010176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_23
+      rect:
+        serializedVersion: 2
+        x: 149
+        y: 369
+        width: 48
+        height: 151
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 211a9e359023365a0800000000000000
+      internalID: -6529320019113172718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_24
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 370
+        width: 19
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 16abcf8109a25a4e0800000000000000
+      internalID: -1971122463521850783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_25
+      rect:
+        serializedVersion: 2
+        x: 1227
+        y: 435
+        width: 9
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e355edbdd93e85f80800000000000000
+      internalID: -8117488061197167298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_26
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 319
+        width: 25
+        height: 31
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce02b54a80cf7abd0800000000000000
+      internalID: -2618847544245280532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_27
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 262
+        width: 54
+        height: 86
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49b5015abdea8dd50800000000000000
+      internalID: 6762347098887183252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_28
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 343
+        width: 22
+        height: 21
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b3501e01f620a3a40800000000000000
+      internalID: 5348590183503693115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_29
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 337
+        width: 23
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53d4d95af6acfc870800000000000000
+      internalID: 8705399185599188277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_30
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 231
+        width: 38
+        height: 87
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 401b7dee05ca8c620800000000000000
+      internalID: 2794673032387866884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_31
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 287
+        width: 42
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07fc2b9bff1793740800000000000000
+      internalID: 5132258593511493488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_32
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 313
+        width: 14
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1827d60a9aeaca430800000000000000
+      internalID: 3795600629530718849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_33
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 275
+        width: 7
+        height: 17
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b286337940bd352e0800000000000000
+      internalID: -2138124585307772885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_34
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 224
+        width: 11
+        height: 28
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ed3fd9191d99fbc80800000000000000
+      internalID: -8304750062477642786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_35
+      rect:
+        serializedVersion: 2
+        x: 377
+        y: 152
+        width: 16
+        height: 11
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7dcae4633583b9660800000000000000
+      internalID: 7393565143303367895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_36
+      rect:
+        serializedVersion: 2
+        x: 912
+        y: 126
+        width: 7
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 879e0765faa1a0790800000000000000
+      internalID: -7563203283843487368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_37
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 136
+        width: 12
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f765cf2047b64b5a0800000000000000
+      internalID: -6506457415633054081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_38
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 95
+        width: 15
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8b6c5b256b1126c00800000000000000
+      internalID: 892295150942144184
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_39
+      rect:
+        serializedVersion: 2
+        x: 892
+        y: 108
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 73ae8df4dfa960630800000000000000
+      internalID: 3892969340665391671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_40
+      rect:
+        serializedVersion: 2
+        x: 918
+        y: 108
+        width: 15
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 099f66f2553e2ed10800000000000000
+      internalID: 2153533526843521424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_41
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 83
+        width: 64
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c3780dd6197b48840800000000000000
+      internalID: 5225503302897141564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_42
+      rect:
+        serializedVersion: 2
+        x: 1065
+        y: 120
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fcd75d2d6cf6e340800000000000000
+      internalID: 4892875591026990324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_43
+      rect:
+        serializedVersion: 2
+        x: 858
+        y: 108
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2e959bb5a39dff5e0800000000000000
+      internalID: -1873540075292632606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_44
+      rect:
+        serializedVersion: 2
+        x: 456
+        y: 85
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 42ae875c2fe4d1fe0800000000000000
+      internalID: -1216729519718077916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_45
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 87
+        width: 8
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f65e44e86a4e0d6f0800000000000000
+      internalID: -661777741220878993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_46
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 84
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 911325c8ebda66ed0800000000000000
+      internalID: -2421056715755474663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_47
+      rect:
+        serializedVersion: 2
+        x: 652
+        y: 61
+        width: 65
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d13abc489ca5496d0800000000000000
+      internalID: -2984660831476931811
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_48
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 79
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c1e146bd5db4a170800000000000000
+      internalID: 8188878232653783488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_49
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 64
+        width: 9
+        height: 15
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92abb178cb60a8a50800000000000000
+      internalID: 6524034416989944361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_50
+      rect:
+        serializedVersion: 2
+        x: 466
+        y: 65
+        width: 7
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad85a612389b6640800000000000000
+      internalID: 5074316746058730927
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_51
+      rect:
+        serializedVersion: 2
+        x: 644
+        y: 71
+        width: 9
+        height: 9
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1033c909acb8ad0800000000000000
+      internalID: -2698840829233790558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: envelope_aberto_52
+      rect:
+        serializedVersion: 2
+        x: 726
+        y: 65
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9836c3cea706b930800000000000000
+      internalID: 4158519753113483422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      envelope_aberto_0: -7648201327617597014
+      envelope_aberto_1: -485402423639583168
+      envelope_aberto_10: 8934389917279269201
+      envelope_aberto_11: 8014831774260231429
+      envelope_aberto_12: 9024315127547002456
+      envelope_aberto_13: 7573229003382447923
+      envelope_aberto_14: 4080617743367025260
+      envelope_aberto_15: 8556560307469876008
+      envelope_aberto_16: -3213255214257179501
+      envelope_aberto_17: -1751428824693422579
+      envelope_aberto_18: -7037212651143983887
+      envelope_aberto_19: 2985873117620100890
+      envelope_aberto_2: 1876956718369262391
+      envelope_aberto_20: -6184630406926946953
+      envelope_aberto_21: 1883420145726484920
+      envelope_aberto_22: 628862981302010176
+      envelope_aberto_23: -6529320019113172718
+      envelope_aberto_24: -1971122463521850783
+      envelope_aberto_25: -8117488061197167298
+      envelope_aberto_26: -2618847544245280532
+      envelope_aberto_27: 6762347098887183252
+      envelope_aberto_28: 5348590183503693115
+      envelope_aberto_29: 8705399185599188277
+      envelope_aberto_3: -1548443369003592
+      envelope_aberto_30: 2794673032387866884
+      envelope_aberto_31: 5132258593511493488
+      envelope_aberto_32: 3795600629530718849
+      envelope_aberto_33: -2138124585307772885
+      envelope_aberto_34: -8304750062477642786
+      envelope_aberto_35: 7393565143303367895
+      envelope_aberto_36: -7563203283843487368
+      envelope_aberto_37: -6506457415633054081
+      envelope_aberto_38: 892295150942144184
+      envelope_aberto_39: 3892969340665391671
+      envelope_aberto_4: -3316445000263734669
+      envelope_aberto_40: 2153533526843521424
+      envelope_aberto_41: 5225503302897141564
+      envelope_aberto_42: 4892875591026990324
+      envelope_aberto_43: -1873540075292632606
+      envelope_aberto_44: -1216729519718077916
+      envelope_aberto_45: -661777741220878993
+      envelope_aberto_46: -2421056715755474663
+      envelope_aberto_47: -2984660831476931811
+      envelope_aberto_48: 8188878232653783488
+      envelope_aberto_49: 6524034416989944361
+      envelope_aberto_5: -568816726913164791
+      envelope_aberto_50: 5074316746058730927
+      envelope_aberto_51: -2698840829233790558
+      envelope_aberto_52: 4158519753113483422
+      envelope_aberto_6: -8038977765019729226
+      envelope_aberto_7: 6255609258555366487
+      envelope_aberto_8: -2651752897058936511
+      envelope_aberto_9: -8411048209232857460
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
