@@ -48,6 +48,15 @@ public class NPCMovement : MonoBehaviour
     {
         canDecide = false;
         isMoving = false;
+
+        PararFala();
+    }
+
+    // Esconde o balão de fala (se existir um DialogueManager na cena)
+    private void PararFala()
+    {
+        if (DialogueManager.Instance != null)
+            DialogueManager.Instance.Parar();
     }
 
     private void Update()
@@ -82,6 +91,12 @@ public class NPCMovement : MonoBehaviour
             gameManager.ShowDocumentIdentity();
             gameManager.EnableDecisionButtons();
         }
+
+        // O NPC chegou e parou na frente do vidro: começa a falar
+        DialogoNPC dialogo = GetComponent<DialogoNPC>();
+
+        if (dialogo != null && DialogueManager.Instance != null)
+            DialogueManager.Instance.FalarAbertura(dialogo);
     }
 
     IEnumerator MoveToPosition(float targetX)
@@ -111,6 +126,8 @@ public class NPCMovement : MonoBehaviour
 
         canDecide = false;
 
+        PararFala();
+
         StartCoroutine(LeaveToRight());
     }
 
@@ -122,6 +139,8 @@ public class NPCMovement : MonoBehaviour
             return;
 
         canDecide = false;
+
+        PararFala();
 
         NPCRecusado recusado = GetComponent<NPCRecusado>();
 
