@@ -3619,6 +3619,7 @@ GameObject:
   - component: {fileID: 328458397}
   - component: {fileID: 328458396}
   - component: {fileID: 328458395}
+  - component: {fileID: 328458400}
   m_Layer: 5
   m_Name: NPC7_Anomalia
   m_TagString: Untagged
@@ -3741,6 +3742,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 328458393}
   m_CullTransparentMesh: 1
+--- !u!114 &328458400
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328458393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Se- senhor juro que meu nariz \xE9 apenas por conta da neve..."
+    - "Juro que n\xE3o fa\xE7o mais isso..."
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &334488685
 GameObject:
   m_ObjectHideFlags: 0
@@ -3755,6 +3774,7 @@ GameObject:
   - component: {fileID: 334488689}
   - component: {fileID: 334488688}
   - component: {fileID: 334488687}
+  - component: {fileID: 334488692}
   m_Layer: 5
   m_Name: NPC6_Docerrado
   m_TagString: Untagged
@@ -3877,6 +3897,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 334488685}
   m_CullTransparentMesh: 1
+--- !u!114 &334488692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334488685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "E ai cara, v\xEA logo essas coisas por que eu preciso encontrar minha m\xE3e"
+  - baloes:
+    - Ta ai os documentos...
+    - "Argh! eu odeio essa burocracia agora... j\xE1 \xE9 minha terceira base diferente"
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &336002381
 GameObject:
   m_ObjectHideFlags: 0
@@ -4169,6 +4209,8 @@ GameObject:
   - component: {fileID: 345674471}
   - component: {fileID: 345674470}
   - component: {fileID: 345674469}
+  - component: {fileID: 345674475}
+  - component: {fileID: 345674474}
   m_Layer: 5
   m_Name: NPC8_Docerrado
   m_TagString: Untagged
@@ -4291,6 +4333,47 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 345674467}
   m_CullTransparentMesh: 1
+--- !u!114 &345674474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345674467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Vamos, pode me deixar entrar, voc\xEA com certeza n\xE3o vai querer arrumar
+      problemas com "
+    - "Meus seguran\xE7as, ou vai?"
+    - 'Aqueles estupidos do governo me fizeram sair do meu bunker seguro '
+    - "Argh, que nojo de voc\xEAs"
+  - baloes:
+    - "Pela sua cara com certeza voc\xEA conhece meu marido n\xE3o \xE9?"
+    - "Vamos, me deixe entrar logo e n\xE3o trarei problemas para voc\xEA."
+    - "Estava segura no meu abrigo e gra\xE7as a seus amiguinhos policiais estou
+      aqui com voc\xEAs pobres agora."
+  modoDeEscolha: 0
+  conversa: []
+--- !u!114 &345674475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345674467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas: []
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &359863114
 GameObject:
   m_ObjectHideFlags: 0
@@ -4920,7 +5003,7 @@ MonoBehaviour:
   m_fontSizeMax: 72
   m_fontStyle: 8
   m_HorizontalAlignment: 2
-  m_VerticalAlignment: 512
+  m_VerticalAlignment: 4096
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -5608,7 +5691,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DiarioInterativo
   paginas:
   - imagem: {fileID: -75356624929925343, guid: 3cb137e45b338cd43b54d7fba9f009ff, type: 3}
-    texto: furicotico imagem 1 KJSBDFJHSBDHJFBSJHKFBHJSDBFJSBJHKFGJIJSDFKJSHDKJSHDFKJSHGKJHBSKJGHSKJDHGKJSDHGKJSHFKJSDHKJSDHNVKHSFKVBHSG,JHSDJKGHKSJGHSKJBHGKSDBHGKJSDHGKSDBHGKBSKGJHSDKGJHSDKFJHSDKFHSKDJHFKDSHFKSDHFKSDBHFKBSDKFBSDKJFHKSDJHFKSDBFKLSDBKJSBKLJSDHFKJBSDKLFBKSDJFBSKDLHBKULDFNKJCVNVIUODFNVERBHVKLERNIUGHKBVIXDHLBIUGNKSLBNVPDSBPIOUGROGNSOPNFKSJBGKJBIBNSDIJGBERKJBGOPENIKSDBVLKXNVOSNMUIKJGHERWONTUIGHIUTNYUDRSINMVL~IDNJVIUBXICBVIYCXBVUIOYXBR
+    texto: furicotico imagem 1 KJSBDFJHSBDHJFBSJHKFBHJSDBFJSBJHKFGJIJSDFKJSHDKJSHDFKJSHGKJHBSKJGHSKJDHGKJSDHGKJSHFKJSDHKJSDHNVKHSFKVBHSG,JHSDJKGHKSJGHSKJBHGKSDBHGKJSDHGKSDBHGKBSKGJHSDKGJHSDKFJHSDKFHSKDJHFKDSHFKSDHFKSDBHFKBSDKFBSDKJFHKSDJHFKSDBFKLSDBKJSBKLJSDHFKJBSDKLFBKSDJFBSKDLHBKULDFNKJCVNVIUODFNVERBHVKLERNIUGHKBVIXDHLBIUGNKSLBNVPDSBPIOUGROGNSOPNFKSJBGKJBIBNSDIJGBERKJBGOPENIKSDBVLKXHBBDBGKDSBGBDGUEGUREBGUBEIBVVBEBREGUREGUGHUIREGE
+      IO TUIEUI RRUI YT UIYTUI YQU TYUYT UIQYTUIYTUI YUIT YIQ YTUIY TUIEYT IYE TUIYT
+      IUEQYTUI YUIT YIQU TYUIQY TUI YQUI TYQUI TYUIQYT IU EUIY TUIYUIT YQUIT YUI
+      UIHQ GUI GUI HUG  HGUHQQ HIEU HIU GHI3U HUI3 UI HUI3 HI3U HI3U H3 3 3 3 IU
+      3UU GUEGUI HUIG 3H GI3G UIGUIHUI3 H3U UI HU3H UI3 HUI3H UI3 UI3H UIH UI3HUI3
+      HUI3H UI3H UI3HUI3 HUI3HGUI 3HGIU 3UIGH U3H 3U GH3IUGH I3UHG34H GU34HU GH3UI
+      GHU3HG3 H3HI3 HG3IH GH U3 HG 3H4UH 3UI GHUI3H GUI34H GIU34 4GUI34HUI34H GUIH
+      GIU3 HUIG H3IUGHUIGHI3UHIUFBDIVBIBVEU BR BGUIVJ BB BI B B B B UUI UHU HU U
+      HU HUHU HU U UU HU HUHU HU HU HUU HU HUHU HU HUHU HU HU HUHU HU HU HUU HUHU
+      HU HUNVOSNMUIKJGHERWONTUIGHIUTNYUDRSINMVL~IDNJVIUBXICBVIYCXBVUIOYXBR
   - imagem: {fileID: 1578825485169042026, guid: a340db7c64d71394fbe4ec598025546d, type: 3}
     texto: FURLOO 2 JKSDBCYJKHSBVJHBDFSHVBVBJHSBVJHBSFJHKVBKXCJBVJFBJHVBDFJVBJDBKJCBVBDFJKLGBVRJBVJDBFHUVBUDVBDBOVUIYTGBOVIDBLKVBDOUIYVTBYUDNVGYT
       EVBNMYEURBMCUIYT45BNMCYUREHCUYEBFCUYCREVTBNFYTUREVFYMNUERGCUTYCFBMREYUIFBCM,UYIERBFMCNUYMEINFTYUERVBYUICNMFVCUIRCFNMVYETRUCNMVFUYETRNMUCIERVCGUIYTWVNMUYCTVBWERNUMCYFNVMWEUYVNERMUGNMVEWRTYUGNCVERYUIGVNMERYUIGCVNMYERTUNMCVGYUITERVNMCUTYEWNVMUTCERVNMUTYERNWCMVTYUIERNVMGYUEVNMGYTUEWVNMGUYIEVNMGUYENMVYUNMVCYUGNMVCEQYUCGVMUEYRVNMF
@@ -6096,6 +6188,7 @@ GameObject:
   - component: {fileID: 496842604}
   - component: {fileID: 496842603}
   - component: {fileID: 496842602}
+  - component: {fileID: 496842607}
   m_Layer: 5
   m_Name: NPC7_Docerrado
   m_TagString: Untagged
@@ -6218,6 +6311,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 496842600}
   m_CullTransparentMesh: 1
+--- !u!114 &496842607
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496842600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Se- senhor juro que meu nariz \xE9 apenas por conta da neve..."
+    - "Juro que n\xE3o fa\xE7o mais isso..."
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &497151769
 GameObject:
   m_ObjectHideFlags: 0
@@ -6457,6 +6568,7 @@ GameObject:
   - component: {fileID: 527718454}
   - component: {fileID: 527718453}
   - component: {fileID: 527718452}
+  - component: {fileID: 527718457}
   m_Layer: 5
   m_Name: NPC6_Anomalia
   m_TagString: Untagged
@@ -6579,6 +6691,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527718450}
   m_CullTransparentMesh: 1
+--- !u!114 &527718457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527718450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "E ai cara, v\xEA logo essas coisas por que eu preciso encontrar minha m\xE3e"
+  - baloes:
+    - Ta ai os documentos...
+    - "Argh! eu odeio essa burocracia agora... j\xE1 \xE9 minha terceira base diferente"
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &538096297
 GameObject:
   m_ObjectHideFlags: 0
@@ -10664,9 +10796,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -465}
-  m_SizeDelta: {x: 1596.2, y: 100}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -515}
+  m_SizeDelta: {x: 1596.2, y: 80}
+  m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &909806540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12788,6 +12920,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogueManager
   balao: {fileID: 909806538}
   textoDoBalao: {fileID: 426006029}
+  balaoCresceComTexto: 1
+  alturaMinima: 80
+  alturaExtra: 20
   letrasPorSegundo: 30
   pausaNaPontuacao: 0.15
   esperaEntreBaloes: 1.2
@@ -15033,6 +15168,7 @@ GameObject:
   - component: {fileID: 1565569974}
   - component: {fileID: 1565569973}
   - component: {fileID: 1565569972}
+  - component: {fileID: 1565569977}
   m_Layer: 5
   m_Name: NPC7
   m_TagString: Untagged
@@ -15155,6 +15291,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1565569970}
   m_CullTransparentMesh: 1
+--- !u!114 &1565569977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565569970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Se- senhor juro que meu nariz \xE9 apenas por conta da neve..."
+    - "Juro que n\xE3o fa\xE7o mais isso..."
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &1570893387
 GameObject:
   m_ObjectHideFlags: 0
@@ -15956,6 +16110,7 @@ GameObject:
   - component: {fileID: 1670944869}
   - component: {fileID: 1670944871}
   - component: {fileID: 1670944870}
+  - component: {fileID: 1670944872}
   m_Layer: 5
   m_Name: TextoPagina
   m_TagString: Untagged
@@ -16082,6 +16237,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1670944868}
   m_CullTransparentMesh: 1
+--- !u!114 &1670944872
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1670944868}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5a9018a825f63446b8d34777ee89e78, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::AjustaTextoRolavel
+  folgaNoFinal: 30
+  sensibilidadeDaRodinha: 30
 --- !u!1 &1687103683
 GameObject:
   m_ObjectHideFlags: 0
@@ -16609,6 +16778,7 @@ GameObject:
   - component: {fileID: 1732097811}
   - component: {fileID: 1732097810}
   - component: {fileID: 1732097809}
+  - component: {fileID: 1732097814}
   m_Layer: 5
   m_Name: NPC6
   m_TagString: Untagged
@@ -16731,6 +16901,26 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1732097807}
   m_CullTransparentMesh: 1
+--- !u!114 &1732097814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732097807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "E ai cara, v\xEA logo essas coisas por que eu preciso encontrar minha m\xE3e"
+  - baloes:
+    - Ta ai os documentos...
+    - "Argh! eu odeio essa burocracia agora... j\xE1 \xE9 minha terceira base diferente"
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &1757505824
 GameObject:
   m_ObjectHideFlags: 0
@@ -21159,6 +21349,7 @@ GameObject:
   - component: {fileID: 2100196810}
   - component: {fileID: 2100196809}
   - component: {fileID: 2100196808}
+  - component: {fileID: 2100196813}
   m_Layer: 5
   m_Name: NPC8_Anomalia
   m_TagString: Untagged
@@ -21281,6 +21472,32 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2100196806}
   m_CullTransparentMesh: 1
+--- !u!114 &2100196813
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100196806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Vamos, pode me deixar entrar, voc\xEA com certeza n\xE3o vai querer arrumar
+      problemas com "
+    - "Meus seguran\xE7as, ou vai?"
+    - 'Aqueles estupidos do governo me fizeram sair do meu bunker seguro '
+    - "Argh, que nojo de voc\xEAs"
+  - baloes:
+    - "Pela sua cara com certeza voc\xEA conhece meu marido n\xE3o \xE9?"
+    - "Vamos, me deixe entrar logo e n\xE3o trarei problemas para voc\xEA."
+    - "Estava segura no meu abrigo e gra\xE7as a seus amiguinhos policiais estou
+      aqui com voc\xEAs pobres agora."
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &2102916668
 GameObject:
   m_ObjectHideFlags: 0
@@ -21295,6 +21512,7 @@ GameObject:
   - component: {fileID: 2102916672}
   - component: {fileID: 2102916671}
   - component: {fileID: 2102916670}
+  - component: {fileID: 2102916675}
   m_Layer: 5
   m_Name: NPC8
   m_TagString: Untagged
@@ -21417,6 +21635,31 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2102916668}
   m_CullTransparentMesh: 1
+--- !u!114 &2102916675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102916668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Vamos, pode me deixar entrar, voc\xEA com certeza n\xE3o vai querer arrumar
+      problemas com "
+    - "meus seguran\xE7as, ou vai?"
+    - 'Aqueles estupidos do governo me fizeram sair do meu bunker seguro '
+    - "Argh, que nojo de voc\xEAs"
+  - baloes:
+    - "Pela sua cara com certeza voc\xEA conhece meu marido n\xE3o \xE9?"
+    - "Vamos, me deixe entrar logo e n\xE3o trarei problemas para voc\xEA."
+    - "Vamos, me deixe entrar logo e n\xE3o trarei problemas para voc\xEA."
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &2110406817
 GameObject:
   m_ObjectHideFlags: 0
