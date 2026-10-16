@@ -663,6 +663,7 @@ GameObject:
   - component: {fileID: 44052346}
   - component: {fileID: 44052345}
   - component: {fileID: 44052344}
+  - component: {fileID: 44052349}
   m_Layer: 5
   m_Name: NPC5_Docerrado
   m_TagString: Untagged
@@ -785,6 +786,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 44052342}
   m_CullTransparentMesh: 1
+--- !u!114 &44052349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44052342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Ol\xE1 amigos como est\xE1, tranquilo?"
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &47799449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1516,6 +1534,7 @@ GameObject:
   - component: {fileID: 140564889}
   - component: {fileID: 140564888}
   - component: {fileID: 140564892}
+  - component: {fileID: 140564893}
   m_Layer: 5
   m_Name: NPC3
   m_TagString: Untagged
@@ -1638,6 +1657,25 @@ MonoBehaviour:
   distanciaPasso: 10
   velocidadePasso: 8
   imagemRecusado: {fileID: -3690741615628675377, guid: 2faa04b8d9129a74ab00f6ab56f28570, type: 3}
+--- !u!114 &140564893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140564886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Os documentos est\xE3o aqui senhor..."
+  - baloes:
+    - Por favor... posso entrar?
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &140711880
 GameObject:
   m_ObjectHideFlags: 0
@@ -4941,6 +4979,7 @@ GameObject:
   - component: {fileID: 435235498}
   - component: {fileID: 435235497}
   - component: {fileID: 435235496}
+  - component: {fileID: 435235501}
   m_Layer: 5
   m_Name: NPC4_Docerrado
   m_TagString: Untagged
@@ -5063,6 +5102,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 435235494}
   m_CullTransparentMesh: 1
+--- !u!114 &435235501
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435235494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - Aqui senhor, pode verificar.
+  - baloes:
+    - "Ol\xE1 senhor, meus documentos est\xE3o todos aqui"
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &438926705
 GameObject:
   m_ObjectHideFlags: 0
@@ -5077,6 +5135,7 @@ GameObject:
   - component: {fileID: 438926709}
   - component: {fileID: 438926708}
   - component: {fileID: 438926707}
+  - component: {fileID: 438926712}
   m_Layer: 5
   m_Name: NPC4
   m_TagString: Untagged
@@ -5199,6 +5258,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438926705}
   m_CullTransparentMesh: 1
+--- !u!114 &438926712
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438926705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - Aqui senhor, pode verificar.
+  - baloes:
+    - "Ol\xE1 senhor, meus documentos est\xE3o todos aqui"
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &441307012
 GameObject:
   m_ObjectHideFlags: 0
@@ -12249,6 +12327,7 @@ GameObject:
   - component: {fileID: 1067992445}
   - component: {fileID: 1067992444}
   - component: {fileID: 1067992443}
+  - component: {fileID: 1067992448}
   m_Layer: 5
   m_Name: NPC5_Anomalia
   m_TagString: Untagged
@@ -12371,6 +12450,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1067992441}
   m_CullTransparentMesh: 1
+--- !u!114 &1067992448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067992441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Ol\xE1 amigos como est\xE1, tranquilo?"
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &1095060603
 GameObject:
   m_ObjectHideFlags: 0
@@ -13974,6 +14070,7 @@ GameObject:
   - component: {fileID: 1427730279}
   - component: {fileID: 1427730278}
   - component: {fileID: 1427730277}
+  - component: {fileID: 1427730282}
   m_Layer: 5
   m_Name: NPC3_Anomalia
   m_TagString: Untagged
@@ -14096,6 +14193,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427730275}
   m_CullTransparentMesh: 1
+--- !u!114 &1427730282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427730275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Os documentos est\xE3o aqui senhor..."
+  - baloes:
+    - Por favor... posso entrar?
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &1472900923
 GameObject:
   m_ObjectHideFlags: 0
@@ -15980,6 +16096,7 @@ GameObject:
   - component: {fileID: 1687103687}
   - component: {fileID: 1687103686}
   - component: {fileID: 1687103685}
+  - component: {fileID: 1687103690}
   m_Layer: 5
   m_Name: NPC4_Anomalia
   m_TagString: Untagged
@@ -16102,6 +16219,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1687103683}
   m_CullTransparentMesh: 1
+--- !u!114 &1687103690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687103683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - Aqui senhor, pode verificar.
+  - baloes:
+    - "Ol\xE1 senhor, meus documentos est\xE3o todos aqui"
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &1704043552
 GameObject:
   m_ObjectHideFlags: 0
@@ -17733,6 +17869,7 @@ GameObject:
   - component: {fileID: 1845522375}
   - component: {fileID: 1845522374}
   - component: {fileID: 1845522373}
+  - component: {fileID: 1845522378}
   m_Layer: 5
   m_Name: NPC5
   m_TagString: Untagged
@@ -17855,6 +17992,23 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1845522371}
   m_CullTransparentMesh: 1
+--- !u!114 &1845522378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845522371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Ol\xE1 amigos como est\xE1, tranquilo?"
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &1846793779
 GameObject:
   m_ObjectHideFlags: 0
@@ -19464,6 +19618,7 @@ GameObject:
   - component: {fileID: 2000316292}
   - component: {fileID: 2000316291}
   - component: {fileID: 2000316290}
+  - component: {fileID: 2000316295}
   m_Layer: 5
   m_Name: NPC3_Docerrado
   m_TagString: Untagged
@@ -19586,6 +19741,25 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2000316288}
   m_CullTransparentMesh: 1
+--- !u!114 &2000316295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000316288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4c8b63aa1972643438f31362e3e57ba6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
+  aberturas:
+  - baloes:
+    - "Os documentos est\xE3o aqui senhor..."
+  - baloes:
+    - Por favor... posso entrar?
+  modoDeEscolha: 0
+  conversa: []
 --- !u!1 &2014914735
 GameObject:
   m_ObjectHideFlags: 0
