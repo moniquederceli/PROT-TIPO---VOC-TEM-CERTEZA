@@ -28,6 +28,13 @@ public class LeitorDaParede : MonoBehaviour
     [Header("Scroll View do texto (opcional: faz o texto sempre começar do topo)")]
     public ScrollRect scrollTexto;
 
+    [Header("Escurecer a imagem enquanto a caixa de texto está aberta")]
+    [Tooltip("Cor da imagem normal (branco = sem mudança)")]
+    public Color corNormal = Color.white;
+
+    [Tooltip("Cor da imagem escurecida. Quanto mais perto de preto, mais escura. Ex: cinza escuro")]
+    public Color corEscurecida = new Color(0.35f, 0.35f, 0.35f, 1f);
+
     private ItemDeParede[] todosOsItens;
     private ItemDeParede itemAberto = null;
     private bool textoVisivel = false;
@@ -94,6 +101,7 @@ public class LeitorDaParede : MonoBehaviour
         {
             imagemGrande.sprite = item.imagemGrande;
             imagemGrande.preserveAspect = true;
+            imagemGrande.color = corNormal;
         }
 
         if (textoLeitura != null)
@@ -102,6 +110,15 @@ public class LeitorDaParede : MonoBehaviour
         // Esconde as setas de virar a cabeça enquanto a leitura está aberta
         if (navegacaoVisao != null)
             navegacaoVisao.DefinirDiarioAberto(true);
+
+        // Post-it especial: ao abrir, sorteia o evento da figura na janela
+        if (item.sorteiaEventoDaJanela)
+        {
+            Day2EventManager evento = FindAnyObjectByType<Day2EventManager>();
+
+            if (evento != null)
+                evento.SortearEvento();
+        }
     }
 
     // Ligue este método no ONCLICK do fundo escurecido (clicar fora fecha)
@@ -111,6 +128,9 @@ public class LeitorDaParede : MonoBehaviour
 
         itemAberto = null;
         textoVisivel = false;
+
+        if (imagemGrande != null)
+            imagemGrande.color = corNormal;
 
         if (navegacaoVisao != null)
             navegacaoVisao.DefinirDiarioAberto(false);
@@ -134,6 +154,10 @@ public class LeitorDaParede : MonoBehaviour
 
         if (caixaTexto != null)
             caixaTexto.SetActive(textoVisivel);
+
+        // Texto aberto: imagem escurece. Texto fechado: imagem volta ao normal
+        if (imagemGrande != null)
+            imagemGrande.color = textoVisivel ? corEscurecida : corNormal;
 
         if (textoVisivel && scrollTexto != null)
         {

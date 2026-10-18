@@ -1,0 +1,598 @@
+fileFormatVersion: 2
+guid: 7f2577fe0b6faa14d905be25b911cc1b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -7446001381407703914
+    second: "Configura\xE7\xF5es grifado_0"
+  - first:
+      213: 5531772601097463422
+    second: "Configura\xE7\xF5es grifado_1"
+  - first:
+      213: -1697310846836955813
+    second: "Configura\xE7\xF5es grifado_2"
+  - first:
+      213: 9054467469938904598
+    second: "Configura\xE7\xF5es grifado_3"
+  - first:
+      213: -9099705045529091534
+    second: "Configura\xE7\xF5es grifado_4"
+  - first:
+      213: -687693402589807535
+    second: "Configura\xE7\xF5es grifado_5"
+  - first:
+      213: 7526255951657215839
+    second: "Configura\xE7\xF5es grifado_6"
+  - first:
+      213: 4707802910716825052
+    second: "Configura\xE7\xF5es grifado_7"
+  - first:
+      213: -5895903071801658974
+    second: "Configura\xE7\xF5es grifado_8"
+  - first:
+      213: -330215964043729956
+    second: "Configura\xE7\xF5es grifado_9"
+  - first:
+      213: 5873285315062533380
+    second: "Configura\xE7\xF5es grifado_10"
+  - first:
+      213: -4828974126219621963
+    second: "Configura\xE7\xF5es grifado_11"
+  - first:
+      213: -5707861251594936852
+    second: "Configura\xE7\xF5es grifado_12"
+  - first:
+      213: 9143553383887361939
+    second: "Configura\xE7\xF5es grifado_13"
+  - first:
+      213: -5288448029789965453
+    second: "Configura\xE7\xF5es grifado_14"
+  - first:
+      213: 7018195507949757125
+    second: "Configura\xE7\xF5es grifado_15"
+  - first:
+      213: 5645116423491339925
+    second: "Configura\xE7\xF5es grifado_16"
+  - first:
+      213: -9131631104017696003
+    second: "Configura\xE7\xF5es grifado_17"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_0"
+      rect:
+        serializedVersion: 2
+        x: 3
+        y: 16
+        width: 38
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69c3028b13d7aa890800000000000000
+      internalID: -7446001381407703914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_1"
+      rect:
+        serializedVersion: 2
+        x: 140
+        y: 17
+        width: 37
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7627a24fddc4cc40800000000000000
+      internalID: 5531772601097463422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_2"
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 57
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b55addc07c0f178e0800000000000000
+      internalID: -1697310846836955813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_3"
+      rect:
+        serializedVersion: 2
+        x: 458
+        y: 56
+        width: 28
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 61ec908f03ee7ad70800000000000000
+      internalID: 9054467469938904598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_4"
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 16
+        width: 39
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 232a860397a57b180800000000000000
+      internalID: -9099705045529091534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_5"
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 17
+        width: 43
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c31407e72d476f0800000000000000
+      internalID: -687693402589807535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_6"
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 17
+        width: 36
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f57a23789e1a27860800000000000000
+      internalID: 7526255951657215839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_7"
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2
+        width: 41
+        height: 52
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cdd83d5edc9755140800000000000000
+      internalID: 4707802910716825052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_8"
+      rect:
+        serializedVersion: 2
+        x: 271
+        y: 16
+        width: 42
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2a1b02fd46b8d2ea0800000000000000
+      internalID: -5895903071801658974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_9"
+      rect:
+        serializedVersion: 2
+        x: 319
+        y: 17
+        width: 38
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd3a20c8456da6bf0800000000000000
+      internalID: -330215964043729956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_10"
+      rect:
+        serializedVersion: 2
+        x: 363
+        y: 16
+        width: 41
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 40d02d440e9128150800000000000000
+      internalID: 5873285315062533380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_11"
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 37
+        height: 54
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b980210e990cfcb0800000000000000
+      internalID: -4828974126219621963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_12"
+      rect:
+        serializedVersion: 2
+        x: 453
+        y: 16
+        width: 38
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ced9777ee6a99c0b0800000000000000
+      internalID: -5707861251594936852
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_13"
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 16
+        width: 37
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3975d67ab5d64ee70800000000000000
+      internalID: 9143553383887361939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_14"
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 16
+        width: 35
+        height: 38
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 373314b4988ab96b0800000000000000
+      internalID: -5288448029789965453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_15"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 228
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5c2669761a3a56160800000000000000
+      internalID: 7018195507949757125
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_16"
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 3
+        width: 150
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 596cce16a7b775e40800000000000000
+      internalID: 5645116423491339925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Configura\xE7\xF5es grifado_17"
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 3
+        width: 146
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dfafd1174ede54180800000000000000
+      internalID: -9131631104017696003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Configura\xE7\xF5es grifado_0": -7446001381407703914
+      "Configura\xE7\xF5es grifado_1": 5531772601097463422
+      "Configura\xE7\xF5es grifado_10": 5873285315062533380
+      "Configura\xE7\xF5es grifado_11": -4828974126219621963
+      "Configura\xE7\xF5es grifado_12": -5707861251594936852
+      "Configura\xE7\xF5es grifado_13": 9143553383887361939
+      "Configura\xE7\xF5es grifado_14": -5288448029789965453
+      "Configura\xE7\xF5es grifado_15": 7018195507949757125
+      "Configura\xE7\xF5es grifado_16": 5645116423491339925
+      "Configura\xE7\xF5es grifado_17": -9131631104017696003
+      "Configura\xE7\xF5es grifado_2": -1697310846836955813
+      "Configura\xE7\xF5es grifado_3": 9054467469938904598
+      "Configura\xE7\xF5es grifado_4": -9099705045529091534
+      "Configura\xE7\xF5es grifado_5": -687693402589807535
+      "Configura\xE7\xF5es grifado_6": 7526255951657215839
+      "Configura\xE7\xF5es grifado_7": 4707802910716825052
+      "Configura\xE7\xF5es grifado_8": -5895903071801658974
+      "Configura\xE7\xF5es grifado_9": -330215964043729956
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

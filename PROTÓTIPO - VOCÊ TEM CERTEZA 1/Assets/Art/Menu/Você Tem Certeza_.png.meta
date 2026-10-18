@@ -1,0 +1,572 @@
+fileFormatVersion: 2
+guid: f281e1eafccc7e84394d938216f49853
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 3878550886749803292
+    second: "Voc\xEA Tem Certeza__0"
+  - first:
+      213: 1827169845811581322
+    second: "Voc\xEA Tem Certeza__1"
+  - first:
+      213: 4467534683379486648
+    second: "Voc\xEA Tem Certeza__2"
+  - first:
+      213: 899773377726831273
+    second: "Voc\xEA Tem Certeza__3"
+  - first:
+      213: 5197393269506875123
+    second: "Voc\xEA Tem Certeza__4"
+  - first:
+      213: -5230155222902847909
+    second: "Voc\xEA Tem Certeza__5"
+  - first:
+      213: 2688103875853454219
+    second: "Voc\xEA Tem Certeza__6"
+  - first:
+      213: 2711616600291865853
+    second: "Voc\xEA Tem Certeza__7"
+  - first:
+      213: 56079165708174143
+    second: "Voc\xEA Tem Certeza__8"
+  - first:
+      213: -824539299767746678
+    second: "Voc\xEA Tem Certeza__9"
+  - first:
+      213: 2866240903509557330
+    second: "Voc\xEA Tem Certeza__10"
+  - first:
+      213: -1956633684333634492
+    second: "Voc\xEA Tem Certeza__11"
+  - first:
+      213: -5497492260277990264
+    second: "Voc\xEA Tem Certeza__12"
+  - first:
+      213: 6447688439998619826
+    second: "Voc\xEA Tem Certeza__13"
+  - first:
+      213: -2432437981906937444
+    second: "Voc\xEA Tem Certeza__14"
+  - first:
+      213: 1773661354853332530
+    second: "Voc\xEA Tem Certeza__15"
+  - first:
+      213: -7920722291468233677
+    second: "Voc\xEA Tem Certeza__16"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 156
+        width: 90
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c139ff76b7163d530800000000000000
+      internalID: 3878550886749803292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__1"
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 238
+        width: 45
+        height: 23
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8197e34b496b5910800000000000000
+      internalID: 1827169845811581322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__2"
+      rect:
+        serializedVersion: 2
+        x: 331
+        y: 156
+        width: 72
+        height: 94
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8bf4290ef1fdffd30800000000000000
+      internalID: 4467534683379486648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__3"
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 155
+        width: 66
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9aad2cdae13ac7c00800000000000000
+      internalID: 899773377726831273
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__4"
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 155
+        width: 59
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fe96f244a9d02840800000000000000
+      internalID: 5197393269506875123
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__5"
+      rect:
+        serializedVersion: 2
+        x: 232
+        y: 155
+        width: 61
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b56c8ba0981ca67b0800000000000000
+      internalID: -5230155222902847909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__6"
+      rect:
+        serializedVersion: 2
+        x: 406
+        y: 155
+        width: 62
+        height: 74
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b8b889f9b301e4520800000000000000
+      internalID: 2688103875853454219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__7"
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 156
+        width: 119
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df4f2736ee891a520800000000000000
+      internalID: 2711616600291865853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__8"
+      rect:
+        serializedVersion: 2
+        x: 6
+        y: 0
+        width: 72
+        height: 95
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f33065f34bb37c000800000000000000
+      internalID: 56079165708174143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__9"
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 0
+        width: 61
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a8f7efd10e5ae84f0800000000000000
+      internalID: -824539299767746678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__10"
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 53
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 250c16e6aeee6c720800000000000000
+      internalID: 2866240903509557330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__11"
+      rect:
+        serializedVersion: 2
+        x: 216
+        y: 0
+        width: 47
+        height: 89
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44cdab1e704a8d4e0800000000000000
+      internalID: -1956633684333634492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__12"
+      rect:
+        serializedVersion: 2
+        x: 269
+        y: 0
+        width: 61
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 88ccbae8aebf4b3b0800000000000000
+      internalID: -5497492260277990264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__13"
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 0
+        width: 54
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2b0a280997aca7950800000000000000
+      internalID: 6447688439998619826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__14"
+      rect:
+        serializedVersion: 2
+        x: 408
+        y: 0
+        width: 65
+        height: 73
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c99d4460b8e3e3ed0800000000000000
+      internalID: -2432437981906937444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__15"
+      rect:
+        serializedVersion: 2
+        x: 479
+        y: 29
+        width: 46
+        height: 66
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 236fedfda9f4d9810800000000000000
+      internalID: 1773661354853332530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Voc\xEA Tem Certeza__16"
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 0
+        width: 17
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 334948caa01f31290800000000000000
+      internalID: -7920722291468233677
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Voc\xEA Tem Certeza__0": 3878550886749803292
+      "Voc\xEA Tem Certeza__1": 1827169845811581322
+      "Voc\xEA Tem Certeza__10": 2866240903509557330
+      "Voc\xEA Tem Certeza__11": -1956633684333634492
+      "Voc\xEA Tem Certeza__12": -5497492260277990264
+      "Voc\xEA Tem Certeza__13": 6447688439998619826
+      "Voc\xEA Tem Certeza__14": -2432437981906937444
+      "Voc\xEA Tem Certeza__15": 1773661354853332530
+      "Voc\xEA Tem Certeza__16": -7920722291468233677
+      "Voc\xEA Tem Certeza__2": 4467534683379486648
+      "Voc\xEA Tem Certeza__3": 899773377726831273
+      "Voc\xEA Tem Certeza__4": 5197393269506875123
+      "Voc\xEA Tem Certeza__5": -5230155222902847909
+      "Voc\xEA Tem Certeza__6": 2688103875853454219
+      "Voc\xEA Tem Certeza__7": 2711616600291865853
+      "Voc\xEA Tem Certeza__8": 56079165708174143
+      "Voc\xEA Tem Certeza__9": -824539299767746678
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

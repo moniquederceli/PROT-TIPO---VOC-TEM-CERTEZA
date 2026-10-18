@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 1b1deb7c66fc37249be326c1c360ab06
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1168022698492631249
+    second: "Modo hist\xF3ria grifado_0"
+  - first:
+      213: -1580975988491150946
+    second: "Modo hist\xF3ria grifado_1"
+  - first:
+      213: 4570590753096234904
+    second: "Modo hist\xF3ria grifado_2"
+  - first:
+      213: -8530687008683614715
+    second: "Modo hist\xF3ria grifado_3"
+  - first:
+      213: -3710520044980767073
+    second: "Modo hist\xF3ria grifado_4"
+  - first:
+      213: -6731015294348233350
+    second: "Modo hist\xF3ria grifado_5"
+  - first:
+      213: -100957755342039029
+    second: "Modo hist\xF3ria grifado_6"
+  - first:
+      213: -6910758373737800719
+    second: "Modo hist\xF3ria grifado_7"
+  - first:
+      213: -8815817271361990314
+    second: "Modo hist\xF3ria grifado_8"
+  - first:
+      213: -2842342133423013396
+    second: "Modo hist\xF3ria grifado_9"
+  - first:
+      213: 5406451775108500427
+    second: "Modo hist\xF3ria grifado_10"
+  - first:
+      213: 2354555723657594126
+    second: "Modo hist\xF3ria grifado_11"
+  - first:
+      213: -7527631006461814869
+    second: "Modo hist\xF3ria grifado_12"
+  - first:
+      213: 1565321208214952678
+    second: "Modo hist\xF3ria grifado_13"
+  - first:
+      213: 1756064714896754805
+    second: "Modo hist\xF3ria grifado_14"
+  - first:
+      213: 358186355483189167
+    second: "Modo hist\xF3ria grifado_15"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f27e0ce4b895acfe0800000000000000
+      internalID: -1168022698492631249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_1"
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 16
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e99109ff6be3f0ae0800000000000000
+      internalID: -1580975988491150946
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_2"
+      rect:
+        serializedVersion: 2
+        x: 220
+        y: 17
+        width: 42
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8977cfbe2100e6f30800000000000000
+      internalID: 4570590753096234904
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_3"
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 56
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 50e9f55fc59ec9980800000000000000
+      internalID: -8530687008683614715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_4"
+      rect:
+        serializedVersion: 2
+        x: 353
+        y: 16
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9674f2ada5918cc0800000000000000
+      internalID: -3710520044980767073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_5"
+      rect:
+        serializedVersion: 2
+        x: 407
+        y: 54
+        width: 20
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a75f6a29041a692a0800000000000000
+      internalID: -6731015294348233350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_6"
+      rect:
+        serializedVersion: 2
+        x: 499
+        y: 56
+        width: 9
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b085487d473599ef0800000000000000
+      internalID: -100957755342039029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_7"
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 16
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fb5dc4bfdd0810a0800000000000000
+      internalID: -6910758373737800719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_8"
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 16
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 65117bf56ece7a580800000000000000
+      internalID: -8815817271361990314
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_9"
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 17
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ce1023793e8fd88d0800000000000000
+      internalID: -2842342133423013396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_10"
+      rect:
+        serializedVersion: 2
+        x: 311
+        y: 16
+        width: 34
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bcb4f9eae33970b40800000000000000
+      internalID: 5406451775108500427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_11"
+      rect:
+        serializedVersion: 2
+        x: 397
+        y: 16
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e054978a4ff0da020800000000000000
+      internalID: 2354555723657594126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_12"
+      rect:
+        serializedVersion: 2
+        x: 442
+        y: 17
+        width: 37
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ba790a39b7b788790800000000000000
+      internalID: -7527631006461814869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_13"
+      rect:
+        serializedVersion: 2
+        x: 487
+        y: 17
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6ea990f685329b510800000000000000
+      internalID: 1565321208214952678
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_14"
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 16
+        width: 39
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 578c40edd8bce5810800000000000000
+      internalID: 1756064714896754805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "Modo hist\xF3ria grifado_15"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 570
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: faf97f1b79888f400800000000000000
+      internalID: 358186355483189167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "Modo hist\xF3ria grifado_0": -1168022698492631249
+      "Modo hist\xF3ria grifado_1": -1580975988491150946
+      "Modo hist\xF3ria grifado_10": 5406451775108500427
+      "Modo hist\xF3ria grifado_11": 2354555723657594126
+      "Modo hist\xF3ria grifado_12": -7527631006461814869
+      "Modo hist\xF3ria grifado_13": 1565321208214952678
+      "Modo hist\xF3ria grifado_14": 1756064714896754805
+      "Modo hist\xF3ria grifado_15": 358186355483189167
+      "Modo hist\xF3ria grifado_2": 4570590753096234904
+      "Modo hist\xF3ria grifado_3": -8530687008683614715
+      "Modo hist\xF3ria grifado_4": -3710520044980767073
+      "Modo hist\xF3ria grifado_5": -6731015294348233350
+      "Modo hist\xF3ria grifado_6": -100957755342039029
+      "Modo hist\xF3ria grifado_7": -6910758373737800719
+      "Modo hist\xF3ria grifado_8": -8815817271361990314
+      "Modo hist\xF3ria grifado_9": -2842342133423013396
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -34,6 +34,13 @@ public class DiarioInterativo : MonoBehaviour
     public GameObject caixaTexto;
     public TMP_Text textoPagina;
 
+    [Header("Escurecer a imagem da página enquanto a caixa de texto está aberta")]
+    [Tooltip("Cor da imagem normal (branco = sem mudança)")]
+    public Color corNormal = Color.white;
+
+    [Tooltip("Cor da imagem escurecida. Quanto mais perto de preto, mais escura")]
+    public Color corEscurecida = new Color(0.35f, 0.35f, 0.35f, 1f);
+
     [Header("Setas de navegação entre páginas")]
     public GameObject setaEsquerda;
     public GameObject setaDireita;
@@ -57,6 +64,8 @@ public class DiarioInterativo : MonoBehaviour
         paginaAtual = 0;
         modoLeitura = false;
 
+        if (imagemPagina != null) imagemPagina.color = corNormal;
+
         if (overlayEscuro != null) overlayEscuro.SetActive(true);
         if (painelDiario != null) painelDiario.SetActive(true);
         if (caixaTexto != null) caixaTexto.SetActive(false);
@@ -77,6 +86,8 @@ public class DiarioInterativo : MonoBehaviour
 
         modoLeitura = false;
 
+        if (imagemPagina != null) imagemPagina.color = corNormal;
+
         // Libera as setas de virar a cabeça de novo
         if (navegacaoVisao != null)
             navegacaoVisao.DefinirDiarioAberto(false);
@@ -89,6 +100,10 @@ public class DiarioInterativo : MonoBehaviour
 
         if (caixaTexto != null)
             caixaTexto.SetActive(modoLeitura);
+
+        // Texto aberto: imagem escurece. Texto fechado: imagem volta ao normal
+        if (imagemPagina != null)
+            imagemPagina.color = modoLeitura ? corEscurecida : corNormal;
     }
 
     // Ligue este método no ONCLICK da seta direita
@@ -134,6 +149,9 @@ public class DiarioInterativo : MonoBehaviour
         modoLeitura = false;
         if (caixaTexto != null)
             caixaTexto.SetActive(false);
+
+        if (imagemPagina != null)
+            imagemPagina.color = corNormal;
 
         AtualizarSetas();
     }

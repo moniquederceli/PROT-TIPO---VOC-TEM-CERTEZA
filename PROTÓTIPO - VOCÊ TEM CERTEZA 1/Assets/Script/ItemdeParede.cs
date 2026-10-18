@@ -28,6 +28,10 @@ public class ItemDeParede : MonoBehaviour, IPointerClickHandler
     [Tooltip("O item some DEPOIS deste dia. Use 0 para o item NUNCA sumir. Exemplo: 1 = aparece no Dia 1 e some no Dia 2.")]
     public int sumirDepoisDoDia = 0;
 
+    [Header("Evento da janela (marque SÓ no post-it novo do Dia 2)")]
+    [Tooltip("Ao abrir este item, o jogo sorteia (50%) se aparece uma figura misteriosa na janela da esquerda")]
+    public bool sorteiaEventoDaJanela = false;
+
     // O LeitorDaParede pergunta isto para decidir se o item deve estar visível
     public bool EstaVisivelNoDia(int dia)
     {

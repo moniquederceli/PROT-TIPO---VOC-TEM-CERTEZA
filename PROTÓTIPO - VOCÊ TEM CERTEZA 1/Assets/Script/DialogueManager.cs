@@ -105,6 +105,10 @@ public class DialogueManager : MonoBehaviour
     {
         Parar();
 
+        // Modo (in)Finito: os NPCs ficam calados
+        if (!GameModeController.FalasAtivas)
+            return;
+
         if (fala == null || fala.baloes == null || fala.baloes.Length == 0)
             return;
 

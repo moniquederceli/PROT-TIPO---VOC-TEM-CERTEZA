@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 09167bc0526d55c4c88069d1d2cf969b
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2510638476241486359
+    second: Modo infinito grifado_0
+  - first:
+      213: 8207017328664815133
+    second: Modo infinito grifado_1
+  - first:
+      213: -659141470451695076
+    second: Modo infinito grifado_2
+  - first:
+      213: 5000431794830394369
+    second: Modo infinito grifado_3
+  - first:
+      213: -2692437735422414117
+    second: Modo infinito grifado_4
+  - first:
+      213: -1738398959591391477
+    second: Modo infinito grifado_5
+  - first:
+      213: -4564427138649031147
+    second: Modo infinito grifado_6
+  - first:
+      213: -3374041743431267574
+    second: Modo infinito grifado_7
+  - first:
+      213: -5291566502000719824
+    second: Modo infinito grifado_8
+  - first:
+      213: 7833265874446469251
+    second: Modo infinito grifado_9
+  - first:
+      213: 8034768789966182874
+    second: Modo infinito grifado_10
+  - first:
+      213: 4197403329482075974
+    second: Modo infinito grifado_11
+  - first:
+      213: -1243427968309903884
+    second: Modo infinito grifado_12
+  - first:
+      213: -442289153020364840
+    second: Modo infinito grifado_13
+  - first:
+      213: -8513091861176285647
+    second: Modo infinito grifado_14
+  - first:
+      213: 2729643073306624013
+    second: Modo infinito grifado_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Modo infinito grifado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 17
+        width: 44
+        height: 45
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9edb2389b9b682dd0800000000000000
+      internalID: -2510638476241486359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_1
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 16
+        width: 40
+        height: 50
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d16aa8c17ce25e170800000000000000
+      internalID: 8207017328664815133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_2
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 56
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c128ffc23524ad6f0800000000000000
+      internalID: -659141470451695076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_3
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 17
+        width: 36
+        height: 49
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1044f66593a156540800000000000000
+      internalID: 5000431794830394369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_4
+      rect:
+        serializedVersion: 2
+        x: 367
+        y: 56
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd23a40152a82aad0800000000000000
+      internalID: -2692437735422414117
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_5
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 56
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b0f75af4b57ffd7e0800000000000000
+      internalID: -1738398959591391477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_6
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 16
+        width: 38
+        height: 47
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 51efba563b5e7a0c0800000000000000
+      internalID: -4564427138649031147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_7
+      rect:
+        serializedVersion: 2
+        x: 47
+        y: 16
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a0b807929eefc21d0800000000000000
+      internalID: -3374041743431267574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_8
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 16
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 03804e66d449096b0800000000000000
+      internalID: -5291566502000719824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_9
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 17
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 38842957fc955bc60800000000000000
+      internalID: 7833265874446469251
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_10
+      rect:
+        serializedVersion: 2
+        x: 264
+        y: 17
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad9545af4ab318f60800000000000000
+      internalID: 8034768789966182874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_11
+      rect:
+        serializedVersion: 2
+        x: 355
+        y: 17
+        width: 36
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 64f22d0e61c204a30800000000000000
+      internalID: 4197403329482075974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_12
+      rect:
+        serializedVersion: 2
+        x: 395
+        y: 17
+        width: 42
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4fd3a1dc9d47ebee0800000000000000
+      internalID: -1243427968309903884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_13
+      rect:
+        serializedVersion: 2
+        x: 443
+        y: 17
+        width: 35
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d77632db5cacd9f0800000000000000
+      internalID: -442289153020364840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_14
+      rect:
+        serializedVersion: 2
+        x: 529
+        y: 16
+        width: 37
+        height: 37
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 136815a7e0c6bd980800000000000000
+      internalID: -8513091861176285647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Modo infinito grifado_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3
+        width: 570
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d000c04b9e3a1e520800000000000000
+      internalID: 2729643073306624013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Modo infinito grifado_0: -2510638476241486359
+      Modo infinito grifado_1: 8207017328664815133
+      Modo infinito grifado_10: 8034768789966182874
+      Modo infinito grifado_11: 4197403329482075974
+      Modo infinito grifado_12: -1243427968309903884
+      Modo infinito grifado_13: -442289153020364840
+      Modo infinito grifado_14: -8513091861176285647
+      Modo infinito grifado_15: 2729643073306624013
+      Modo infinito grifado_2: -659141470451695076
+      Modo infinito grifado_3: 5000431794830394369
+      Modo infinito grifado_4: -2692437735422414117
+      Modo infinito grifado_5: -1738398959591391477
+      Modo infinito grifado_6: -4564427138649031147
+      Modo infinito grifado_7: -3374041743431267574
+      Modo infinito grifado_8: -5291566502000719824
+      Modo infinito grifado_9: 7833265874446469251
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,546 @@
+fileFormatVersion: 2
+guid: 6107d17fcc7d7834e8d5c15115c0597c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -8159525922107017529
+    second: Janela sem bordas grifado_0
+  - first:
+      213: 3858927093163933387
+    second: Janela sem bordas grifado_1
+  - first:
+      213: -3518235160496653567
+    second: Janela sem bordas grifado_2
+  - first:
+      213: -4967933315192506587
+    second: Janela sem bordas grifado_3
+  - first:
+      213: 1047980378471513084
+    second: Janela sem bordas grifado_4
+  - first:
+      213: 7588231136209642147
+    second: Janela sem bordas grifado_5
+  - first:
+      213: -1310328169818375250
+    second: Janela sem bordas grifado_6
+  - first:
+      213: 3329677466524090534
+    second: Janela sem bordas grifado_7
+  - first:
+      213: 5465319973588434605
+    second: Janela sem bordas grifado_8
+  - first:
+      213: -2815873233149564455
+    second: Janela sem bordas grifado_9
+  - first:
+      213: -2622292737658229027
+    second: Janela sem bordas grifado_10
+  - first:
+      213: -7823439578506051499
+    second: Janela sem bordas grifado_11
+  - first:
+      213: 8615147829489018318
+    second: Janela sem bordas grifado_12
+  - first:
+      213: -7954659792819314506
+    second: Janela sem bordas grifado_13
+  - first:
+      213: -3847465369182315464
+    second: Janela sem bordas grifado_14
+  - first:
+      213: -8739936948658426986
+    second: Janela sem bordas grifado_15
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 9
+        width: 29
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7c63835a76a83ce80800000000000000
+      internalID: -8159525922107017529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_1
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 9
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bceba2aeeb9ad8530800000000000000
+      internalID: 3858927093163933387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_2
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 10
+        width: 30
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 10bbe4e03c7bc2fc0800000000000000
+      internalID: -3518235160496653567
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_3
+      rect:
+        serializedVersion: 2
+        x: 92
+        y: 9
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5273f1898fa5e0bb0800000000000000
+      internalID: -4967933315192506587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_4
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 10
+        width: 25
+        height: 34
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cfbbf5e0a9c2b8e00800000000000000
+      internalID: 1047980378471513084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_5
+      rect:
+        serializedVersion: 2
+        x: 152
+        y: 9
+        width: 28
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3a2a553a300de4960800000000000000
+      internalID: 7588231136209642147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_6
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 9
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eabb9c2d877c0dde0800000000000000
+      internalID: -1310328169818375250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_7
+      rect:
+        serializedVersion: 2
+        x: 242
+        y: 9
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a08ac0b304653e20800000000000000
+      internalID: 3329677466524090534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_8
+      rect:
+        serializedVersion: 2
+        x: 268
+        y: 10
+        width: 34
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: daef5993f87b8db40800000000000000
+      internalID: 5465319973588434605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_9
+      rect:
+        serializedVersion: 2
+        x: 329
+        y: 9
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d9e69da6320ce8d0800000000000000
+      internalID: -2815873233149564455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_10
+      rect:
+        serializedVersion: 2
+        x: 362
+        y: 9
+        width: 26
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dde6bca06aebb9bd0800000000000000
+      internalID: -2622292737658229027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_11
+      rect:
+        serializedVersion: 2
+        x: 392
+        y: 10
+        width: 26
+        height: 26
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5504a69572f8d6390800000000000000
+      internalID: -7823439578506051499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_12
+      rect:
+        serializedVersion: 2
+        x: 421
+        y: 9
+        width: 29
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec5ab205e472f8770800000000000000
+      internalID: 8615147829489018318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_13
+      rect:
+        serializedVersion: 2
+        x: 452
+        y: 9
+        width: 27
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6b02ce3601f5b9190800000000000000
+      internalID: -7954659792819314506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_14
+      rect:
+        serializedVersion: 2
+        x: 483
+        y: 9
+        width: 24
+        height: 27
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 83c5548a1ae0b9ac0800000000000000
+      internalID: -3847465369182315464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Janela sem bordas grifado_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 511
+        height: 6
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 69b27efb6a185b680800000000000000
+      internalID: -8739936948658426986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Janela sem bordas grifado_0: -8159525922107017529
+      Janela sem bordas grifado_1: 3858927093163933387
+      Janela sem bordas grifado_10: -2622292737658229027
+      Janela sem bordas grifado_11: -7823439578506051499
+      Janela sem bordas grifado_12: 8615147829489018318
+      Janela sem bordas grifado_13: -7954659792819314506
+      Janela sem bordas grifado_14: -3847465369182315464
+      Janela sem bordas grifado_15: -8739936948658426986
+      Janela sem bordas grifado_2: -3518235160496653567
+      Janela sem bordas grifado_3: -4967933315192506587
+      Janela sem bordas grifado_4: 1047980378471513084
+      Janela sem bordas grifado_5: 7588231136209642147
+      Janela sem bordas grifado_6: -1310328169818375250
+      Janela sem bordas grifado_7: 3329677466524090534
+      Janela sem bordas grifado_8: 5465319973588434605
+      Janela sem bordas grifado_9: -2815873233149564455
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
