@@ -14085,9 +14085,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Day2EventManager
   gameManager: {fileID: 1623669880}
+  navegacaoVisao: {fileID: 0}
   figuraMisteriosa: {fileID: 1730168841}
   chanceDeAparecer: 0.5
   diaDoEvento: 2
+  segundosOlhandoAteSumir: 0.1
+  objetoQueTreme: {fileID: 0}
+  forcaDoTremor: 30
+  duracaoDoTremor: 0.5
   modoDeTeste: 1
   mostrarMensagens: 1
 --- !u!224 &1044725011

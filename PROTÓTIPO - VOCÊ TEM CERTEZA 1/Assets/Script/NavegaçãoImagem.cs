@@ -42,6 +42,9 @@ public class NavegacaoVisao : MonoBehaviour
     private bool relatorioAberto = false;
     private bool transicaoDiaAtiva = false;
 
+    // Usado pelos eventos (ex: tremida de susto) para impedir virar a cabeça por alguns instantes
+    private bool navegacaoBloqueada = false;
+
     // Guardamos os elementos do centro e o quanto já os deslocamos
     private List<RectTransform> rectsCentrais = new List<RectTransform>();
     private List<CanvasGroup> gruposCentrais = new List<CanvasGroup>();
@@ -113,7 +116,7 @@ public class NavegacaoVisao : MonoBehaviour
     // Ligue este método no ONCLICK da seta esquerda
     public void SetaEsquerdaClicada()
     {
-        if (emTransicao)
+        if (emTransicao || navegacaoBloqueada)
             return;
 
         if (visaoAtual == Visao.Direita)
@@ -125,7 +128,7 @@ public class NavegacaoVisao : MonoBehaviour
     // Ligue este método no ONCLICK da seta direita
     public void SetaDireitaClicada()
     {
-        if (emTransicao)
+        if (emTransicao || navegacaoBloqueada)
             return;
 
         if (visaoAtual == Visao.Esquerda)
@@ -137,6 +140,18 @@ public class NavegacaoVisao : MonoBehaviour
     // ==========================================
     // CHAMADOS POR OUTROS SCRIPTS (Diário e GameManager)
     // ==========================================
+
+    // TRUE quando o jogador está PARADO olhando a janela (visão da esquerda), já sem animação de virar
+    public bool OlhandoParaEsquerda
+    {
+        get { return visaoAtual == Visao.Esquerda && !emTransicao; }
+    }
+
+    // Trava / destrava o clique nas setas de virar a cabeça
+    public void BloquearNavegacao(bool bloquear)
+    {
+        navegacaoBloqueada = bloquear;
+    }
 
     // O GameManager avisa quando o jogo realmente começou (true) ou voltou ao menu (false).
     // Antes disso (menu e animação da porta de entrada) as setas ficam escondidas.

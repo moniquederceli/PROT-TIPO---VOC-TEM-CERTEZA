@@ -55,6 +55,11 @@ public class GameManager : MonoBehaviour
     private int anomalicoSalvos = 0;
     private int anomalicoMortos = 0;
 
+    // Quantos foram RECUSADOS no botão vermelho (usado na nota do Relatório Final)
+    private int normalRecusados = 0;
+    private int docErradoRecusados = 0;
+    private int anomalicoRecusados = 0;
+
     [Header("Tela de Final de Dia")]
     public GameObject finalDeDia;
     public Button botaoConcluirDia;
@@ -161,6 +166,9 @@ public class GameManager : MonoBehaviour
         docErradoMortos = 0;
         anomalicoSalvos = 0;
         anomalicoMortos = 0;
+        normalRecusados = 0;
+        docErradoRecusados = 0;
+        anomalicoRecusados = 0;
     }
 
     // ==========================================
@@ -322,16 +330,19 @@ public class GameManager : MonoBehaviour
             {
                 case TipoVariacao.Normal:
                     // NPC Normal recusado: não acontece nada
+                    normalRecusados++;
                     break;
 
                 case TipoVariacao.DocumentoErrado:
                     // Documento Errado recusado: +10 de bônus
                     bonus += 10f;
+                    docErradoRecusados++;
                     break;
 
                 case TipoVariacao.AparenciaAnomala:
                     // Anomálico recusado: +10 de bônus
                     bonus += 10f;
+                    anomalicoRecusados++;
                     break;
             }
 
@@ -582,14 +593,29 @@ public class GameManager : MonoBehaviour
         {
             telaResumoFinal.SetActive(true);
 
-            ResumoFinalJogo resumo = telaResumoFinal.GetComponent<ResumoFinalJogo>();
-            if (resumo != null)
+            // Relatório novo, com nota de S+ até E-
+            EndGameReportManager relatorio = telaResumoFinal.GetComponent<EndGameReportManager>();
+
+            if (relatorio != null)
             {
-                resumo.ConfigurarResumo(
-                    normalSalvos, normalMortos,
-                    docErradoSalvos, docErradoMortos,
-                    anomalicoSalvos, anomalicoMortos
+                relatorio.MostrarRelatorio(
+                    normalSalvos, normalRecusados, normalMortos,
+                    docErradoSalvos, docErradoRecusados, docErradoMortos,
+                    anomalicoSalvos, anomalicoRecusados, anomalicoMortos
                 );
+            }
+            else
+            {
+                // Se ainda não colocou o EndGameReportManager, usa o resumo antigo
+                ResumoFinalJogo resumo = telaResumoFinal.GetComponent<ResumoFinalJogo>();
+                if (resumo != null)
+                {
+                    resumo.ConfigurarResumo(
+                        normalSalvos, normalMortos,
+                        docErradoSalvos, docErradoMortos,
+                        anomalicoSalvos, anomalicoMortos
+                    );
+                }
             }
         }
     }
