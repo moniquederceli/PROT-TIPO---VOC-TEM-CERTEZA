@@ -89,6 +89,13 @@ public class EndGameReportManager : MonoBehaviour
     [Header("NOTAS (da melhor para a pior)")]
     public List<FaixaDeNota> faixas = CriarFaixasPadrao();
 
+    [Header("PENALIDADE SILENCIOSA DA FICHA (o jogador não vê isso na tela)")]
+    [Tooltip("Ligado: ficha preenchida errada rebaixa a nota")]
+    public bool aplicarPenalidadeDaFicha = true;
+
+    [Tooltip("Quantos pontos de PORCENTAGEM são descontados se o jogador errar TODAS as linhas de TODAS as fichas. 20 = uma nota inteira, ex: A (60%) vira B (40%). Errar só metade desconta metade")]
+    public float penalidadeMaximaDaFicha = 20f;
+
     [Header("EFEITO")]
     [Tooltip("Ligado: a nota aparece 'crescendo' na tela")]
     public bool animarNota = true;
@@ -138,7 +145,8 @@ public class EndGameReportManager : MonoBehaviour
     public void MostrarRelatorio(
         int normalEntrou, int normalNegado, int normalMorto,
         int docErradoEntrou, int docErradoNegado, int docErradoMorto,
-        int anomaliaEntrou, int anomaliaNegada, int anomaliaMorta)
+        int anomaliaEntrou, int anomaliaNegada, int anomaliaMorta,
+        int linhasConferidas, int linhasErradas)
     {
         // 1) Pontuação conseguida
         int total =
@@ -164,12 +172,27 @@ public class EndGameReportManager : MonoBehaviour
 
         // 3) Porcentagem e nota
         float porcentagem = (maximo > 0) ? (total * 100f / maximo) : 0f;
+        float porcentagemAntesDaFicha = porcentagem;
+
+        // Penalidade silenciosa: quanto mais linhas erradas nas fichas, maior o desconto
+        float desconto = 0f;
+
+        if (aplicarPenalidadeDaFicha && linhasConferidas > 0)
+        {
+            float fracaoErrada = (float)linhasErradas / linhasConferidas;
+            desconto = penalidadeMaximaDaFicha * fracaoErrada;
+            porcentagem -= desconto;
+        }
+
         FaixaDeNota faixa = EscolherFaixa(porcentagem);
 
         if (mostrarMensagens)
         {
             Debug.Log("EndGameReportManager: pontuação " + total + " de " + maximo
-                + " (" + Mathf.RoundToInt(porcentagem) + "%) -> nota "
+                + " (" + Mathf.RoundToInt(porcentagemAntesDaFicha) + "%)"
+                + " | fichas: " + linhasErradas + " linha(s) errada(s) de " + linhasConferidas
+                + " -> desconto de " + desconto.ToString("0.0") + " pontos de porcentagem"
+                + " | porcentagem final " + Mathf.RoundToInt(porcentagem) + "% -> nota "
                 + (faixa != null ? faixa.nota : "?"));
         }
 

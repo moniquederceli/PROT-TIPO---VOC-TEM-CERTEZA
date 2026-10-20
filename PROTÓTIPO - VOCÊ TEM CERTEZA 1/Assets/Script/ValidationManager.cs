@@ -53,6 +53,22 @@ public class ValidationManager : MonoBehaviour
         return false;
     }
 
+    // Usado pelo ChecklistManager (gabarito): diz o que o jogador marcou na linha.
+    // Devolve: 0 = nada marcado | 1 = só A | 2 = só B | 3 = A e B juntas
+    public int LerMarcacao(int linha)
+    {
+        if (checklist == null)
+            return 0;
+
+        bool a = TemMarcaLigada(BuscarPorNome(prefixoDaLinha + linha + sufixoA));
+        bool b = TemMarcaLigada(BuscarPorNome(prefixoDaLinha + linha + sufixoB));
+
+        if (a && b) return 3;
+        if (a) return 1;
+        if (b) return 2;
+        return 0;
+    }
+
     private bool TodasAsLinhasMarcadas()
     {
         if (checklist == null)

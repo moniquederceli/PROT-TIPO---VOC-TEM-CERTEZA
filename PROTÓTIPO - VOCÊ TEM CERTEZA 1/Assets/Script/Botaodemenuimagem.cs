@@ -27,6 +27,10 @@ public class BotaoDeMenuImagem : MonoBehaviour, IPointerEnterHandler, IPointerEx
     [Tooltip("Arraste aqui a imagem da setinha. Ela só aparece com o mouse em cima do botão")]
     public GameObject setinha;
 
+    [Header("Texto explicativo que aparece com o mouse em cima (OPCIONAL)")]
+    [Tooltip("Arraste aqui o texto (TextMeshPro) de descrição do modo. Ele só aparece com o mouse em cima do botão, igual à setinha")]
+    public GameObject textoDeDescricao;
+
     [Header("Bloqueado?")]
     [Tooltip("Marque nos botões que ainda não funcionam (Modo Timer e Modo Difícil). Ao clicar, o botão treme")]
     public bool bloqueado = false;
@@ -87,6 +91,9 @@ public class BotaoDeMenuImagem : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
         if (setinha != null)
             setinha.SetActive(true);
+
+        if (textoDeDescricao != null)
+            textoDeDescricao.SetActive(true);
     }
 
     public void OnPointerExit(PointerEventData eventData)
@@ -126,6 +133,9 @@ public class BotaoDeMenuImagem : MonoBehaviour, IPointerEnterHandler, IPointerEx
 
         if (setinha != null)
             setinha.SetActive(false);
+
+        if (textoDeDescricao != null)
+            textoDeDescricao.SetActive(false);
     }
 
     // Balança o botão pros lados, diminuindo até parar

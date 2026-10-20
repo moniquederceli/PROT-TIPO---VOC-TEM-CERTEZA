@@ -60,6 +60,10 @@ public class GameManager : MonoBehaviour
     private int docErradoRecusados = 0;
     private int anomalicoRecusados = 0;
 
+    // Gabarito do checklist (silencioso): quantas linhas foram conferidas e quantas estavam erradas
+    private int linhasConferidas = 0;
+    private int linhasPreenchidasErradas = 0;
+
     [Header("Tela de Final de Dia")]
     public GameObject finalDeDia;
     public Button botaoConcluirDia;
@@ -83,6 +87,9 @@ public class GameManager : MonoBehaviour
 
     [Header("Trava dos botões Aprovar/Recusar (OPCIONAL): arraste o objeto ValidationManager")]
     public ValidationManager validationManager;
+
+    [Header("Gabarito do Checklist (OPCIONAL): arraste o objeto GabaritoManager. Vale como bônus/penalidade silenciosa na nota final")]
+    public GabaritoManager gabaritoManager;
 
     [Header("Limpeza de caixinhas marcadas (OPCIONAL)")]
     [Tooltip("Arraste aqui o Checklist: ele volta em branco a cada NPC novo")]
@@ -113,6 +120,9 @@ public class GameManager : MonoBehaviour
     {
         if (navegacaoVisao == null)
             navegacaoVisao = FindAnyObjectByType<NavegacaoVisao>();
+
+        if (gabaritoManager == null)
+            gabaritoManager = FindAnyObjectByType<GabaritoManager>();
 
         SetButtons(false);
 
@@ -169,6 +179,8 @@ public class GameManager : MonoBehaviour
         normalRecusados = 0;
         docErradoRecusados = 0;
         anomalicoRecusados = 0;
+        linhasConferidas = 0;
+        linhasPreenchidasErradas = 0;
     }
 
     // ==========================================
@@ -282,6 +294,7 @@ public class GameManager : MonoBehaviour
                     // NPC Normal aceito: +20 de bônus (vida salva)
                     vidasSalvas += 20f;
                     normalSalvos++;
+                    ConferirFicha(filaNPCs[currentNPC], TipoVariacao.Normal);
                     break;
 
                 case TipoVariacao.DocumentoErrado:
@@ -337,12 +350,14 @@ public class GameManager : MonoBehaviour
                     // Documento Errado recusado: +10 de bônus
                     bonus += 10f;
                     docErradoRecusados++;
+                    ConferirFicha(filaNPCs[currentNPC], TipoVariacao.DocumentoErrado);
                     break;
 
                 case TipoVariacao.AparenciaAnomala:
                     // Anomálico recusado: +10 de bônus
                     bonus += 10f;
                     anomalicoRecusados++;
+                    ConferirFicha(filaNPCs[currentNPC], TipoVariacao.AparenciaAnomala);
                     break;
             }
 
@@ -449,6 +464,21 @@ public class GameManager : MonoBehaviour
         HideDocumentIdentity();
         FecharTodosDocumentosGrandes();
         SetButtons(false);
+    }
+
+    // Compara a ficha (Checklist) preenchida com o gabarito do NPC.
+    // Só é chamado quando o jogador tomou a decisão CORRETA nos botões
+    // (Normal aceito, Documento Errado recusado, Anomalia recusada).
+    // O resultado é guardado em silêncio e só entra na nota final.
+    private void ConferirFicha(GameObject npc, TipoVariacao variacao)
+    {
+        if (gabaritoManager == null)
+            return;
+
+        int erradas = gabaritoManager.ContarLinhasErradas(npc, (int)variacao);
+
+        linhasConferidas += gabaritoManager.QuantidadeDeLinhas;
+        linhasPreenchidasErradas += erradas;
     }
 
     private void RegistrarMortePorPorta(TipoVariacao variacao)
@@ -601,7 +631,8 @@ public class GameManager : MonoBehaviour
                 relatorio.MostrarRelatorio(
                     normalSalvos, normalRecusados, normalMortos,
                     docErradoSalvos, docErradoRecusados, docErradoMortos,
-                    anomalicoSalvos, anomalicoRecusados, anomalicoMortos
+                    anomalicoSalvos, anomalicoRecusados, anomalicoMortos,
+                    linhasConferidas, linhasPreenchidasErradas
                 );
             }
             else
