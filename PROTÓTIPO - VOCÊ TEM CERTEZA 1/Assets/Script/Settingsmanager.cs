@@ -68,7 +68,10 @@ public class SettingsManager : MonoBehaviour
     public Slider sliderMusicas;
     public TMP_Text textoMusicas;
 
-    private bool telaCheia = true;
+    // Estas duas são "compartilhadas": se houver dois painéis de configuração
+    // (o do Menu e o da Pausa), os dois mostram sempre a mesma coisa.
+    private static bool telaCheia = true;
+    private static bool telaInicializada = false;
     private float escalaDaImagem = 1f;
 
     private void Awake()
@@ -79,15 +82,20 @@ public class SettingsManager : MonoBehaviour
         if (imagemModoDeTela != null && imagemModoDeTela.sprite != null && imagemModoDeTela.sprite.rect.width > 0f)
             escalaDaImagem = imagemModoDeTela.rectTransform.rect.width / imagemModoDeTela.sprite.rect.width;
 
-        // Modo de tela: se o jogador já escolheu antes, aplica a escolha dele
-        if (PlayerPrefs.HasKey("telaCheia"))
+        // Modo de tela: só o primeiro painel que acordar lê e aplica a escolha salva
+        if (!telaInicializada)
         {
-            telaCheia = PlayerPrefs.GetInt("telaCheia") == 1;
-            AplicarTela();
-        }
-        else
-        {
-            telaCheia = Screen.fullScreen;
+            telaInicializada = true;
+
+            if (PlayerPrefs.HasKey("telaCheia"))
+            {
+                telaCheia = PlayerPrefs.GetInt("telaCheia") == 1;
+                AplicarTela();
+            }
+            else
+            {
+                telaCheia = Screen.fullScreen;
+            }
         }
 
         AtualizarImagemDaTela();
@@ -110,6 +118,19 @@ public class SettingsManager : MonoBehaviour
         }
 
         AtualizarTextosDeVolume();
+    }
+
+    // Toda vez que este painel aparece, mostra o estado atual (útil para o painel da Pausa)
+    private void OnEnable()
+    {
+        if (sliderEfeitos != null)
+            sliderEfeitos.SetValueWithoutNotify(volumeEfeitos);
+
+        if (sliderMusicas != null)
+            sliderMusicas.SetValueWithoutNotify(volumeMusicas);
+
+        AtualizarTextosDeVolume();
+        AtualizarImagemDaTela();
     }
 
     private void OnDestroy()

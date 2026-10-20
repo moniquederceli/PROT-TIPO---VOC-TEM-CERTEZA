@@ -739,6 +739,7 @@ GameObject:
   - component: {fileID: 44052345}
   - component: {fileID: 44052344}
   - component: {fileID: 44052349}
+  - component: {fileID: 44052350}
   m_Layer: 5
   m_Name: NPC5_Docerrado
   m_TagString: Untagged
@@ -878,6 +879,24 @@ MonoBehaviour:
     - "Ol\xE1 amigos como est\xE1, tranquilo?"
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &44052350
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 44052342}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 1
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &47799449
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,7 +1066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &72575870
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1524,6 +1543,7 @@ GameObject:
   - component: {fileID: 113497969}
   - component: {fileID: 113497968}
   - component: {fileID: 113497973}
+  - component: {fileID: 113497974}
   m_Layer: 5
   m_Name: NPC2_Docerrado
   m_TagString: Untagged
@@ -1669,6 +1689,24 @@ MonoBehaviour:
     - Eram bons tempos.... Enfim.... posso entrar?
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &113497974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 113497966}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 1
+  linha4: 0
+  linha5: 0
 --- !u!1 &118923290
 GameObject:
   m_ObjectHideFlags: 0
@@ -1914,6 +1952,7 @@ GameObject:
   - component: {fileID: 140564888}
   - component: {fileID: 140564892}
   - component: {fileID: 140564893}
+  - component: {fileID: 140564894}
   m_Layer: 5
   m_Name: NPC3
   m_TagString: Untagged
@@ -2055,6 +2094,24 @@ MonoBehaviour:
     - Por favor... posso entrar?
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &140564894
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 140564886}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &140711880
 GameObject:
   m_ObjectHideFlags: 0
@@ -2541,6 +2598,7 @@ GameObject:
   - component: {fileID: 233796715}
   - component: {fileID: 233796714}
   - component: {fileID: 233796719}
+  - component: {fileID: 233796720}
   m_Layer: 5
   m_Name: NPC1_Docerrado
   m_TagString: Untagged
@@ -2685,6 +2743,24 @@ MonoBehaviour:
     - Minha esposa me espera dentro... posso entrar?
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &233796720
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 233796712}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 1
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &235373158
 GameObject:
   m_ObjectHideFlags: 0
@@ -3669,7 +3745,7 @@ GameObject:
   - component: {fileID: 273136335}
   - component: {fileID: 273136334}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: "TextoDescri\xE7\xE3o"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3691,8 +3767,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 425, y: -13}
-  m_SizeDelta: {x: 200, y: 50}
+  m_AnchoredPosition: {x: 480.44946, y: 0.0000019073486}
+  m_SizeDelta: {x: 335, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &273136334
 MonoBehaviour:
@@ -3714,7 +3790,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: New Text
+  m_text: "A experi\xEAncia completa com narrativas, di\xE1logos e progress\xE3o
+    de dias."
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -3741,15 +3818,15 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
+  m_fontSize: 20
+  m_fontSizeBase: 20
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 512
   m_textAlignment: 65535
   m_characterSpacing: 0
   m_characterHorizontalScale: 1
@@ -4676,6 +4753,7 @@ GameObject:
   - component: {fileID: 328458396}
   - component: {fileID: 328458395}
   - component: {fileID: 328458400}
+  - component: {fileID: 328458401}
   m_Layer: 5
   m_Name: NPC7_Anomalia
   m_TagString: Untagged
@@ -4816,6 +4894,24 @@ MonoBehaviour:
     - "Juro que n\xE3o fa\xE7o mais isso..."
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &328458401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 328458393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 1
+  linha5: 1
 --- !u!1 &334488685
 GameObject:
   m_ObjectHideFlags: 0
@@ -4831,6 +4927,7 @@ GameObject:
   - component: {fileID: 334488688}
   - component: {fileID: 334488687}
   - component: {fileID: 334488692}
+  - component: {fileID: 334488693}
   m_Layer: 5
   m_Name: NPC6_Docerrado
   m_TagString: Untagged
@@ -4973,6 +5070,24 @@ MonoBehaviour:
     - "Argh! eu odeio essa burocracia agora... j\xE1 \xE9 minha terceira base diferente"
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &334488693
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334488685}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 1
+  linha4: 0
+  linha5: 0
 --- !u!1 &336002381
 GameObject:
   m_ObjectHideFlags: 0
@@ -5267,6 +5382,7 @@ GameObject:
   - component: {fileID: 345674469}
   - component: {fileID: 345674475}
   - component: {fileID: 345674474}
+  - component: {fileID: 345674476}
   m_Layer: 5
   m_Name: NPC8_Docerrado
   m_TagString: Untagged
@@ -5430,6 +5546,24 @@ MonoBehaviour:
   aberturas: []
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &345674476
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 345674467}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 1
+  linha4: 0
+  linha5: 0
 --- !u!1 &371421367
 GameObject:
   m_ObjectHideFlags: 0
@@ -6186,6 +6320,7 @@ GameObject:
   - component: {fileID: 435235497}
   - component: {fileID: 435235496}
   - component: {fileID: 435235501}
+  - component: {fileID: 435235502}
   m_Layer: 5
   m_Name: NPC4_Docerrado
   m_TagString: Untagged
@@ -6327,6 +6462,24 @@ MonoBehaviour:
     - "Ol\xE1 senhor, meus documentos est\xE3o todos aqui"
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &435235502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 435235494}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 1
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &438926705
 GameObject:
   m_ObjectHideFlags: 0
@@ -6342,6 +6495,7 @@ GameObject:
   - component: {fileID: 438926708}
   - component: {fileID: 438926707}
   - component: {fileID: 438926712}
+  - component: {fileID: 438926713}
   m_Layer: 5
   m_Name: NPC4
   m_TagString: Untagged
@@ -6483,6 +6637,24 @@ MonoBehaviour:
     - "Ol\xE1 senhor, meus documentos est\xE3o todos aqui"
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &438926713
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 438926705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &441307012
 GameObject:
   m_ObjectHideFlags: 0
@@ -6513,7 +6685,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 477031281}
   m_Father: {fileID: 1968457852}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -6541,8 +6714,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -6763,6 +6936,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 470552371}
+  m_CullTransparentMesh: 1
+--- !u!1 &477031280
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 477031281}
+  - component: {fileID: 477031283}
+  - component: {fileID: 477031282}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &477031281
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477031280}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 441307013}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 14.448082, y: -21.558685}
+  m_SizeDelta: {x: 1009.69, y: 713.88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &477031282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477031280}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 7c16538e5f3cffb4f82d026d4124ed56, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &477031283
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 477031280}
   m_CullTransparentMesh: 1
 --- !u!1 &479533024
 GameObject:
@@ -7315,6 +7563,7 @@ GameObject:
   - component: {fileID: 496842603}
   - component: {fileID: 496842602}
   - component: {fileID: 496842607}
+  - component: {fileID: 496842608}
   m_Layer: 5
   m_Name: NPC7_Docerrado
   m_TagString: Untagged
@@ -7455,6 +7704,24 @@ MonoBehaviour:
     - "Juro que n\xE3o fa\xE7o mais isso..."
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &496842608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 496842600}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 1
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &497151769
 GameObject:
   m_ObjectHideFlags: 0
@@ -7585,7 +7852,7 @@ MonoBehaviour:
   imagemNormal: {fileID: 21300000, guid: 4d8bb0b32609c9846a44000cda829b2b, type: 3}
   imagemGrifada: {fileID: 21300000, guid: 1b1deb7c66fc37249be326c1c360ab06, type: 3}
   setinha: {fileID: 2004563568}
-  textoDeDescricao: {fileID: 0}
+  textoDeDescricao: {fileID: 273136332}
   bloqueado: 0
   forcaDoTremor: 12
   duracaoDoTremor: 0.3
@@ -7808,6 +8075,7 @@ GameObject:
   - component: {fileID: 527718453}
   - component: {fileID: 527718452}
   - component: {fileID: 527718457}
+  - component: {fileID: 527718458}
   m_Layer: 5
   m_Name: NPC6_Anomalia
   m_TagString: Untagged
@@ -7950,6 +8218,24 @@ MonoBehaviour:
     - "Argh! eu odeio essa burocracia agora... j\xE1 \xE9 minha terceira base diferente"
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &527718458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527718450}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 1
 --- !u!1 &538096297
 GameObject:
   m_ObjectHideFlags: 0
@@ -8183,7 +8469,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &551784628
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10022,6 +10308,7 @@ GameObject:
   - component: {fileID: 728075937}
   - component: {fileID: 728075940}
   - component: {fileID: 728075941}
+  - component: {fileID: 728075942}
   m_Layer: 5
   m_Name: NPC1
   m_TagString: Untagged
@@ -10166,6 +10453,24 @@ MonoBehaviour:
     - Minha esposa me espera dentro... posso entrar?
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &728075942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 728075934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &736358010
 GameObject:
   m_ObjectHideFlags: 0
@@ -10551,6 +10856,7 @@ RectTransform:
   - {fileID: 3543124}
   - {fileID: 47799450}
   - {fileID: 1367094311}
+  - {fileID: 866032541}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -11699,6 +12005,77 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 862069396}
   m_CullTransparentMesh: 1
+--- !u!1 &866032540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 866032541}
+  - component: {fileID: 866032542}
+  m_Layer: 5
+  m_Name: SistemaChecklist
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &866032541
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866032540}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 752682737}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &866032542
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 866032540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4024c28ea45578949bafdab523d1e32d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoManager
+  validationManager: {fileID: 0}
+  linhas:
+  - nome: LM
+    opcaoQuandoValido: 0
+    erradaNoDocumentoErrado: 0
+    erradaNaAnomalia: 0
+  - nome: RM
+    opcaoQuandoValido: 0
+    erradaNoDocumentoErrado: 0
+    erradaNaAnomalia: 0
+  - nome: RG
+    opcaoQuandoValido: 0
+    erradaNoDocumentoErrado: 0
+    erradaNaAnomalia: 0
+  - nome: SAUDE
+    opcaoQuandoValido: 0
+    erradaNoDocumentoErrado: 0
+    erradaNaAnomalia: 0
+  - nome: "APAR\xCANCIA"
+    opcaoQuandoValido: 0
+    erradaNoDocumentoErrado: 0
+    erradaNaAnomalia: 0
+  mostrarMensagens: 1
 --- !u!1 &890501438
 GameObject:
   m_ObjectHideFlags: 0
@@ -12895,6 +13272,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 992351052}
   m_CullTransparentMesh: 1
+--- !u!1 &995456049
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 995456050}
+  - component: {fileID: 995456052}
+  - component: {fileID: 995456051}
+  m_Layer: 5
+  m_Name: 'Image '
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &995456050
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995456049}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1835029192}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -218.3822, y: -30.259033}
+  m_SizeDelta: {x: 1009.69, y: 713.88}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &995456051
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995456049}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 4a45117a769454b42b2efcda6600744e, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &995456052
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 995456049}
+  m_CullTransparentMesh: 1
 --- !u!1 &998307270
 GameObject:
   m_ObjectHideFlags: 0
@@ -12991,7 +13443,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1009625206
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13326,7 +13778,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1023186090
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14055,6 +14507,7 @@ GameObject:
   - component: {fileID: 1067992444}
   - component: {fileID: 1067992443}
   - component: {fileID: 1067992448}
+  - component: {fileID: 1067992449}
   m_Layer: 5
   m_Name: NPC5_Anomalia
   m_TagString: Untagged
@@ -14194,6 +14647,24 @@ MonoBehaviour:
     - "Ol\xE1 amigos como est\xE1, tranquilo?"
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &1067992449
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1067992441}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 1
+  linha5: 1
 --- !u!1 &1081315784
 GameObject:
   m_ObjectHideFlags: 0
@@ -14990,10 +15461,10 @@ RectTransform:
   - {fileID: 1010110432}
   - {fileID: 4283824}
   - {fileID: 1580592359}
-  - {fileID: 1878145662}
   - {fileID: 1023186096}
   - {fileID: 1009625207}
   - {fileID: 551784629}
+  - {fileID: 1878145662}
   m_Father: {fileID: 752682737}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -16646,6 +17117,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 371421368}
+  - {fileID: 2112146883}
   m_Father: {fileID: 593778437}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -16668,7 +17140,7 @@ MonoBehaviour:
   imagemNormal: {fileID: 21300000, guid: 59135fc6e1c60a546bd9e8fdf27061b7, type: 3}
   imagemGrifada: {fileID: 21300000, guid: eab799ef10382374ca5d9674c11d7bb2, type: 3}
   setinha: {fileID: 371421367}
-  textoDeDescricao: {fileID: 0}
+  textoDeDescricao: {fileID: 2112146882}
   bloqueado: 0
   forcaDoTremor: 12
   duracaoDoTremor: 0.3
@@ -16741,6 +17213,7 @@ GameObject:
   - component: {fileID: 1427730278}
   - component: {fileID: 1427730277}
   - component: {fileID: 1427730282}
+  - component: {fileID: 1427730283}
   m_Layer: 5
   m_Name: NPC3_Anomalia
   m_TagString: Untagged
@@ -16882,6 +17355,24 @@ MonoBehaviour:
     - Por favor... posso entrar?
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &1427730283
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427730275}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 1
+  linha5: 1
 --- !u!1 &1472900923
 GameObject:
   m_ObjectHideFlags: 0
@@ -17515,7 +18006,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1533772436
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17603,6 +18094,7 @@ GameObject:
   - component: {fileID: 1565569973}
   - component: {fileID: 1565569972}
   - component: {fileID: 1565569977}
+  - component: {fileID: 1565569978}
   m_Layer: 5
   m_Name: NPC7
   m_TagString: Untagged
@@ -17743,6 +18235,24 @@ MonoBehaviour:
     - "Juro que n\xE3o fa\xE7o mais isso..."
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &1565569978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1565569970}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &1570893387
 GameObject:
   m_ObjectHideFlags: 0
@@ -18757,6 +19267,7 @@ GameObject:
   - component: {fileID: 1687103686}
   - component: {fileID: 1687103685}
   - component: {fileID: 1687103690}
+  - component: {fileID: 1687103691}
   m_Layer: 5
   m_Name: NPC4_Anomalia
   m_TagString: Untagged
@@ -18898,6 +19409,24 @@ MonoBehaviour:
     - "Ol\xE1 senhor, meus documentos est\xE3o todos aqui"
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &1687103691
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687103683}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 1
 --- !u!1 &1704043552
 GameObject:
   m_ObjectHideFlags: 0
@@ -19557,6 +20086,7 @@ GameObject:
   - component: {fileID: 1732097810}
   - component: {fileID: 1732097809}
   - component: {fileID: 1732097814}
+  - component: {fileID: 1732097815}
   m_Layer: 5
   m_Name: NPC6
   m_TagString: Untagged
@@ -19699,6 +20229,24 @@ MonoBehaviour:
     - "Argh! eu odeio essa burocracia agora... j\xE1 \xE9 minha terceira base diferente"
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &1732097815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732097807}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &1757505824
 GameObject:
   m_ObjectHideFlags: 0
@@ -19864,6 +20412,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1757505824}
   m_CullTransparentMesh: 1
+--- !u!1 &1769518025
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1769518026}
+  - component: {fileID: 1769518028}
+  - component: {fileID: 1769518027}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1769518026
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769518025}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1968457852}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 522.75604, y: -464.45935}
+  m_SizeDelta: {x: 1112.42, y: 786.52}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1769518027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769518025}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 2a9ad3f5d46bed0449a52ab4581c345d, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1769518028
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1769518025}
+  m_CullTransparentMesh: 1
 --- !u!1 &1793380327
 GameObject:
   m_ObjectHideFlags: 0
@@ -19973,6 +20596,7 @@ GameObject:
   - component: {fileID: 1794015383}
   - component: {fileID: 1794015382}
   - component: {fileID: 1794015387}
+  - component: {fileID: 1794015388}
   m_Layer: 5
   m_Name: NPC2_Anomalia
   m_TagString: Untagged
@@ -20118,6 +20742,24 @@ MonoBehaviour:
     - Eram bons tempos.... Enfim.... posso entrar?
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &1794015388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794015380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 1
+  linha5: 1
 --- !u!1 &1802276593
 GameObject:
   m_ObjectHideFlags: 0
@@ -20578,7 +21220,8 @@ RectTransform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 995456050}
   m_Father: {fileID: 1968457852}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
@@ -20876,6 +21519,7 @@ GameObject:
   - component: {fileID: 1845522374}
   - component: {fileID: 1845522373}
   - component: {fileID: 1845522378}
+  - component: {fileID: 1845522379}
   m_Layer: 5
   m_Name: NPC5
   m_TagString: Untagged
@@ -21015,6 +21659,24 @@ MonoBehaviour:
     - "Ol\xE1 amigos como est\xE1, tranquilo?"
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &1845522379
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845522371}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &1846793779
 GameObject:
   m_ObjectHideFlags: 0
@@ -22249,6 +22911,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1769518026}
   - {fileID: 441307013}
   - {fileID: 1835029192}
   - {fileID: 728075936}
@@ -22849,6 +23512,7 @@ GameObject:
   - component: {fileID: 2000316291}
   - component: {fileID: 2000316290}
   - component: {fileID: 2000316295}
+  - component: {fileID: 2000316296}
   m_Layer: 5
   m_Name: NPC3_Docerrado
   m_TagString: Untagged
@@ -22990,6 +23654,24 @@ MonoBehaviour:
     - Por favor... posso entrar?
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &2000316296
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2000316288}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 1
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &2004563568
 GameObject:
   m_ObjectHideFlags: 0
@@ -23316,6 +23998,7 @@ GameObject:
   - component: {fileID: 2052727672}
   - component: {fileID: 2052727671}
   - component: {fileID: 2052727676}
+  - component: {fileID: 2052727677}
   m_Layer: 5
   m_Name: NPC1_Anomalia
   m_TagString: Untagged
@@ -23460,6 +24143,24 @@ MonoBehaviour:
     - Minha esposa me espera dentro... posso entrar?
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &2052727677
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2052727669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 1
 --- !u!1 &2053200583
 GameObject:
   m_ObjectHideFlags: 0
@@ -23724,6 +24425,7 @@ GameObject:
   - component: {fileID: 2082801395}
   - component: {fileID: 2082801399}
   - component: {fileID: 2082801400}
+  - component: {fileID: 2082801401}
   m_Layer: 5
   m_Name: NPC2
   m_TagString: Untagged
@@ -23869,6 +24571,24 @@ MonoBehaviour:
     - Eram bons tempos.... Enfim.... posso entrar?
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &2082801401
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2082801393}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &2088481131
 GameObject:
   m_ObjectHideFlags: 0
@@ -24566,6 +25286,7 @@ GameObject:
   - component: {fileID: 2100196809}
   - component: {fileID: 2100196808}
   - component: {fileID: 2100196813}
+  - component: {fileID: 2100196814}
   m_Layer: 5
   m_Name: NPC8_Anomalia
   m_TagString: Untagged
@@ -24714,6 +25435,24 @@ MonoBehaviour:
       aqui com voc\xEAs pobres agora."
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &2100196814
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2100196806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 1
 --- !u!1 &2102916668
 GameObject:
   m_ObjectHideFlags: 0
@@ -24729,6 +25468,7 @@ GameObject:
   - component: {fileID: 2102916671}
   - component: {fileID: 2102916670}
   - component: {fileID: 2102916675}
+  - component: {fileID: 2102916676}
   m_Layer: 5
   m_Name: NPC8
   m_TagString: Untagged
@@ -24876,6 +25616,24 @@ MonoBehaviour:
     - "Vamos, me deixe entrar logo e n\xE3o trarei problemas para voc\xEA."
   modoDeEscolha: 0
   conversa: []
+--- !u!114 &2102916676
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2102916668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a63b074792a015a4896f07cbdd5da2d7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::GabaritoNPC
+  usarGabaritoPersonalizado: 1
+  linha1: 0
+  linha2: 0
+  linha3: 0
+  linha4: 0
+  linha5: 0
 --- !u!1 &2109546580
 GameObject:
   m_ObjectHideFlags: 0
@@ -25013,6 +25771,144 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!1 &2112146882
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2112146883}
+  - component: {fileID: 2112146885}
+  - component: {fileID: 2112146884}
+  m_Layer: 5
+  m_Name: "TextoDescri\xE7\xE3o "
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2112146883
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112146882}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1418917167}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 480.70267, y: 3}
+  m_SizeDelta: {x: 335, y: 50}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2112146884
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112146882}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Unity.TextMeshPro::TMPro.TextMeshProUGUI
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: "A experi\xEAncia r\xE1pida, sem fala\xE7\xE3o, para aqueles que querem
+    a jogabilidade"
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 8
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_characterHorizontalScale: 1
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_TextWrappingMode: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 0
+  m_ActiveFontFeatures: 6e72656b
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_EmojiFallbackSupport: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2112146885
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2112146882}
+  m_CullTransparentMesh: 1
 --- !u!1 &2112587709
 GameObject:
   m_ObjectHideFlags: 0

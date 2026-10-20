@@ -38,6 +38,12 @@ public class PortaAnimacao : MonoBehaviour
 
     private bool animando = false;
 
+    // Outros scripts (ex: EmergencyButtonSafety) consultam isto para saber se a porta já está em ação
+    public bool Animando
+    {
+        get { return animando; }
+    }
+
     private void Start()
     {
         // =================================

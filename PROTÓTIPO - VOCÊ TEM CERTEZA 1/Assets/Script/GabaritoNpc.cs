@@ -17,8 +17,8 @@ public class GabaritoNPC : MonoBehaviour
     }
 
     [Header("Usar o gabarito DESTE NPC (em vez do automático)?")]
-    [Tooltip("Desmarcado: o jogo usa o gabarito automático. Marcado: vale o que você escolher abaixo")]
-    public bool usarGabaritoPersonalizado = false;
+    [Tooltip("Marcado: vale o que você escolher abaixo (o normal). Desmarcado: este NPC usa o gabarito automático do GabaritoManager")]
+    public bool usarGabaritoPersonalizado = true;
 
     [Header("Resposta CORRETA de cada linha do Checklist (A ou B)")]
     [Tooltip("Linha 1 = objetos 'Check1 A' / 'Check1 B'")]

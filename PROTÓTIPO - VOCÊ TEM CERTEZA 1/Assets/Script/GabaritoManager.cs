@@ -82,6 +82,9 @@ public class GabaritoManager : MonoBehaviour
         GabaritoNPC personalizado = (npc != null) ? npc.GetComponent<GabaritoNPC>() : null;
         bool usarPersonalizado = (personalizado != null && personalizado.usarGabaritoPersonalizado);
 
+        if (mostrarMensagens && !usarPersonalizado)
+            Debug.LogWarning("GabaritoManager: " + (npc != null ? npc.name : "NPC") + " NÃO tem o script GabaritoNPC (ou ele está desmarcado). Usando o gabarito automático.");
+
         int erradas = 0;
         System.Text.StringBuilder relatorio = new System.Text.StringBuilder();
 
