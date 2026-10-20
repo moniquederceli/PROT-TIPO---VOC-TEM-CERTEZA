@@ -86,6 +86,9 @@ public class BotaoDeMenuImagem : MonoBehaviour, IPointerEnterHandler, IPointerEx
         if (bloqueado || GameModeController.Iniciando)
             return;
 
+        // Som de navegação ao passar de uma opção para outra
+        AudioManager.SomDeClique();
+
         if (imagemGrifada != null)
             imagem.sprite = imagemGrifada;
 

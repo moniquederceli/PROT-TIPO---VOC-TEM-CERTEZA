@@ -34,6 +34,9 @@ public class MainMenuManager : MonoBehaviour
         {
             MostrarSo(painelPrincipal);
 
+            // O menu apareceu: música do menu
+            AudioManager.MusicaDoMenu();
+
             if (gameModeController != null)
                 gameModeController.PrepararMenu();
         }

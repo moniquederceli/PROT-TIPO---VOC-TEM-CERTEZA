@@ -127,6 +127,9 @@ public class DialogueManager : MonoBehaviour
 
         quemEstaFalando = null;
 
+        // Se a fala for cortada no meio, o som também para
+        AudioManager.PararDigitacao();
+
         if (textoDoBalao != null)
             textoDoBalao.text = "";
 
@@ -198,6 +201,9 @@ public class DialogueManager : MonoBehaviour
         // Começa com o balão do tamanho de 1 linha
         AplicarAlturaDoBalao(alturaAteLinha[0]);
 
+        // Começa o som de máquina de escrever junto com as letras
+        AudioManager.IniciarDigitacao();
+
         float tempoPorLetra = 1f / Mathf.Max(1f, letrasPorSegundo);
 
         for (int visiveis = 1; visiveis <= total; visiveis++)
@@ -221,6 +227,9 @@ public class DialogueManager : MonoBehaviour
 
             yield return new WaitForSeconds(espera);
         }
+
+        // As letras acabaram: o som de digitação para na hora
+        AudioManager.PararDigitacao();
 
         // Garante que o texto inteiro está aparecendo
         textoDoBalao.maxVisibleCharacters = 99999;

@@ -1,16 +1,16 @@
 using System.Collections;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.UI;
 
-// Coloque este script NO PRÓPRIO botão Verde e NO PRÓPRIO botão Vermelho da mesa
-// (o objeto que tem a Image do botão).
+// Coloque este script na IMAGEM do botão Verde e na IMAGEM do botão Vermelho da mesa
+// (o objeto filho chamado "Image", dentro de AcceptButton / DenyButton).
+// O componente Button pode estar nesse mesmo objeto ou no objeto pai: o script acha sozinho.
 //
 // O que ele faz: quando o jogador clica, a imagem troca rapidinho para a do botão
 // "apertado" e depois volta para a normal, como um botão físico.
 // Ele NÃO mexe no que o botão já faz (aprovar/recusar continua igual).
 [RequireComponent(typeof(Image))]
-public class PhysicalButtonFeedback : MonoBehaviour, IPointerClickHandler
+public class PhysicalButtonFeedback : MonoBehaviour
 {
     [Header("Imagens do botão")]
     [Tooltip("Imagem do botão normal (solto)")]
@@ -30,6 +30,9 @@ public class PhysicalButtonFeedback : MonoBehaviour, IPointerClickHandler
     [Header("Mostra mensagens no Console")]
     public bool mostrarMensagens = false;
 
+    [Header("OPCIONAL: o Button deste botão (se vazio, o script procura neste objeto e nos pais)")]
+    public Button botaoDoJogo;
+
     private Image imagem;
     private Button botao;
     private float escalaDaImagem = 1f;
@@ -38,7 +41,7 @@ public class PhysicalButtonFeedback : MonoBehaviour, IPointerClickHandler
     private void Awake()
     {
         imagem = GetComponent<Image>();
-        botao = GetComponent<Button>();
+        botao = (botaoDoJogo != null) ? botaoDoJogo : GetComponentInParent<Button>();
 
         // Evita qualquer deformação: a imagem sempre mantém a proporção do desenho
         imagem.preserveAspect = true;
@@ -54,24 +57,24 @@ public class PhysicalButtonFeedback : MonoBehaviour, IPointerClickHandler
     private void OnEnable()
     {
         MostrarNormal();
+
+        // Escuta o clique do Button (só dispara quando o botão está ligado/interactable)
+        if (botao != null)
+            botao.onClick.AddListener(AoClicar);
     }
 
     private void OnDisable()
     {
+        if (botao != null)
+            botao.onClick.RemoveListener(AoClicar);
+
         // Se o botão for desligado no meio do clique, ele volta ao normal
         rotina = null;
         MostrarNormal();
     }
 
-    public void OnPointerClick(PointerEventData eventData)
+    private void AoClicar()
     {
-        if (eventData.button != PointerEventData.InputButton.Left)
-            return;
-
-        // Se o botão está desligado (sem NPC para decidir), não mostra o clique
-        if (botao != null && !botao.interactable)
-            return;
-
         if (spriteApertado == null)
             return;
 

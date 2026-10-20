@@ -1,10 +1,4 @@
-using UnityEngine;
-
-public class EmergencyButtonSafety : MonoBehaviour
-{
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {using System.Collections;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
@@ -48,6 +42,9 @@ public class EmergencyButtonSafety : MonoBehaviour, IPointerClickHandler
     [Tooltip("Ligado: a imagem muda de tamanho junto com o desenho e nunca fica esticada")]
     public bool ajustarTamanho = true;
 
+    [Tooltip("Ligado: o CANTO INFERIOR ESQUERDO fica parado ao trocar de imagem (a base preta não pula, e a tampa levanta para cima). Desligue só se as 3 imagens tiverem o mesmo tamanho")]
+    public bool prenderNoCantoInferiorEsquerdo = true;
+
     [Header("Mostra mensagens no Console")]
     public bool mostrarMensagens = true;
 
@@ -55,6 +52,7 @@ public class EmergencyButtonSafety : MonoBehaviour, IPointerClickHandler
     private Estado estado = Estado.TampaFechada;
     private bool ocupado = false;
     private float escalaDaImagem = 1f;
+    private Vector2 cantoInferiorEsquerdo;
     private Coroutine rotinaAutoFechar;
 
     private void Awake()
@@ -68,6 +66,10 @@ public class EmergencyButtonSafety : MonoBehaviour, IPointerClickHandler
 
         if (spriteTampaFechada == null)
             spriteTampaFechada = imagem.sprite;
+
+        // Guarda onde fica o canto inferior esquerdo da imagem (a base do botão)
+        RectTransform caixa = imagem.rectTransform;
+        cantoInferiorEsquerdo = caixa.anchoredPosition - Vector2.Scale(caixa.rect.size, caixa.pivot);
     }
 
     private void OnEnable()
@@ -178,7 +180,10 @@ public class EmergencyButtonSafety : MonoBehaviour, IPointerClickHandler
             RectTransform caixa = imagem.rectTransform;
             caixa.SetSizeWithCurrentAnchors(RectTransform.Axis.Horizontal, sprite.rect.width * escalaDaImagem);
             caixa.SetSizeWithCurrentAnchors(RectTransform.Axis.Vertical, sprite.rect.height * escalaDaImagem);
+
+            // Mantém a base no mesmo lugar: só a altura muda, para cima
+            if (prenderNoCantoInferiorEsquerdo)
+                caixa.anchoredPosition = cantoInferiorEsquerdo + Vector2.Scale(caixa.rect.size, caixa.pivot);
         }
     }
-}
 }

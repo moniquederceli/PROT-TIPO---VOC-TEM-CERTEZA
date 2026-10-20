@@ -159,6 +159,9 @@ public class GameModeController : MonoBehaviour
             }
         }
 
+        // O jogador saiu do menu: troca para a música do jogo
+        AudioManager.MusicaDoJogo();
+
         // Espera 1 frame: se a porta tinha algum outro script que muda a imagem ao ligar,
         // ele já rodou. Aí reforçamos nossa imagem.
         yield return null;
@@ -171,6 +174,9 @@ public class GameModeController : MonoBehaviour
         {
             if (tempoPortaFechada > 0f)
                 yield return new WaitForSeconds(tempoPortaFechada);
+
+            // Som mecânico da porta de entrada
+            AudioManager.SomDePorta();
 
             // Toca do FECHADO até o ABERTO
             if (framesVaoDoAbertoAteFechado)

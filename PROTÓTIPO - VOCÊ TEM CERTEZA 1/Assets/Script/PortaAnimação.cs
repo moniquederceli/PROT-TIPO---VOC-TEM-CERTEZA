@@ -102,6 +102,9 @@ public class PortaAnimacao : MonoBehaviour
     {
         animando = true;
 
+        // Som mecânico da porta começando a fechar
+        AudioManager.SomDePorta();
+
         // =========================
         // PORTA APARECE
         // =========================
@@ -198,6 +201,9 @@ public class PortaAnimacao : MonoBehaviour
     {
         float tempo = 0f;
 
+        // Sirene toca enquanto a luz vermelha pisca
+        AudioManager.IniciarSirene();
+
         while (tempo < duracao)
         {
             tempo += Time.deltaTime;
@@ -209,8 +215,9 @@ public class PortaAnimacao : MonoBehaviour
             yield return null;
         }
 
-        // Apaga a luz no fim
+        // Apaga a luz e a sirene no fim
         DefinirAlfaLuz(0f);
+        AudioManager.PararSirene();
     }
 
     private void DefinirAlfaLuz(float alfa)
