@@ -48,6 +48,13 @@ public class Day2EventManager : MonoBehaviour
     [Tooltip("Quanto tempo dura a tremida (segundos)")]
     public float duracaoDoTremor = 0.5f;
 
+    [Header("Som de 'toc toc' no vidro")]
+    [Tooltip("Quantos segundos depois de abrir o post-it o toc toc toca")]
+    public float segundosAteOToc = 2f;
+
+    [Tooltip("Ligado: o toc toc toca mesmo se o sorteio decidir que o monstro NÃO aparece. Desligado: só toca quando o monstro vai aparecer")]
+    public bool tocarTocMesmoSemMonstro = false;
+
     [Header("Para testar (deixe em Aleatorio no jogo final)")]
     public ModoDeTeste modoDeTeste = ModoDeTeste.Aleatorio;
 
@@ -58,6 +65,7 @@ public class Day2EventManager : MonoBehaviour
     private int ultimoDiaConferido = -1;
     private float tempoOlhando = 0f;
     private bool tremendo = false;
+    private Coroutine rotinaDoToc;
 
     private void Awake()
     {
@@ -79,6 +87,13 @@ public class Day2EventManager : MonoBehaviour
             diaJaSorteado = -1;
             tempoOlhando = 0f;
             EsconderFigura();
+
+            // Se o dia virou antes do toc toc tocar, cancela
+            if (rotinaDoToc != null)
+            {
+                StopCoroutine(rotinaDoToc);
+                rotinaDoToc = null;
+            }
         }
 
         // Conta quanto tempo o jogador está olhando pra janela com a figura visível
@@ -138,14 +153,38 @@ public class Day2EventManager : MonoBehaviour
         if (figuraMisteriosa != null)
             figuraMisteriosa.SetActive(aparece);
 
+        // Toc toc no vidro, alguns segundos depois de abrir o post-it
+        if (aparece || tocarTocMesmoSemMonstro)
+        {
+            if (rotinaDoToc != null)
+                StopCoroutine(rotinaDoToc);
+
+            rotinaDoToc = StartCoroutine(TocarTocDepoisDeUmTempo());
+        }
+
         if (mostrarMensagens)
             Debug.Log("Day2EventManager: sorteio feito. A figura na janela " + (aparece ? "APARECEU." : "NÃO apareceu."));
+    }
+
+    private IEnumerator TocarTocDepoisDeUmTempo()
+    {
+        yield return new WaitForSeconds(segundosAteOToc);
+
+        rotinaDoToc = null;
+
+        if (mostrarMensagens)
+            Debug.Log("Day2EventManager: toc toc no vidro.");
+
+        AudioManager.SomDeToc();
     }
 
     // A figura some e a tela treme
     private void Assustar()
     {
         tempoOlhando = 0f;
+
+        // Som de susto junto com a tremida
+        AudioManager.SomDeJumpscare();
 
         if (figuraMisteriosa != null)
             figuraMisteriosa.SetActive(false);

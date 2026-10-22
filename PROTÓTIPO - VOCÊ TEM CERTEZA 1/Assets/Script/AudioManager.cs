@@ -76,6 +76,15 @@ public class AudioManager : MonoBehaviour
     public AudioClip somDeDigitacao;
     [Range(0f, 1f)] public float volumeDaDigitacao = 1f;
 
+    [Header("EVENTO DA JANELA (Dia 2)")]
+    [Tooltip("Toc toc, como se alguém batesse no vidro")]
+    public AudioClip somDeToc;
+    [Range(0f, 1f)] public float volumeDoToc = 1f;
+
+    [Tooltip("Susto: toca junto com a tremida da tela quando o monstro some")]
+    public AudioClip somDeJumpscare;
+    [Range(0f, 1f)] public float volumeDoJumpscare = 1f;
+
     [Header("Mostra mensagens no Console")]
     public bool mostrarMensagens = true;
 
@@ -98,6 +107,8 @@ public class AudioManager : MonoBehaviour
     public static void MusicaDoJogo()        { if (Instance != null) Instance.TocarMusica(EstadoDaMusica.Jogo); }
     public static void SomDeClique()         { if (Instance != null) Instance.TocarClique(); }
     public static void SomDePorta()          { if (Instance != null) Instance.TocarPorta(); }
+    public static void SomDeToc()            { if (Instance != null) Instance.TocarEfeito(Instance.somDeToc, Instance.volumeDoToc); }
+    public static void SomDeJumpscare()      { if (Instance != null) Instance.TocarEfeito(Instance.somDeJumpscare, Instance.volumeDoJumpscare); }
     public static void IniciarSirene()       { if (Instance != null) Instance.LigarLoop(Instance.fonteSirene, Instance.somDaSirene, Instance.volumeDaSirene); }
     public static void PararSirene()         { if (Instance != null) Instance.DesligarLoop(Instance.fonteSirene); }
     public static void IniciarDigitacao()    { if (Instance != null) Instance.LigarLoop(Instance.fonteDigitacao, Instance.somDeDigitacao, Instance.volumeDaDigitacao); }
@@ -273,6 +284,15 @@ public class AudioManager : MonoBehaviour
             return;
 
         fonteEfeitos.PlayOneShot(somDePorta, volumeDaPorta);
+    }
+
+    // Toca um efeito simples (uma vez) no canal de Efeitos
+    private void TocarEfeito(AudioClip clip, float volume)
+    {
+        if (clip == null)
+            return;
+
+        fonteEfeitos.PlayOneShot(clip, volume);
     }
 
     private void LigarLoop(AudioSource fonte, AudioClip clip, float volume)

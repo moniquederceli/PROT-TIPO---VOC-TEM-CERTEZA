@@ -1,0 +1,624 @@
+fileFormatVersion: 2
+guid: 55cd54a054dcebf478f97cc5678d6481
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3872655515910025339
+    second: emo bravo an_0
+  - first:
+      213: 8385352662879677775
+    second: emo bravo an_1
+  - first:
+      213: 9197048158575203031
+    second: emo bravo an_2
+  - first:
+      213: -6843144219618199437
+    second: emo bravo an_3
+  - first:
+      213: -6238428418838676134
+    second: emo bravo an_4
+  - first:
+      213: 4995369496394906011
+    second: emo bravo an_5
+  - first:
+      213: -4759203320327870733
+    second: emo bravo an_6
+  - first:
+      213: -7350441449999280026
+    second: emo bravo an_7
+  - first:
+      213: 2876096735792710047
+    second: emo bravo an_8
+  - first:
+      213: 2603194132098620130
+    second: emo bravo an_9
+  - first:
+      213: -4763789824756226467
+    second: emo bravo an_10
+  - first:
+      213: 4963627716975422525
+    second: emo bravo an_11
+  - first:
+      213: 8237396655665059556
+    second: emo bravo an_12
+  - first:
+      213: -3262309845052384797
+    second: emo bravo an_13
+  - first:
+      213: 1639405654834392091
+    second: emo bravo an_14
+  - first:
+      213: -9086522353865509083
+    second: emo bravo an_15
+  - first:
+      213: -1492818183804164464
+    second: emo bravo an_16
+  - first:
+      213: 4992948366225194917
+    second: emo bravo an_17
+  - first:
+      213: 5487597682639258012
+    second: emo bravo an_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 1
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: emo bravo an_0
+      rect:
+        serializedVersion: 2
+        x: 4007
+        y: 6348
+        width: 35
+        height: 631
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 58fc9b49350914ac0800000000000000
+      internalID: -3872655515910025339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_1
+      rect:
+        serializedVersion: 2
+        x: 4018
+        y: 6337
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f4da153c1d1ce5470800000000000000
+      internalID: 8385352662879677775
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_2
+      rect:
+        serializedVersion: 2
+        x: 5187
+        y: 6337
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7d2190a729a72af70800000000000000
+      internalID: 9197048158575203031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_3
+      rect:
+        serializedVersion: 2
+        x: 1249
+        y: 0
+        width: 5305
+        height: 6311
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 378b3eab6944801a0800000000000000
+      internalID: -6843144219618199437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_4
+      rect:
+        serializedVersion: 2
+        x: 3995
+        y: 6169
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a5d3b6ad766ac69a0800000000000000
+      internalID: -6238428418838676134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_5
+      rect:
+        serializedVersion: 2
+        x: 4532
+        y: 6040
+        width: 64
+        height: 69
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b99b072271e135540800000000000000
+      internalID: 4995369496394906011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_6
+      rect:
+        serializedVersion: 2
+        x: 6468
+        y: 6057
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3f66ff5abc9e3fdb0800000000000000
+      internalID: -4759203320327870733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_7
+      rect:
+        serializedVersion: 2
+        x: 6233
+        y: 5744
+        width: 35
+        height: 24
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6685c7e027cfdf990800000000000000
+      internalID: -7350441449999280026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_8
+      rect:
+        serializedVersion: 2
+        x: 6289
+        y: 5749
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f91c5943eb2f9e720800000000000000
+      internalID: 2876096735792710047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_9
+      rect:
+        serializedVersion: 2
+        x: 6289
+        y: 5732
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ea9e155547602420800000000000000
+      internalID: 2603194132098620130
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_10
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 5430
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d56e8ced46e93edb0800000000000000
+      internalID: -4763789824756226467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_11
+      rect:
+        serializedVersion: 2
+        x: 1031
+        y: 5017
+        width: 24
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3c6a933c1952e440800000000000000
+      internalID: 4963627716975422525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_12
+      rect:
+        serializedVersion: 2
+        x: 863
+        y: 4357
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e618ee5d9c115270800000000000000
+      internalID: 8237396655665059556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_13
+      rect:
+        serializedVersion: 2
+        x: 533
+        y: 3702
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3e9946afa72f9b2d0800000000000000
+      internalID: -3262309845052384797
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_14
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 3579
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1cab23d1c650c610800000000000000
+      internalID: 1639405654834392091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_15
+      rect:
+        serializedVersion: 2
+        x: 997
+        y: 3545
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5273336cf0036e180800000000000000
+      internalID: -9086522353865509083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_16
+      rect:
+        serializedVersion: 2
+        x: 6423
+        y: 2964
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 096eb1865c1784be0800000000000000
+      internalID: -1492818183804164464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_17
+      rect:
+        serializedVersion: 2
+        x: 6440
+        y: 2959
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5af38b6d5148a4540800000000000000
+      internalID: 4992948366225194917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: emo bravo an_18
+      rect:
+        serializedVersion: 2
+        x: 6462
+        y: 2959
+        width: 36
+        height: 12
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9148ff840dd72c40800000000000000
+      internalID: 5487597682639258012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      emo bravo an_0: -3872655515910025339
+      emo bravo an_1: 8385352662879677775
+      emo bravo an_10: -4763789824756226467
+      emo bravo an_11: 4963627716975422525
+      emo bravo an_12: 8237396655665059556
+      emo bravo an_13: -3262309845052384797
+      emo bravo an_14: 1639405654834392091
+      emo bravo an_15: -9086522353865509083
+      emo bravo an_16: -1492818183804164464
+      emo bravo an_17: 4992948366225194917
+      emo bravo an_18: 5487597682639258012
+      emo bravo an_2: 9197048158575203031
+      emo bravo an_3: -6843144219618199437
+      emo bravo an_4: -6238428418838676134
+      emo bravo an_5: 4995369496394906011
+      emo bravo an_6: -4759203320327870733
+      emo bravo an_7: -7350441449999280026
+      emo bravo an_8: 2876096735792710047
+      emo bravo an_9: 2603194132098620130
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

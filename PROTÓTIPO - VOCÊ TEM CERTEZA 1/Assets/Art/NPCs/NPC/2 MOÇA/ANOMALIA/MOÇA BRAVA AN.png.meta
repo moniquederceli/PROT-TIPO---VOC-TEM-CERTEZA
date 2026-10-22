@@ -1,0 +1,520 @@
+fileFormatVersion: 2
+guid: de03c1dbde767ff4090f3cf971d4101f
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1261763595150913275
+    second: "MO\xC7A BRAVA AN_0"
+  - first:
+      213: -2151532368330412396
+    second: "MO\xC7A BRAVA AN_1"
+  - first:
+      213: -3037930699134457953
+    second: "MO\xC7A BRAVA AN_2"
+  - first:
+      213: -916137007417477974
+    second: "MO\xC7A BRAVA AN_3"
+  - first:
+      213: 6171914152810653888
+    second: "MO\xC7A BRAVA AN_4"
+  - first:
+      213: 4695184979345290246
+    second: "MO\xC7A BRAVA AN_5"
+  - first:
+      213: 1330824608084327104
+    second: "MO\xC7A BRAVA AN_6"
+  - first:
+      213: 5881882603863825489
+    second: "MO\xC7A BRAVA AN_7"
+  - first:
+      213: 3244256225741474227
+    second: "MO\xC7A BRAVA AN_8"
+  - first:
+      213: -593803647215510951
+    second: "MO\xC7A BRAVA AN_9"
+  - first:
+      213: -1644261542470017129
+    second: "MO\xC7A BRAVA AN_10"
+  - first:
+      213: 288897556486175515
+    second: "MO\xC7A BRAVA AN_11"
+  - first:
+      213: 3916729587715239687
+    second: "MO\xC7A BRAVA AN_12"
+  - first:
+      213: 7035414164386026342
+    second: "MO\xC7A BRAVA AN_13"
+  - first:
+      213: 919437839157834917
+    second: "MO\xC7A BRAVA AN_14"
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_0"
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 6767
+        height: 6620
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 501928002b05d7ee0800000000000000
+      internalID: -1261763595150913275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_1"
+      rect:
+        serializedVersion: 2
+        x: 623
+        y: 6506
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 49e29e6d5b83422e0800000000000000
+      internalID: -2151532368330412396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_2"
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 6428
+        width: 8
+        height: 13
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9726d1ff1a17d5d0800000000000000
+      internalID: -3037930699134457953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_3"
+      rect:
+        serializedVersion: 2
+        x: 523
+        y: 6439
+        width: 7
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa4ba43ee3a3943f0800000000000000
+      internalID: -916137007417477974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_4"
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 6417
+        width: 7
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0c82c76c83b07a550800000000000000
+      internalID: 6171914152810653888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_5"
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 6417
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60430a0dcd5a82140800000000000000
+      internalID: 4695184979345290246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_6"
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 6249
+        width: 8
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0caf6371ee9087210800000000000000
+      internalID: 1330824608084327104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_7"
+      rect:
+        serializedVersion: 2
+        x: 634
+        y: 5569
+        width: 8
+        height: 35
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 15c5add8015a0a150800000000000000
+      internalID: 5881882603863825489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_8"
+      rect:
+        serializedVersion: 2
+        x: 489
+        y: 5468
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3b98ba739d9e50d20800000000000000
+      internalID: 3244256225741474227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_9"
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 5468
+        width: 8
+        height: 8
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 95a536d9ab262c7f0800000000000000
+      internalID: -593803647215510951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_10"
+      rect:
+        serializedVersion: 2
+        x: 500
+        y: 5435
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79f1d3bb6d86e29e0800000000000000
+      internalID: -1644261542470017129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_11"
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 5167
+        width: 13
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1b36d60cce520400800000000000000
+      internalID: 288897556486175515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_12"
+      rect:
+        serializedVersion: 2
+        x: 411
+        y: 5161
+        width: 25
+        height: 30
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70f670deec40b5630800000000000000
+      internalID: 3916729587715239687
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_13"
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 2935
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6631bf348efc2a160800000000000000
+      internalID: 7035414164386026342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "MO\xC7A BRAVA AN_14"
+      rect:
+        serializedVersion: 2
+        x: 740
+        y: 2918
+        width: 8
+        height: 7
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5a43e04e7df72cc00800000000000000
+      internalID: 919437839157834917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      "MO\xC7A BRAVA AN_0": -1261763595150913275
+      "MO\xC7A BRAVA AN_1": -2151532368330412396
+      "MO\xC7A BRAVA AN_10": -1644261542470017129
+      "MO\xC7A BRAVA AN_11": 288897556486175515
+      "MO\xC7A BRAVA AN_12": 3916729587715239687
+      "MO\xC7A BRAVA AN_13": 7035414164386026342
+      "MO\xC7A BRAVA AN_14": 919437839157834917
+      "MO\xC7A BRAVA AN_2": -3037930699134457953
+      "MO\xC7A BRAVA AN_3": -916137007417477974
+      "MO\xC7A BRAVA AN_4": 6171914152810653888
+      "MO\xC7A BRAVA AN_5": 4695184979345290246
+      "MO\xC7A BRAVA AN_6": 1330824608084327104
+      "MO\xC7A BRAVA AN_7": 5881882603863825489
+      "MO\xC7A BRAVA AN_8": 3244256225741474227
+      "MO\xC7A BRAVA AN_9": -593803647215510951
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
