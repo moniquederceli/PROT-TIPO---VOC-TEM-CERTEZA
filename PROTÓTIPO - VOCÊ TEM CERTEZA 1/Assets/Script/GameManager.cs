@@ -309,6 +309,7 @@ public class GameManager : MonoBehaviour
                     break;
             }
 
+            movement.decisaoAutorizada = true;
             movement.Accept();
 
             Invoke(nameof(NextNPC), 2f);
@@ -361,6 +362,7 @@ public class GameManager : MonoBehaviour
                     break;
             }
 
+            movement.decisaoAutorizada = true;
             movement.Deny();
 
             Invoke(nameof(NextNPC), 2f);

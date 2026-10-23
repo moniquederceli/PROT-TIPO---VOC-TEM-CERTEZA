@@ -20,6 +20,11 @@ public class NPCMovement : MonoBehaviour
     private bool canDecide = false;
     private bool isMoving = false;
 
+    // Trava de segurança: só o GameManager (que confere o checklist e o carimbo) pode mandar
+    // o NPC aceitar ou recusar. Se algum botão ligar direto em Accept/Deny pelo Inspector,
+    // o clique é ignorado.
+    [HideInInspector] public bool decisaoAutorizada = false;
+
     private void Awake()
     {
         rectTransform = GetComponent<RectTransform>();
@@ -39,6 +44,9 @@ public class NPCMovement : MonoBehaviour
         canDecide = false;
         isMoving = true;
 
+        // Passos começam junto com a caminhada
+        AudioManager.IniciarPassos(gameObject);
+
         StartCoroutine(EnterCabin());
     }
 
@@ -49,6 +57,9 @@ public class NPCMovement : MonoBehaviour
         canDecide = false;
         isMoving = false;
 
+        // Se o NPC morrer, não tem som de passos
+        AudioManager.PararPassos(gameObject);
+
         PararFala();
     }
 
@@ -57,6 +68,12 @@ public class NPCMovement : MonoBehaviour
     {
         if (DialogueManager.Instance != null)
             DialogueManager.Instance.Parar();
+    }
+
+    // Se o NPC for desligado (morte pela porta, por exemplo), os passos dele param
+    private void OnDisable()
+    {
+        AudioManager.PararPassos(gameObject);
     }
 
     private void Update()
@@ -77,6 +94,9 @@ public class NPCMovement : MonoBehaviour
         yield return MoveToPosition(centerPosition);
 
         isMoving = false;
+
+        // Chegou na frente do vidro: os passos param
+        AudioManager.PararPassos(gameObject);
 
         Vector2 position = rectTransform.anchoredPosition;
         position.y = originalY;
@@ -120,6 +140,12 @@ public class NPCMovement : MonoBehaviour
     // BOTÃO VERDE
     public void Accept()
     {
+        bool autorizado = decisaoAutorizada;
+        decisaoAutorizada = false;
+
+        if (!autorizado)
+            return;
+
         // Impede aceitar antes de chegar, ou se este NPC está desligado (ex: morto pela porta)
         if (!canDecide || !gameObject.activeInHierarchy)
             return;
@@ -134,6 +160,12 @@ public class NPCMovement : MonoBehaviour
     // BOTÃO VERMELHO
     public void Deny()
     {
+        bool autorizado = decisaoAutorizada;
+        decisaoAutorizada = false;
+
+        if (!autorizado)
+            return;
+
         // Mesma proteção do Accept
         if (!canDecide || !gameObject.activeInHierarchy)
             return;
@@ -158,9 +190,14 @@ public class NPCMovement : MonoBehaviour
     {
         isMoving = true;
 
+        // Ele vai embora: os passos voltam
+        AudioManager.IniciarPassos(gameObject);
+
         yield return MoveToPosition(rightPosition);
 
         isMoving = false;
+
+        AudioManager.PararPassos(gameObject);
 
         gameObject.SetActive(false);
     }

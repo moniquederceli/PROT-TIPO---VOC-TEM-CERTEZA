@@ -804,6 +804,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &44052346
 Canvas:
   m_ObjectHideFlags: 0
@@ -1070,7 +1071,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &72575870
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1724,6 +1725,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &113497970
 Canvas:
   m_ObjectHideFlags: 0
@@ -2227,6 +2229,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &140564889
 Canvas:
   m_ObjectHideFlags: 0
@@ -2952,6 +2955,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!222 &233796718
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5093,6 +5097,7 @@ MonoBehaviour:
   rightPosition: 850
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &328458397
 Canvas:
   m_ObjectHideFlags: 0
@@ -5169,8 +5174,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
   aberturas:
   - baloes:
-    - "Se- senhor juro que meu nariz \xE9 apenas por conta da neve..."
-    - "Juro que n\xE3o fa\xE7o mais isso..."
+    - "Senhor... voc\xEA por acaso viu uma mulher andado com uma crian\xE7a?"
+    - Preciso encontrar minha familia....
   modoDeEscolha: 0
   conversa: []
 --- !u!114 &328458401
@@ -5271,6 +5276,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &334488689
 Canvas:
   m_ObjectHideFlags: 0
@@ -5730,6 +5736,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &345674471
 Canvas:
   m_ObjectHideFlags: 0
@@ -5807,8 +5814,8 @@ MonoBehaviour:
   aberturas:
   - baloes:
     - "Vamos, pode me deixar entrar, voc\xEA com certeza n\xE3o vai querer arrumar
-      problemas com "
-    - "Meus seguran\xE7as, ou vai?"
+      problemas com meus seguran\xE7as, ou vai? "
+    - Esse bando de idiotas...
     - 'Aqueles estupidos do governo me fizeram sair do meu bunker seguro '
     - "Argh, que nojo de voc\xEAs"
   - baloes:
@@ -6672,6 +6679,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &435235498
 Canvas:
   m_ObjectHideFlags: 0
@@ -6851,6 +6859,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &438926709
 Canvas:
   m_ObjectHideFlags: 0
@@ -7074,18 +7083,6 @@ MonoBehaviour:
       - m_Target: {fileID: 1623669880}
         m_TargetAssemblyTypeName: GameManager, Assembly-CSharp
         m_MethodName: AcceptCurrentNPC
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 728075935}
-        m_TargetAssemblyTypeName: NPCMovement, Assembly-CSharp
-        m_MethodName: Accept
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -7451,19 +7448,36 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DiarioInterativo
   paginas:
   - imagem: {fileID: 638024921863407906, guid: 1c28410cdcde4ec4baf6dc2aff3044a1, type: 3}
-    texto: furicotico imagem 1 KJSBDFJHSBDHJFBSJHKFBHJSDBFJSBJHKFGJIJSDFKJSHDKJSHDFKJSHGKJHBSKJGHSKJDHGKJSDHGKJSHFKJSDHKJSDHNVKHSFKVBHSG,JHSDJKGHKSJGHSKJBHGKSDBHGKJSDHGKSDBHGKBSKGJHSDKGJHSDKFJHSDKFHSKDJHFKDSHFKSDHFKSDBHFKBSDKFBSDKJFHKSDJHFKSDBFKLSDBKJSBKLJSDHFKJBSDKLFBKSDJFBSKDLHBKULDFNKJCVNVIUODFNVERBHVKLERNIUGHKBVIXDHLBIUGNKSLBNVPDSBPIOUGROGNSOPNFKSJBGKJBIBNSDIJGBERKJBGOPENIKSDBVLKXHBBDBGKDSBGBDGUEGUREBGUBEIBVVBEBREGUREGUGHUIREGE
-      IO TUIEUI RRUI YT UIYTUI YQU TYUYT UIQYTUIYTUI YUIT YIQ YTUIY TUIEYT IYE TUIYT
-      IUEQYTUI YUIT YIQU TYUIQY TUI YQUI TYQUI TYUIQYT IU EUIY TUIYUIT YQUIT YUI
-      UIHQ GUI GUI HUG  HGUHQQ HIEU HIU GHI3U HUI3 UI HUI3 HI3U HI3U H3 3 3 3 IU
-      3UU GUEGUI HUIG 3H GI3G UIGUIHUI3 H3U UI HU3H UI3 HUI3H UI3 UI3H UIH UI3HUI3
-      HUI3H UI3H UI3HUI3 HUI3HGUI 3HGIU 3UIGH U3H 3U GH3IUGH I3UHG34H GU34HU GH3UI
-      GHU3HG3 H3HI3 HG3IH GH U3 HG 3H4UH 3UI GHUI3H GUI34H GIU34 4GUI34HUI34H GUIH
-      GIU3 HUIG H3IUGHUIGHI3UHIUFBDIVBIBVEU BR BGUIVJ BB BI B B B B UUI UHU HU U
-      HU HUHU HU U UU HU HUHU HU HU HUU HU HUHU HU HUHU HU HU HUHU HU HU HUU HUHU
-      HU HUNVOSNMUIKJGHERWONTUIGHIUTNYUDRSINMVL~IDNJVIUBXICBVIYCXBVUIOYXBR
+    texto: "DIA 1\n\nAinda parece tudo meio irreal... \nmas \xE9 real, e agora \xE9
+      aqui que eu estou. \nDe p\xE9 no posto, olhando as pessoas, \ndecidindo quem
+      pode entrar e quem n\xE3o pode.\n\n\xC9 uma sensa\xE7\xE3o estranha. Eu nunca
+      imaginei que um dia teria que fazer esse tipo de escolha. Mas tamb\xE9m sei
+      que \xE9 necess\xE1rio. Se algu\xE9m estiver infectado ou deformado pela radia\xE7\xE3o,
+      n\xE3o pode entrar. \xC9 por causa das pessoas que j\xE1 est\xE3o aqui dentro.
+      Eu n\xE3o quero que mais ningu\xE9m passe pelo que elas j\xE1 passaram.\n\nFicar
+      horas observando, conferindo documentos, analisando cada detalhe... e ainda
+      ter que lidar com gente nervosa, com medo, com raiva. \xC0s vezes d\xE1 vontade
+      de simplesmente fechar os olhos e n\xE3o ver nada disso. Mas eu preciso manter
+      a cabe\xE7a no lugar.\n\nEu penso muito na guerra. Em como tudo chegou at\xE9
+      aqui. Em como o mundo ficou assim. E, principalmente, em como eu quero que
+      isso tudo acabe um dia.\nEu s\xF3 queria voltar pra casa. Ver minha filha crescer.
+      Ela ainda \xE9 t\xE3o pequena... \nEla sempre me desenha uns desenhos fofos.
+      Esse aqui \xE9 o mais recente. Ela me chamou de \u201Cher\xF3i\u201D.\n\nVivendo
+      um dia de cada vez."
   - imagem: {fileID: -6519291082669178317, guid: c2bcde03eba1c604caa9627caf0ec8f4, type: 3}
-    texto: FURLOO 2 JKSDBCYJKHSBVJHBDFSHVBVBJHSBVJHBSFJHKVBKXCJBVJFBJHVBDFJVBJDBKJCBVBDFJKLGBVRJBVJDBFHUVBUDVBDBOVUIYTGBOVIDBLKVBDOUIYVTBYUDNVGYT
-      EVBNMYEURBMCUIYT45BNMCYUREHCUYEBFCUYCREVTBNFYTUREVFYMNUERGCUTYCFBMREYUIFBCM,UYIERBFMCNUYMEINFTYUERVBYUICNMFVCUIRCFNMVYETRUCNMVFUYETRNMUCIERVCGUIYTWVNMUYCTVBWERNUMCYFNVMWEUYVNERMUGNMVEWRTYUGNCVERYUIGVNMERYUIGCVNMYERTUNMCVGYUITERVNMCUTYEWNVMUTCERVNMUTYERNWCMVTYUIERNVMGYUEVNMGYTUEWVNMGUYIEVNMGUYENMVYUNMVCYUGNMVCEQYUCGVMUEYRVNMF
+    texto: "DIA 2\n\nAcho que estou come\xE7ando a me acostumar com a rotina do posto,
+      embora n\xE3o saiba se isso \xE9 algo bom.\n\nO Marcos, meu colega de trabalho,
+      passou a manh\xE3 tentando consertar nosso r\xE1dio, maldita tecnologia primitiva.
+      Ele tem dois filhos e quase nunca fala deles. \n\nDurante o turno, um homem
+      apareceu pedindo para entrar. Estava com os olhos vermelhos de tanto co\xE7ar
+      e pupilas dilatadas. Disse que n\xE3o estava infectado, mas n\xE3o pod\xEDamos
+      correr o risco. Quando o mandamos embora, ele come\xE7ou a chorar. Tive pena
+      dele. \n\nEm casa, minha filha me mostrou outro desenho. Dessa vez, \xE9ramos
+      n\xF3s tr\xEAs fazendo um piquenique. Ela sente saudades de passear no parque,
+      mas ela \xE9 esperta o suficiente pra saber que n\xE3o podemos mais fazer isso.\n\nOuvi
+      barulhos estranhos na janela ontem perto da troca do meu turno. Parecia algu\xE9m
+      tacando pedra ou tentando entrar, sei l\xE1. As pessoas por essa regi\xE3o
+      me d\xE3o medo. Essa situa\xE7\xE3o toda me deixa com medo."
   gameManager: {fileID: 1623669880}
   navegacaoVisao: {fileID: 955216382}
   overlayEscuro: {fileID: 1993998934}
@@ -7547,7 +7561,7 @@ MonoBehaviour:
     pois a exposi\xE7\xE3o pode provocar graves consequ\xEAncias \xE0 sa\xFAde e
     at\xE9 mesmo a morte.\r\nNEVE QUENTE INTRIGA PESQUISADORES\r\nSobreviventes relatam
     precipita\xE7\xE3o com temperaturas anormais. Especialistas suspeitam de n\xEDveis
-    extremos de radia\xE7\xE3o.\r\n"
+    extremos de radia\xE7\xE3o."
   aparecerNoDia: 1
   sumirDepoisDoDia: 1
   sorteiaEventoDaJanela: 0
@@ -8017,6 +8031,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &496842604
 Canvas:
   m_ObjectHideFlags: 0
@@ -8093,8 +8108,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
   aberturas:
   - baloes:
-    - "Se- senhor juro que meu nariz \xE9 apenas por conta da neve..."
-    - "Juro que n\xE3o fa\xE7o mais isso..."
+    - "Senhor... voc\xEA por acaso viu uma mulher andado com uma crian\xE7a?"
+    - Preciso encontrar minha familia....
   modoDeEscolha: 0
   conversa: []
 --- !u!114 &496842608
@@ -8533,6 +8548,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &527718454
 Canvas:
   m_ObjectHideFlags: 0
@@ -10903,6 +10919,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!224 &728075936
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15618,6 +15635,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &1067992445
 Canvas:
   m_ObjectHideFlags: 0
@@ -18147,28 +18165,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemDeParede
   tipo: 0
   imagemGrande: {fileID: 205973539272171820, guid: 65895063532fb0e43b2620754e0ce3e9, type: 3}
-  texto: "O SENTINELA\r\nO GRANDE SENTINELA EST\xC1 OBSERVANDO VOC\xCA eSSE \xC9
-    DO DIA 2 O JORNAL DE CIMA\r\n15 DE NOVEMBRO DE 2027\r\nO MUNDO EM CHAMAS:\r\nCONFLITO
-    NUCLEAR DEVASTA MUNDO\r\nAp\xF3s anos de tens\xF5es entre as grandes pot\xEAncias,
-    explos\xF5es nucleares deixam cidades em ru\xEDnas e colocam o futuro da humanidade
-    em risco.\r\nO que durante d\xE9cadas foi considerado uma amea\xE7a distante
-    tornou-se realidade. Ap\xF3s sucessivas crises diplom\xE1ticas e conflitos entre
-    pot\xEAncias mundiais e intensifica\xE7\xF5es na terceira grande guerra, uma
-    s\xE9rie de explos\xF5es nucleares atingiram diferentes regi\xF5es do planeta,
-    incluindo na\xE7\xF5es neutras, provocando destrui\xE7\xE3o em propor\xE7\xF5es
-    ainda desconhecidas.\r\nCidades inteiras foram reduzidas a escombros, enquanto
-    milh\xF5es de pessoas enfrentam a escassez de alimentos, a interrup\xE7\xE3o
-    das comunica\xE7\xF5es e o colapso dos servi\xE7os essenciais. Em diversas regi\xF5es,
-    sobreviventes relatam o surgimento de uma espessa n\xE9voa junto de uma neve
-    escura que encobrem o horizonte, dificultando opera\xE7\xF5es de resgate.\r\nEspecialistas
-    alertam que as consequ\xEAncias ambientais podem se estender por gera\xE7\xF5es.
-    As autoridades militares iniciaram a instala\xE7\xE3o de abrigos e centros de
-    emerg\xEAncia, enquanto tentam restabelecer a ordem nas regi\xF5es sobreviventes.\r\nAinda
-    n\xE3o h\xE1 informa\xE7\xF5es conclusivas sobre a extens\xE3o da destrui\xE7\xE3o
-    ou sobre quais governos permanecem operacionais.\r\nO mundo que conhec\xEDamos
-    pode ter chegado ao fim.\r\nORIENTA\xC7\xD5ES\r\nComunica\xE7\xF5es internacionais
-    permanecem interrompidas em diversas regi\xF5es. Autoridades recomendam que sobreviventes
-    procurem abrigos protegidos.\r\n"
+  texto: "O SENTINELA\r\nO GRANDE SENTINELA EST\xC1 OBSERVANDO VOC\xCA\r\n20 DE JANEIRO
+    DE 2028\r\nNEVE ESCURA CONTAMINA A POPULA\xC7\xC3O!\r\nEXPOSI\xC7\xC3O PROLONGADA
+    PODE CAUSAR INFEC\xC7\xD5ES; ORIGEM DA CONTAMINA\xC7\xC3O SEGUE DESCONHECIDA\r\nAn\xE1lises
+    confirmam que a neve escura cont\xE9m part\xEDculas radioativas capazes de contaminar
+    o organismo humano. Sobreviventes expostos por longos per\xEDodos relatam febre,
+    tremores e manchas escuras na pele. As autoridades ainda desconhecem a natureza
+    exata da contamina\xE7\xE3o e seus efeitos a longo prazo.\r\nPesquisadores alertam
+    que o perigo pode persistir mesmo ap\xF3s o derretimento da neve, pois res\xEDduos
+    contaminantes permanecem no solo, na \xE1gua e em objetos. H\xE1 relatos de pessoas
+    que adoeceram dias ap\xF3s a exposi\xE7\xE3o, levantando suspeitas de que os
+    efeitos podem demorar a aparecer.\r\nAs autoridades recomendam evitar qualquer
+    contato com a neve e as \xE1reas atingidas. Enquanto novos casos surgem, especialistas
+    tentam descobrir se est\xE3o diante de uma contamina\xE7\xE3o radioativa comum
+    ou de algo muito mais perigoso.\r\nNEVE ESCURA DEIXA RASTROS PERIGOSOS\r\nRes\xEDduos
+    contaminantes continuam sendo encontrados ap\xF3s o derretimento. Especialistas
+    alertam que at\xE9 mesmo a \xE1gua e o solo podem representar riscos \xE0 sobreviv\xEAncia."
   aparecerNoDia: 2
   sumirDepoisDoDia: 0
   sorteiaEventoDaJanela: 0
@@ -18192,7 +18204,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -8624646325252365587, guid: 65b676910141f924fa4252c424c9be32, type: 3}
+  m_Sprite: {fileID: -5462306287972068379, guid: c4aada96b90ff3c418b3844fdf464a76, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -18284,6 +18296,81 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408965938}
+  m_CullTransparentMesh: 1
+--- !u!1 &1409542481
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1409542482}
+  - component: {fileID: 1409542484}
+  - component: {fileID: 1409542483}
+  m_Layer: 5
+  m_Name: "calend\xE1rio"
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1409542482
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409542481}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1968457852}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 660.03, y: -153.2}
+  m_SizeDelta: {x: 139.94, y: 139.94}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1409542483
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409542481}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: UnityEngine.UI::UnityEngine.UI.Image
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 39be0007afdf3ff47aea9efee7b2d4c2, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1409542484
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1409542481}
   m_CullTransparentMesh: 1
 --- !u!1 &1417585483
 GameObject:
@@ -18529,6 +18616,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &1427730279
 Canvas:
   m_ObjectHideFlags: 0
@@ -19236,28 +19324,29 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::ItemDeParede
   tipo: 0
   imagemGrande: {fileID: -1079574771501804286, guid: eb55cd3473bb1814088cef96f5137b20, type: 3}
-  texto: "O SENTINELA\r\nO GRANDE SENTINELA EST\xC1 OBSERVANDO VOC\xCA ESSE \xC9
-    O DIA 2 DE BAIXP\r\n15 DE NOVEMBRO DE 2027\r\nO MUNDO EM CHAMAS:\r\nCONFLITO
-    NUCLEAR DEVASTA MUNDO\r\nAp\xF3s anos de tens\xF5es entre as grandes pot\xEAncias,
-    explos\xF5es nucleares deixam cidades em ru\xEDnas e colocam o futuro da humanidade
-    em risco.\r\nO que durante d\xE9cadas foi considerado uma amea\xE7a distante
-    tornou-se realidade. Ap\xF3s sucessivas crises diplom\xE1ticas e conflitos entre
-    pot\xEAncias mundiais e intensifica\xE7\xF5es na terceira grande guerra, uma
-    s\xE9rie de explos\xF5es nucleares atingiram diferentes regi\xF5es do planeta,
-    incluindo na\xE7\xF5es neutras, provocando destrui\xE7\xE3o em propor\xE7\xF5es
-    ainda desconhecidas.\r\nCidades inteiras foram reduzidas a escombros, enquanto
-    milh\xF5es de pessoas enfrentam a escassez de alimentos, a interrup\xE7\xE3o
-    das comunica\xE7\xF5es e o colapso dos servi\xE7os essenciais. Em diversas regi\xF5es,
-    sobreviventes relatam o surgimento de uma espessa n\xE9voa junto de uma neve
-    escura que encobrem o horizonte, dificultando opera\xE7\xF5es de resgate.\r\nEspecialistas
-    alertam que as consequ\xEAncias ambientais podem se estender por gera\xE7\xF5es.
-    As autoridades militares iniciaram a instala\xE7\xE3o de abrigos e centros de
-    emerg\xEAncia, enquanto tentam restabelecer a ordem nas regi\xF5es sobreviventes.\r\nAinda
-    n\xE3o h\xE1 informa\xE7\xF5es conclusivas sobre a extens\xE3o da destrui\xE7\xE3o
-    ou sobre quais governos permanecem operacionais.\r\nO mundo que conhec\xEDamos
-    pode ter chegado ao fim.\r\nORIENTA\xC7\xD5ES\r\nComunica\xE7\xF5es internacionais
-    permanecem interrompidas em diversas regi\xF5es. Autoridades recomendam que sobreviventes
-    procurem abrigos protegidos.\r\n"
+  texto: "O SENTINELA\r\nO GRANDE SENTINELA EST\xC1 OBSERVANDO VOC\xCA\r\n22 DE JANEIRO
+    DE 2028\r\nM\xC9DICOS IDENTIFICAM SINTOMAS DA CONTAMINA\xC7\xC3O\r\nAPRENDA A
+    IDENTIFICAR SINAIS DA CONTAMINA\xC7\xC3O E PROCURE UM POSTO DE SA\xDADE PR\xD3XIMO\r\nEquipes
+    m\xE9dicas das regi\xF5es atingidas pela Neve Escura identificaram um padr\xE3o
+    de sintomas em pessoas expostas \xE0 precipita\xE7\xE3o. Entre os sinais mais
+    frequentes est\xE3o irrita\xE7\xE3o persistente nos olhos, fungadas compulsivas,
+    palidez acentuada e m\xE3os extremamente geladas, que n\xE3o aquecem mesmo em
+    ambientes fechados.\r\nNos casos mais graves, pacientes desenvolveram les\xF5es
+    cut\xE2neas semelhantes \xE0 lepra, consideradas um poss\xEDvel est\xE1gio terminal
+    da contamina\xE7\xE3o. A origem exata da condi\xE7\xE3o e o tempo necess\xE1rio
+    para sua progress\xE3o continuam desconhecidos.\r\nCARTEIRA DE PREVEN\xC7\xC3O
+    TORNA-SE OBRIGAT\xD3RIA\r\nAs autoridades anunciaram a emiss\xE3o de uma Carteira
+    de Preven\xE7\xE3o \xE0 Neve Escura nos postos de sa\xFAde autorizados. O documento
+    dever\xE1 conter os carimbos de avalia\xE7\xE3o sanit\xE1ria e poder\xE1 ser
+    exigido em abrigos, instala\xE7\xF5es p\xFAblicas e pontos de controle.\r\nPessoas
+    sem a carteira poder\xE3o ser conduzidas pelas autoridades locais a centros de
+    triagem e quarentena. A medida busca impedir a propaga\xE7\xE3o de uma poss\xEDvel
+    contamina\xE7\xE3o, embora pesquisadores ainda n\xE3o saibam se a condi\xE7\xE3o
+    \xE9 transmiss\xEDvel entre seres humanos ou se depende exclusivamente da exposi\xE7\xE3o
+    \xE0 neve contaminada.\r\nA recomenda\xE7\xE3o oficial \xE9 evitar o contato
+    com a precipita\xE7\xE3o e procurar atendimento diante dos primeiros sintomas.\r\nALERTA
+    SANIT\xC1RIO:\r\nA aus\xEAncia da carteira poder\xE1 resultar em encaminhamento
+    obrigat\xF3rio para quarentena."
   aparecerNoDia: 2
   sumirDepoisDoDia: 0
   sorteiaEventoDaJanela: 0
@@ -19281,7 +19370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: -9220747020688589240, guid: 324a91506da28b34d89e8ffb11748dcf, type: 3}
+  m_Sprite: {fileID: -8748388990878660075, guid: 9e09d26f82f66e14c973380e16d1ee1a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -19765,6 +19854,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &1565569974
 Canvas:
   m_ObjectHideFlags: 0
@@ -19841,8 +19931,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::DialogoNPC
   aberturas:
   - baloes:
-    - "Se- senhor juro que meu nariz \xE9 apenas por conta da neve..."
-    - "Juro que n\xE3o fa\xE7o mais isso..."
+    - "Senhor... voc\xEA por acaso viu uma mulher andado com uma crian\xE7a?"
+    - Preciso encontrar minha familia....
   modoDeEscolha: 0
   conversa: []
 --- !u!114 &1565569978
@@ -21076,6 +21166,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &1687103687
 Canvas:
   m_ObjectHideFlags: 0
@@ -21519,7 +21610,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 94491047ab8502f4b99782c1efa4b71c, type: 3}
+  m_Sprite: {fileID: 7692040030187585602, guid: 7c77dac4524505743ac36306fe772432, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -21974,6 +22065,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &1732097811
 Canvas:
   m_ObjectHideFlags: 0
@@ -22488,6 +22580,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &1794015384
 Canvas:
   m_ObjectHideFlags: 0
@@ -22990,18 +23083,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 728075935}
-        m_TargetAssemblyTypeName: NPCMovement, Assembly-CSharp
-        m_MethodName: Deny
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1835029190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23415,6 +23496,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &1845522375
 Canvas:
   m_ObjectHideFlags: 0
@@ -23781,6 +23863,8 @@ MonoBehaviour:
   volumeDaPorta: 1
   somDeDigitacao: {fileID: 8300000, guid: 31a7bd2da97aff54c86813b33694c58c, type: 3}
   volumeDaDigitacao: 0.7
+  somDePasso: {fileID: 8300000, guid: 21f397b9ab26fe7499a8ed60b4ef3fc3, type: 3}
+  volumeDosPassos: 1
   somDeToc: {fileID: 8300000, guid: f800b18e80f7e2645ae6a14199b0534c, type: 3}
   volumeDoToc: 1
   somDeJumpscare: {fileID: 8300000, guid: 6f70a178756502446b853535e3e50985, type: 3}
@@ -24969,6 +25053,7 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 1409542482}
   - {fileID: 1769518026}
   - {fileID: 441307013}
   - {fileID: 1835029192}
@@ -25381,7 +25466,7 @@ MonoBehaviour:
     sobre a extens\xE3o da destrui\xE7\xE3o ou sobre quais governos permanecem operacionais.\r\nO
     mundo que conhec\xEDamos pode ter chegado ao fim.\r\nORIENTA\xC7\xD5ES\r\nComunica\xE7\xF5es
     internacionais permanecem interrompidas em diversas regi\xF5es. Autoridades recomendam
-    que sobreviventes procurem abrigos protegidos.\r\n"
+    que sobreviventes procurem abrigos protegidos."
   aparecerNoDia: 1
   sumirDepoisDoDia: 1
   sorteiaEventoDaJanela: 0
@@ -25710,6 +25795,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &2000316292
 Canvas:
   m_ObjectHideFlags: 0
@@ -25952,12 +26038,12 @@ MonoBehaviour:
     rmCorretoGrande: {fileID: 3452494852753367315, guid: c31618739bce1fc4dae9baa2f5ecec8f, type: 3}
     rgIncorretoGrande: {fileID: 4201114021969956665, guid: 803a78f8d2e3edd4385d67cb00b0da7e, type: 3}
     lmIncorretoGrande: {fileID: 62064374465137072, guid: 806cdc61a09291f459e318cece901ac9, type: 3}
-    rmIncorretoGrande: {fileID: 3452494852753367315, guid: c31618739bce1fc4dae9baa2f5ecec8f, type: 3}
+    rmIncorretoGrande: {fileID: -6488881719305192043, guid: 9bfc560d9c0046644a2e3c6093736dee, type: 3}
   - npcId: 2
     rgCorretoGrande: {fileID: 8887293026637702193, guid: 6c596bfeef7c9d04b9b24e7a3aaffd08, type: 3}
     lmCorretoGrande: {fileID: -7370201160173944892, guid: 7d6b4b2517ede90409e1b3bb53be602a, type: 3}
     rmCorretoGrande: {fileID: 6757033625355782961, guid: c576da3a52d00774b878a1311c1b4470, type: 3}
-    rgIncorretoGrande: {fileID: 8887293026637702193, guid: 6c596bfeef7c9d04b9b24e7a3aaffd08, type: 3}
+    rgIncorretoGrande: {fileID: 5719653942642618456, guid: aad8b0048b2150d4388a8f84c8dd11a9, type: 3}
     lmIncorretoGrande: {fileID: -7370201160173944892, guid: 7d6b4b2517ede90409e1b3bb53be602a, type: 3}
     rmIncorretoGrande: {fileID: 6757033625355782961, guid: c576da3a52d00774b878a1311c1b4470, type: 3}
   - npcId: 3
@@ -25965,41 +26051,41 @@ MonoBehaviour:
     lmCorretoGrande: {fileID: -8744161742237569766, guid: fe577f1bfd7b2144f94ba85e9fd90bd3, type: 3}
     rmCorretoGrande: {fileID: -2688767551332479368, guid: 884c76bbba83ade4f9bd10284a83b347, type: 3}
     rgIncorretoGrande: {fileID: 8933481291062557899, guid: e1a062a26da948649a7eb2a9bb8cd681, type: 3}
-    lmIncorretoGrande: {fileID: -8744161742237569766, guid: fe577f1bfd7b2144f94ba85e9fd90bd3, type: 3}
+    lmIncorretoGrande: {fileID: -5088903051765510607, guid: 383b9cd3fd84498478c41efe7130eb2e, type: 3}
     rmIncorretoGrande: {fileID: -2688767551332479368, guid: 884c76bbba83ade4f9bd10284a83b347, type: 3}
   - npcId: 4
-    rgCorretoGrande: {fileID: -4638144748832478917, guid: 5e44a212891a1c54db6679110b670974, type: 3}
-    lmCorretoGrande: {fileID: -5193229638936560725, guid: b424080cc0ac22d4b8c75dc18b4ecfdf, type: 3}
-    rmCorretoGrande: {fileID: 7024377803440307931, guid: 02b5280961cb84e4d84056ec1bcb0186, type: 3}
-    rgIncorretoGrande: {fileID: -3950776805341975277, guid: d58688a2b92b8c94dae5edfbe313a4c6, type: 3}
-    lmIncorretoGrande: {fileID: -5193229638936560725, guid: b424080cc0ac22d4b8c75dc18b4ecfdf, type: 3}
-    rmIncorretoGrande: {fileID: 7024377803440307931, guid: 02b5280961cb84e4d84056ec1bcb0186, type: 3}
+    rgCorretoGrande: {fileID: 6487834094498672948, guid: b1b8c91c7c28ede41997a36d73a53ac3, type: 3}
+    lmCorretoGrande: {fileID: -519237330498336284, guid: f380b4ba84dd6d74b83f2ac0e3b4dc26, type: 3}
+    rmCorretoGrande: {fileID: 8506167642240334331, guid: ce98b3742e76c6d47a8361eb5abef0ef, type: 3}
+    rgIncorretoGrande: {fileID: 6487834094498672948, guid: b1b8c91c7c28ede41997a36d73a53ac3, type: 3}
+    lmIncorretoGrande: {fileID: -4958939453240966528, guid: 71cf098f0a8a8be47b4219a32d61996d, type: 3}
+    rmIncorretoGrande: {fileID: 8506167642240334331, guid: ce98b3742e76c6d47a8361eb5abef0ef, type: 3}
   - npcId: 5
-    rgCorretoGrande: {fileID: 4130640169021434097, guid: c5e4fe3290398bf47b6766278ffdacde, type: 3}
-    lmCorretoGrande: {fileID: -3789653621476813933, guid: f4b12b008c3b0d34eab71a896a45cc65, type: 3}
-    rmCorretoGrande: {fileID: -6146860342206559806, guid: 8cd02ef565c71f44ab244b1bcda3d0b9, type: 3}
-    rgIncorretoGrande: {fileID: -3701759560546033312, guid: 8cce39242c050114da7fe440a03f9572, type: 3}
-    lmIncorretoGrande: {fileID: -3789653621476813933, guid: f4b12b008c3b0d34eab71a896a45cc65, type: 3}
-    rmIncorretoGrande: {fileID: -6146860342206559806, guid: 8cd02ef565c71f44ab244b1bcda3d0b9, type: 3}
+    rgCorretoGrande: {fileID: 6480336466288880889, guid: adae94d9aa7069d4a8dfed2dcccd583f, type: 3}
+    lmCorretoGrande: {fileID: -4923167894316059123, guid: 4c3a89e2563e914489e5957175a93844, type: 3}
+    rmCorretoGrande: {fileID: -1882560248577376730, guid: 5179e2dce08be804da101fa42e24de30, type: 3}
+    rgIncorretoGrande: {fileID: 6480336466288880889, guid: adae94d9aa7069d4a8dfed2dcccd583f, type: 3}
+    lmIncorretoGrande: {fileID: -4923167894316059123, guid: 4c3a89e2563e914489e5957175a93844, type: 3}
+    rmIncorretoGrande: {fileID: 3920061280713006352, guid: 72ab2dfb14aed084ab591c436bf3a8fe, type: 3}
   - npcId: 6
     rgCorretoGrande: {fileID: -1815874705565436143, guid: 0bc4d51004e988146ab31312cadca695, type: 3}
     lmCorretoGrande: {fileID: 7001528591158343071, guid: de971b1dfbd066847a93b98654a42e3d, type: 3}
     rmCorretoGrande: {fileID: -3914355808792781537, guid: 4711e4a7ae5367f4fadb5e92830bb1a7, type: 3}
-    rgIncorretoGrande: {fileID: -1815874705565436143, guid: 0bc4d51004e988146ab31312cadca695, type: 3}
+    rgIncorretoGrande: {fileID: 1131996872001033967, guid: 35a4c6f153d20f947a9dc39863d4293d, type: 3}
     lmIncorretoGrande: {fileID: 7001528591158343071, guid: de971b1dfbd066847a93b98654a42e3d, type: 3}
     rmIncorretoGrande: {fileID: -3914355808792781537, guid: 4711e4a7ae5367f4fadb5e92830bb1a7, type: 3}
   - npcId: 7
-    rgCorretoGrande: {fileID: 7028616704906629411, guid: 8d65c84133370f049bcc8427e141d208, type: 3}
-    lmCorretoGrande: {fileID: -4890865873410770253, guid: 288e22ba762d79d4faf1fca7267ac6ae, type: 3}
-    rmCorretoGrande: {fileID: 6167196265798756472, guid: 2cc602ded04fea04b8b73171501723c1, type: 3}
-    rgIncorretoGrande: {fileID: 4169131004038670043, guid: f86a30345ddabad48b3b3317c9150852, type: 3}
-    lmIncorretoGrande: {fileID: -4890865873410770253, guid: 288e22ba762d79d4faf1fca7267ac6ae, type: 3}
-    rmIncorretoGrande: {fileID: 6167196265798756472, guid: 2cc602ded04fea04b8b73171501723c1, type: 3}
+    rgCorretoGrande: {fileID: -3075335870001353609, guid: 5e48c67f5d1df1c469fd818826784574, type: 3}
+    lmCorretoGrande: {fileID: 2270514125195992362, guid: 191492f6b91e195479e2c76afd833bc2, type: 3}
+    rmCorretoGrande: {fileID: 2520409251431611293, guid: 746d3d4f822c4424eb63176cd8f53efc, type: 3}
+    rgIncorretoGrande: {fileID: -3075335870001353609, guid: 5e48c67f5d1df1c469fd818826784574, type: 3}
+    lmIncorretoGrande: {fileID: -5942657351514248411, guid: 4807f39254ac0d34da14eda655945a59, type: 3}
+    rmIncorretoGrande: {fileID: 2520409251431611293, guid: 746d3d4f822c4424eb63176cd8f53efc, type: 3}
   - npcId: 8
     rgCorretoGrande: {fileID: 2786152252014074569, guid: d366dadc10001e0459e0b3c760f7ea99, type: 3}
     lmCorretoGrande: {fileID: -4545738112280521985, guid: dd10b9799e02a2c41a8b63cfbdbae4c2, type: 3}
     rmCorretoGrande: {fileID: 5002641858398181760, guid: 6bedc20dd56282146a433597af2e1a50, type: 3}
-    rgIncorretoGrande: {fileID: 2786152252014074569, guid: d366dadc10001e0459e0b3c760f7ea99, type: 3}
+    rgIncorretoGrande: {fileID: 8481107671531824941, guid: 6dbb5db3b922ab345b227869759d8ea0, type: 3}
     lmIncorretoGrande: {fileID: -4545738112280521985, guid: dd10b9799e02a2c41a8b63cfbdbae4c2, type: 3}
     rmIncorretoGrande: {fileID: 5002641858398181760, guid: 6bedc20dd56282146a433597af2e1a50, type: 3}
 --- !u!1 &2017248471
@@ -26391,6 +26477,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!222 &2052727675
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -26747,6 +26834,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &2082801396
 Canvas:
   m_ObjectHideFlags: 0
@@ -27632,6 +27720,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &2100196810
 Canvas:
   m_ObjectHideFlags: 0
@@ -27709,8 +27798,8 @@ MonoBehaviour:
   aberturas:
   - baloes:
     - "Vamos, pode me deixar entrar, voc\xEA com certeza n\xE3o vai querer arrumar
-      problemas com "
-    - "Meus seguran\xE7as, ou vai?"
+      problemas com meus seguran\xE7as, ou vai? "
+    - Esse bando de idiotas...
     - 'Aqueles estupidos do governo me fizeram sair do meu bunker seguro '
     - "Argh, que nojo de voc\xEAs"
   - baloes:
@@ -27818,6 +27907,7 @@ MonoBehaviour:
   rightPosition: 750
   walkHeight: 8
   walkSpeed: 8
+  decisaoAutorizada: 0
 --- !u!223 &2102916672
 Canvas:
   m_ObjectHideFlags: 0
@@ -27895,8 +27985,8 @@ MonoBehaviour:
   aberturas:
   - baloes:
     - "Vamos, pode me deixar entrar, voc\xEA com certeza n\xE3o vai querer arrumar
-      problemas com "
-    - "meus seguran\xE7as, ou vai?"
+      problemas com meus seguran\xE7as, ou vai? "
+    - Esse bando de idiotas...
     - 'Aqueles estupidos do governo me fizeram sair do meu bunker seguro '
     - "Argh, que nojo de voc\xEAs"
   - baloes:

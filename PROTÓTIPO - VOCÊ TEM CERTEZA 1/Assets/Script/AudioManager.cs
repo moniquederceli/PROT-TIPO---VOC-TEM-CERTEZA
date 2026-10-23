@@ -76,6 +76,10 @@ public class AudioManager : MonoBehaviour
     public AudioClip somDeDigitacao;
     [Range(0f, 1f)] public float volumeDaDigitacao = 1f;
 
+    [Tooltip("Passos do NPC andando (toca em repetição enquanto ele anda)")]
+    public AudioClip somDePasso;
+    [Range(0f, 1f)] public float volumeDosPassos = 1f;
+
     [Header("EVENTO DA JANELA (Dia 2)")]
     [Tooltip("Toc toc, como se alguém batesse no vidro")]
     public AudioClip somDeToc;
@@ -95,6 +99,8 @@ public class AudioManager : MonoBehaviour
     private AudioSource fonteClique;
     private AudioSource fonteSirene;
     private AudioSource fonteDigitacao;
+    private AudioSource fontePasso;
+    private Object donoDosPassos;
 
     private EstadoDaMusica estadoDaMusica = EstadoDaMusica.Nenhuma;
     private Coroutine transicao;
@@ -111,6 +117,8 @@ public class AudioManager : MonoBehaviour
     public static void SomDeJumpscare()      { if (Instance != null) Instance.TocarEfeito(Instance.somDeJumpscare, Instance.volumeDoJumpscare); }
     public static void IniciarSirene()       { if (Instance != null) Instance.LigarLoop(Instance.fonteSirene, Instance.somDaSirene, Instance.volumeDaSirene); }
     public static void PararSirene()         { if (Instance != null) Instance.DesligarLoop(Instance.fonteSirene); }
+    public static void IniciarPassos(Object dono)  { if (Instance != null) Instance.LigarPassos(dono); }
+    public static void PararPassos(Object dono)    { if (Instance != null) Instance.DesligarPassos(dono); }
     public static void IniciarDigitacao()    { if (Instance != null) Instance.LigarLoop(Instance.fonteDigitacao, Instance.somDeDigitacao, Instance.volumeDaDigitacao); }
     public static void PararDigitacao()      { if (Instance != null) Instance.DesligarLoop(Instance.fonteDigitacao); }
 
@@ -135,6 +143,7 @@ public class AudioManager : MonoBehaviour
         fonteClique = CriarFonte(grupoEfeitos, false);
         fonteSirene = CriarFonte(grupoEfeitos, true);
         fonteDigitacao = CriarFonte(grupoEfeitos, true);
+        fontePasso = CriarFonte(grupoEfeitos, true);
 
         fonteMenu.volume = 0f;
         fonteJogo.volume = 0f;
@@ -184,6 +193,8 @@ public class AudioManager : MonoBehaviour
     {
         DesligarLoop(fonteDigitacao);
         DesligarLoop(fonteSirene);
+        DesligarLoop(fontePasso);
+        donoDosPassos = null;
     }
 
     // ==========================================
@@ -295,6 +306,23 @@ public class AudioManager : MonoBehaviour
         fonteEfeitos.PlayOneShot(clip, volume);
     }
 
+    // Passos: só quem LIGOU (o NPC) consegue desligar. Assim, um NPC que some
+    // não corta os passos do NPC seguinte.
+    private void LigarPassos(Object dono)
+    {
+        donoDosPassos = dono;
+        LigarLoop(fontePasso, somDePasso, volumeDosPassos);
+    }
+
+    private void DesligarPassos(Object dono)
+    {
+        if (donoDosPassos != dono)
+            return;
+
+        donoDosPassos = null;
+        DesligarLoop(fontePasso);
+    }
+
     private void LigarLoop(AudioSource fonte, AudioClip clip, float volume)
     {
         if (fonte == null || clip == null)
@@ -334,11 +362,13 @@ public class AudioManager : MonoBehaviour
         {
             fonteDigitacao.Pause();
             fonteSirene.Pause();
+            fontePasso.Pause();
         }
         else
         {
             fonteDigitacao.UnPause();
             fonteSirene.UnPause();
+            fontePasso.UnPause();
         }
     }
 }

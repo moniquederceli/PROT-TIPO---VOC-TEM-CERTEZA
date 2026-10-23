@@ -92,6 +92,7 @@ public class NPCRecusado : MonoBehaviour
             // Sem imagem de recusado, ele só vai embora andando
             posicaoYInicial = transform.localPosition.y;
             indoEmbora = true;
+            AudioManager.IniciarPassos(gameObject);
             return;
         }
 
@@ -112,6 +113,9 @@ public class NPCRecusado : MonoBehaviour
         // Depois da troca, o chão (Y) em que ele caminha é o atual
         posicaoYInicial = transform.localPosition.y;
         indoEmbora = true;
+
+        // Ele vai embora: os passos voltam
+        AudioManager.IniciarPassos(gameObject);
     }
 
     private void Update()
@@ -130,6 +134,7 @@ public class NPCRecusado : MonoBehaviour
         if (Mathf.Abs(posicao.x - limiteEsquerda) <= 1f)
         {
             indoEmbora = false;
+            AudioManager.PararPassos(gameObject);
             gameObject.SetActive(false);
         }
     }
